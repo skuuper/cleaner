@@ -1,0 +1,54 @@
+{% extends 'layouts/app.twig' %}
+
+{% block content %}
+    <h1 class="text-center">Skuuper Cleaner</h1>
+
+    <div id="form">
+        <div class="content">
+    <ul class="nav nav-tabs nav-justified">
+        <li><a href="#url" role="tab" data-toggle="tab">Paste link</a></li>
+        <li><a href="#file" role="tab" data-toggle="tab">Upload file</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="url">
+            <!-- URL form -->
+            <form method="post" class="form" action="{{ base_uri }}">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="url_address">Link address:</label>
+                        <input type="text" name="url_address" id="url_address" required="required" value="{{ url }}" class="form-control input-lg">
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-primary">
+                        <i class='fa fa-arrow-right'></i>
+                    </button>
+                </div>
+            </form>
+            <!-- /URL form -->
+        </div>
+        <div role="tabpanel" class="tab-pane" id="file">
+            <!-- File form -->
+            <form method="post" class="form" action="{{ base_uri }}process_file" enctype="multipart/form-data">
+                <div class="col-md-12">
+                    <div class="form-group text-center">
+                        <label for="upload_file" class="hidden">Upload file:</label>
+                        <input type="file" name="upload_file" id="upload_file" data-buttonName="btn-default" data-input="false" class="filestyle">
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-primary">
+                        <i class='fa fa-upload'></i>
+                    </button>
+                </div>
+            </form>
+            <!-- File form -->
+        </div>
+    </div>
+
+    {% if file %}
+        <div class="col-md-12 text-center">
+            <hr><a href="/download/{{ file }}" class="btn btn-success btn-sm"><i class="fa fa-download"></i> Download: {{ file }}</a>
+        </div>
+    {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

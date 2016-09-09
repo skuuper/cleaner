@@ -1,0 +1,31 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="icon" type="image/png" href="{{ base_uri }}assets/img/favicon.png" />
+
+    <link rel="manifest" href="manifest.json">
+
+    <title>Skuuper Cleaner</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ base_uri }}bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="{{ base_uri }}bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ base_uri }}assets/css/application.css">
+</head>
+<body>
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+<script type="text/javascript" src="{{ base_uri }}bower_components/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="{{ base_uri }}bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="{{ base_uri }}bower_components/bootstrap-filestyle/src/bootstrap-filestyle.min.js"></script>
+<script type="text/javascript" src="{{ base_uri }}assets/js/application.js"></script>
+
+</body>
+</html>

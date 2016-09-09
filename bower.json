@@ -1,0 +1,23 @@
+{
+  "name": "skuuper-cleaner",
+  "authors": [
+    "Martin Verrev <martin.verrev@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-filestyle": "^1.2.1",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "fontawesome#^4.6.3"
+  }
+}
