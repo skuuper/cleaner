@@ -7,7 +7,10 @@
         "tuupola/slim-basic-auth": "^2.0",
         "illuminate/database": "~5.1",
         "guzzlehttp/guzzle": "^6.2",
-        "nategood/httpful": "^0.2.20"
+        "nategood/httpful": "^0.2.20",
+        "monolog/monolog": "^1.21",
+        "php-console/php-console": "^3.1",
+        "sabre/xml": "^1.4"
     },
     "autoload": {
         "psr-4": {

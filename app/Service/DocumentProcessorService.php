@@ -2,18 +2,31 @@
 
 namespace App\Service;
 
+use Monolog\Logger;
+use Monolog\Handler\BrowserConsoleHandler;
+use Monolog\Processor\IntrospectionProcessor;
+
 class DocumentProcessorService {
 
     private $paragraph_separator;
     private $debug = 0;
+    private $tmx;
+    private $log;
 
     public function __construct($debug = 0)
     {
+        $this->log = new Logger( __CLASS__ );
+        $this->log->pushHandler(new BrowserConsoleHandler());
+        $this->log->pushProcessor(new IntrospectionProcessor());
+
         $this->debug = $debug;
         $this->paragraph_separator = "\n";
         if ($this->debug > 0) {
             $this->paragraph_separator = "\n----\n";
         }
+
+        $this->tmx = new TmxService();
+
     }
 
     public function process($input) {
@@ -50,7 +63,7 @@ class DocumentProcessorService {
             $k++;
         }
         if ($k > 0) {
-            debug('Cleaned whitespaces in ' . $k . ' steps');
+            $this->log->addDebug('Cleaned whitespaces in ' . $k . ' steps');
         }
         return $input;
     }
@@ -113,6 +126,17 @@ class DocumentProcessorService {
             return false;
         }
         return $paragraph;
+    }
+
+
+
+    public function build_tmx($request, $response) {
+        $writer = new \Sabre\Xml\Writer();
+        $writer->openMemory();
+        $writer->setIndent(true);
+        $writer->startDocument();
+        $writer->write('...');
+        echo $writer->outputMemory();
     }
 
 }

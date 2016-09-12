@@ -27,6 +27,7 @@ class NltkService
     private function call_py_api($method, $text)
     {
         $json = json_encode(array($text));
+        dd($json);
 
         $command = sprintf('python %s %s %s 2>&1', $this->api_file, $method, escapeshellarg($json));
         $result = shell_exec($command);
