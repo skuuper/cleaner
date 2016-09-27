@@ -1,0 +1,56 @@
+{% extends 'layouts/app.twig' %}
+
+{% block content %}
+    <h1 class="text-center">TMX Generator</h1>
+
+    <form method="post" class="form label-left" action="{{ base_uri }}tmx/process" enctype="multipart/form-data">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="form-group col-md-3">
+                <label>Source language: {{ request.source_language }}</label>
+                <select name="source_language" class="form-control" required="required">
+                    <option value="">---</option>
+                    {% for code, language in languages %}
+                        <option value="{{ code }}" {% if code == req.source_language %}selected="selected"{% endif %}>{{ language }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-9 form-group">
+                <label>Source text:</label>
+                <input type="file" name="source_text" required="required">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-3">
+                <label>Destination language:</label>
+                <select name="destination_language" class="form-control" required="required">
+                    <option value="">---</option>
+                    {% for code, language in languages %}
+                        <option value="{{ code }}" {% if code == req.destination_language %}selected="selected"{% endif %}>{{ language }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <div class="col-md-9 form-group">
+                <label>Destination text:</label>
+                <input type="file" name="destination_text" required="required">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <button type="submit" class="btn btn-lg btn-primary">
+                    Create TMX
+                </button>
+            </div>
+        </div>
+    </div>
+    </form>
+
+    {% if file %}
+        <div class="col-md-12 text-center">
+            <hr><a href="/tmx/download/{{ file }}" class="btn btn-success btn-sm"><i class="fa fa-download"></i> Download: {{ file }}.tmx</a>
+        </div>
+    {% endif %}
+        </div>
+    </div>
+
+{% endblock %}

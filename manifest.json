@@ -1,0 +1,11 @@
+{
+  "lang": "en",
+  "name": "Skuuper TMX cleaner",
+  "short_name": "skuuper-tmx",
+  "start_url": "index.php",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "icons": {
+    "128": "assets/img/icon.png"
+  }
+}

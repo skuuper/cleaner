@@ -23,17 +23,19 @@ use App\Model\TmxEntry;
 
 class TmxService {
 
-    public function __construct()
-    {
-        $this->xml = new Service();
+    public function __construct() {
     }
 
 
     public function parse($raw_xml) {
-
         $xml = new \SimpleXMLElement($raw_xml);
         $translation_units = $xml->body->tu;
         return $translation_units;
+    }
+
+
+    public function parse_split($raw_xml) {
+        return $this->parse($raw_xml);
     }
 
 

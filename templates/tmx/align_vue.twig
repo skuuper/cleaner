@@ -1,0 +1,52 @@
+{% extends 'layouts/app.twig' %}
+
+{% block content %}
+
+    <h1>Align TMX</h1>
+
+    {% verbatim %}
+    <div id="aligner-editor">
+        <div class="toolbox">
+            <button v-on:click="save" class="btn btn-success">Save TMX</button>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="item" v-for="item in language0" track-by="$index">
+                    <div contenteditable="true" class="contents"
+                        v-on:click="select(item)"
+                        v-on:keyup.enter="split"
+                        >
+                        {{ item }}
+                    </div>
+                    <div class="tools">
+                        <i v-on:click="remove('language0', item)" class="fa fa-remove"></i>
+                        <i v-on:click="duplicate('language0', item, index)" class="fa fa-copy"></i>
+                        <i v-on:click="" class="fa fa-edit"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item" v-for="item in language1" track-by="$index">
+                    <div contenteditable="true" class="contents" v-on:click="select(item)">
+                        {{ item }}
+                    </div>
+                    <div class="tools">
+                        <i v-on:click="remove('language1', item)" class="fa fa-remove"></i>
+                        <i v-on:click="duplicate('language1', item, index)" class="fa fa-copy"></i>
+                        <i v-on:click="" class="fa fa-edit"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    {% endverbatim %}
+
+
+
+    {% if file %}
+        <div class="col-md-12 text-center">
+            <hr><a href="/tmx/download/{{ file }}" class="btn btn-success btn-sm"><i class="fa fa-download"></i> Download: {{ file }}.tmx</a>
+        </div>
+    {% endif %}
+{% endblock %}

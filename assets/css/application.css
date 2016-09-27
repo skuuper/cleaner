@@ -89,3 +89,68 @@ div[id=form] .content .tab-content .tab-pane {
   height: 150px;
   border-radius: 20px;
 }
+.label-left label {
+  display: block;
+  text-align: left;
+}
+.toolbox {
+  display: inline-block;
+  position: fixed;
+  right: 24px;
+  top: 24px;
+  background-color: white;
+  text-align: left;
+  padding: 8px;
+}
+.toolbox ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#aligner-editor .row {
+  display: flex;
+  flex-direction: row;
+}
+#aligner-editor .col {
+  width: 50%;
+}
+#aligner-editor .item {
+  margin: 0;
+  padding: 1em;
+  border-bottom: 1px solid #9e9e9e;
+  flex: 1;
+  display: flex;
+  width: 100%;
+}
+#aligner-editor .item:nth-of-type(odd) {
+  background: #fcfcfc;
+}
+#aligner-editor .item.active {
+  background-color: #ffc107;
+}
+#aligner-editor .item .contents {
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+#aligner-editor .item .tools {
+  float: right;
+  white-space: nowrap;
+  visibility: hidden;
+}
+#aligner-editor .item .tools span {
+  display: block;
+}
+#aligner-editor .item .tools i {
+  border: 2px solid black;
+  border-radius: 100%;
+  padding: .3em;
+  display: block;
+  margin-bottom: 1em;
+}
+#aligner-editor .item:hover {
+  background-color: rgba(97, 255, 61, 0.27);
+}
+#aligner-editor .item:hover .tools {
+  visibility: visible;
+}

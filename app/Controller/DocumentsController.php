@@ -12,21 +12,20 @@ use App\Service\DocumentProcessorService;
 use App\Service\NltkService;
 use App\Service\SkuuperTikaService;
 use App\Service\TmxService;
-use App\Util\Transliterator;
+use App\Util\FileUtil;
 use Slim\Http\UploadedFile;
 
-class DocumentsController extends \App\Controller\BaseController {
+class DocumentsController extends BaseController {
 
-    private $debug;
     private $tika;
     private $processor;
-    private $dl_path = './downloads/';
+    private $file;
 
     public function __construct(\Interop\Container\ContainerInterface $container)
     {
         parent::__construct($container);
 
-        $this->debug = $container->get('settings')['debug'];
+        $this->file = FileUtil::getInstance();
 
         $this->tika = new SkuuperTikaService();
         $this->processor = new DocumentProcessorService($this->debug);
@@ -51,7 +50,7 @@ class DocumentsController extends \App\Controller\BaseController {
         $file = $files['upload_file'];
         $raw_contents = $file->getStream()->getContents();
 
-        $filename = $this->get_file_name($file->getClientFilename());
+        $filename = $this->file->get_file_name($file->getClientFilename());
         $contents = $this->tika->get_contents_stream($raw_contents);
 
         if ($this->debug > 0) {
@@ -68,6 +67,8 @@ class DocumentsController extends \App\Controller\BaseController {
 
         return $this->view->render($response, 'documents/index.twig', $data);
     }
+
+
 
 
     public function process($request, $response) {
@@ -88,7 +89,6 @@ class DocumentsController extends \App\Controller\BaseController {
 
         file_put_contents($this->dl_path . $filename . '.txt', $contents);
 
-
         $data = [
             'file' => $filename,
             'url' => $url
@@ -108,28 +108,7 @@ class DocumentsController extends \App\Controller\BaseController {
             exit;
         }
 
-        header('Content-Description: File Transfer');
-        header('Content-Type: application/octet-stream');
-        header('Content-Disposition: attachment;filename="'.basename($file).'"');
-        header('Expires: 0');
-        header('Cache-Control: must-revalidate');
-        header('Pragma: public');
-        header('Content-Length: ' . filesize($file));
-        readfile($file);
-        exit;
-    }
-
-
-
-    private function get_file_name($url) {
-        $t = new Transliterator();
-        $filename = basename(urldecode($url));
-        $filename = strtolower($t->from_cyr($filename));
-        $filename = str_replace(' ', '_', $filename);
-        $filename = str_replace('.', '_', $filename);
-
-        $filename =  pathinfo($filename, PATHINFO_FILENAME);
-        return $filename;
+        $this->file->download($file);
     }
 
 
@@ -138,7 +117,7 @@ class DocumentsController extends \App\Controller\BaseController {
         $nltk = new NltkService(1);
         $tmx = new TmxService();
 
-        $raw_contents = $this->read_file('init_riigiteataja.txt');
+        $raw_contents = $this->file->read_file('init_riigiteataja.txt');
         $contents = $this->processor->process($raw_contents);
 
         $language = $nltk->detect_lang($contents);
@@ -161,31 +140,11 @@ class DocumentsController extends \App\Controller\BaseController {
     public function test_processing($request, $response) {
         $filename = 'riigiteataja.txt';
 
-        $raw_contents = $this->read_file('init_riigiteataja.txt');
+        $raw_contents = $this->file->read_file('init_riigiteataja.txt');
         $contents = $this->processor->process($raw_contents);
 
         $file = $file = strval(str_replace("\0", "", $this->dl_path . 'done_riigiteataja.txt'));
         file_put_contents($file, $contents);
         dd('Done processing');
-    }
-
-
-
-    private function read_file($filename)  {
-        $this->dl_path = $_SERVER['DOCUMENT_ROOT'] . '/downloads/';
-        $this->processor = new DocumentProcessorService(0);
-
-        if (!file_exists($this->dl_path)) {
-            dd('Path does not exist: ' . $this->dl_path);
-        }
-
-        $file = strval(str_replace("\0", "", $this->dl_path . $filename));
-
-        if (!file_exists($file)) {
-            dd($file . ' does not exist');
-        }
-
-        $raw_contents = file_get_contents($file);
-        return $raw_contents;
     }
 }

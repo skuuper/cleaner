@@ -29,8 +29,8 @@ class DocumentProcessorService {
 
     }
 
-    public function process($input) {
 
+    public function process_array($input) {
         $input = $this->remove_between_brackets($input);
         $input = $this->sections_to_newlines($input);
         $input = $this->remove_double_newlines($input);
@@ -48,8 +48,14 @@ class DocumentProcessorService {
             $paragraph = $this->cleanup_whitespace($paragraph);
         }
         $paragraphs = array_filter($paragraphs);
-        $output = implode($this->paragraph_separator, $paragraphs);
+        return $paragraphs;
+    }
 
+
+
+    public function process($input) {
+        $paragraphs = $this->process_array($input);
+        $output = implode($this->paragraph_separator, $paragraphs);
         return $output;
     }
 

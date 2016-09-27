@@ -1,968 +1,0 @@
-Väljaandja: Riigikogu Akti liik: seadus Teksti liik: terviktekst Redaktsiooni jõustumise kp: 01.07.2015 Redaktsiooni kehtivuse lõpp: 31.12.2017 Avaldamismärge: RT I, 30.06.2015, 41  Asjaõigusseadus1  Vastu võetud 09.06.1993 RT I 1993, 39, 590 jõustumine 01.12.1993  Muudetud järgmiste aktidega Vastuvõtmine - Avaldamine - Jõustumine 15.02.1995 - RT I 1995, 26, 355 - 18.03.1995 14.06.1995 - RT I 1995, 57, 976 - 12.07.1995 05.06.1996 - RT I 1996, 45, 848 - 01.01.1997 26.06.1996 - RT I 1996, 51, 967 - 29.07.1996 11.06.1997 - RT I 1997, 52, 833 - 01.01.1998 12.01.1998 - RT I 1998, 12, 152 - 16.02.1998 11.03.1998 - RT I 1998, 30, 409 - 01.07.1998 17.06.1998 - RT I 1998, 59, 941 - 10.07.1998 17.02.1999 - RT I 1999, 26, 377 - 23.03.1999 17.02.1999 - RT I 1999, 27, 380 - 01.04.1999 terviktekst RT paberkandjal - RT I 1999, 44, 509 -  13.03.2001 - RT I 2001, 34, 185 - 10.04.2001 14.11.2001 - RT I 2001, 93, 565 - 01.02.2002 15.05.2002 - RT I 2002, 47, 297 - 01.01.2003 05.06.2002 - RT I 2002, 53, 336 - 01.07.2002 13.11.2002 - RT I 2002, 99, 579 - 01.01.2003 15.01.2003 - RT I 2003, 13, 64 - 01.07.2003 22.01.2003 - RT I 2003, 17, 95 - 01.01.2004 19.11.2003 - RT I 2003, 78, 523 - 27.12.2003 10.03.2004 - RT I 2004, 20, 141 - 12.04.2004 22.04.2004 - RT I 2004, 37, 255 - 01.05.2004 15.06.2005 - RT I 2005, 39, 308 - 01.01.2006 19.10.2005 - RT I 2005, 59, 464 - 15.11.2005 21.02.2007 - RT I 2007, 24, 128 - 26.03.2007 10.12.2008 - RT I 2008, 59, 330 - 01.01.2009 21.05.2009 - RT I 2009, 30, 178 - 01.10.2009 15.06.2009 - RT I 2009, 37, 251 - 10.07.2009 09.12.2009 - RT I 2009, 68, 463 - 01.01.2010 27.01.2010 - RT I 2010, 8, 37 - 27.02.2010 22.04.2010 - RT I 2010, 22, 108 - 01.01.2011 jõustub päeval, mis on kindlaks määratud Euroopa Liidu Nõukogu otsuses Eesti Vabariigi suhtes kehtestatud erandi kehtetuks tunnistamise kohta Euroopa Liidu toimimise lepingu artikli 140 lõikes 2 sätestatud alusel, Euroopa Liidu Nõukogu 13.07.2010. a otsus Nr 2010/416/EL (ELT L 196, 28.07.2010, lk 24–26). 12.05.2010 - RT I 2010, 26, 128 - 14.06.2010 17.06.2010 - RT I 2010, 38, 231 - 01.07.2010 17.11.2010 - RT I, 06.12.2010, 1 - 05.04.2011 23.02.2011 - RT I, 21.03.2011, 4 - 01.06.2011 09.06.2011 - RT I, 29.06.2011, 1 - 30.06.2011 17.04.2012 - RT I, 23.04.2012, 1 - 17.04.2012 - Riigikohtu põhiseaduslikkuse järelevalve kolleegiumi 17.04.2012 kohtuotsus tunnistab AÕSRS § 15.4 lõiked 2–4 ja AÕS § 158² lõike 1 esimese lause osa „asjaõigusseaduse rakendamise seaduse §-s 15.4 kehtestatud suuruses” põhiseadusega vastuolus olevaks ning alates käesoleva otsuse jõustumisest kehtetuks. 19.02.2014 - RT I, 13.03.2014, 3 - 01.01.2018, osaliselt 23.03.2014 ja 01.01.2016 20.06.2014 - RT I, 08.07.2014, 3 - 01.08.2014 19.06.2014 - RT I, 29.06.2014, 109 - 01.07.2014, Vabariigi Valitsuse seaduse § 107³ lõike 4 alusel asendatud ministrite ametinimetused alates 2014. aasta 1. juulil jõus olevast redaktsioonist. 11.02.2015 - RT I, 04.03.2015, 4 - 01.07.2015 18.02.2015 - RT I, 23.03.2015, 3 - 01.07.2015 11.06.2015 - RT I, 30.06.2015, 4 - 01.07.2015  1. osa ÜLDOSA  1. peatükk ÜLDSÄTTED
-§ 1.  Seaduse ülesanne  Asjaõigusseadus sätestab asjaõigused, nende sisu, tekkimise ja lõppemise ning on aluseks teistele asjaõigust reguleerivatele seadustele.
-§ 2.  – § 4.
-§ 5.  Asjaõigused
-(1) Asjaõigused on omand (omandiõigus) ja piiratud asjaõigused: servituudid, reaalkoormatised, hoonestusõigus, ostueesõigus ja pandiõigus.
-(2) Seaduses võib lisaks käesoleva paragrahvi 1. lõikes nimetatule sätestada ka muid asjaõigusi.
-§ 6.  Omanik
-(2) Kõigil omanikel on võrdsed õigused, kui seaduses ei ole sätestatud teisiti. Juriidilise isiku vara ega juriidiline isik ei saa kuuluda teistele isikutele.
-(3)   2. peatükk ASJAD  1. jagu MÕISTE JA LIIGID
-§ 7.  – § 31.   2. osa VALDUS JA KINNISTUSRAAMAT  1. peatükk VALDUS  1. jagu ÜLDSÄTTED
-§ 32.  Valduse mõiste  Valdus on tegelik võim asja üle.
-§ 33.  Valdaja
-(1) Valdaja on isik, kelle tegeliku võimu all asi on.
-(2) Isik, kes valdab asja rendi-, üüri-, hoiu-, pandi- või muu selletaolise suhte alusel, mis annab talle õiguse teise isiku asja ajutiselt vallata, on otsene, teine isik aga kaudne valdaja.
-(3) Valdajaks ei ole isik, kes teostab tegelikku võimu asja üle teise isiku korralduste kohaselt tema majapidamises või ettevõttes.
-§ 34.  Seaduslik ja ebaseaduslik valdus
-(1) Valdus on seaduslik või ebaseaduslik sõltuvalt sellest, kas see põhineb õiguslikul alusel või mitte.
-(2) Valdus loetakse seaduslikuks, kuni ei ole tõendatud vastupidist.
-§ 35.  Heauskne ja pahauskne valdus
-(1) Valdus on heauskne, kui valdaja ei tea ega peagi teadma, et tema valdusel puudub õiguslik alus või et teisel isikul on suurem õigus asja vallata.
-(2) Valdus on pahauskne, kui valdaja teab või peab teadma, et tema valdusel puudub õiguslik alus või et teisel isikul on suurem õigus asja vallata.
-(3) Valdus loetakse heauskseks, kuni ei ole tõendatud vastupidist.    2. jagu VALDUSE OMANDAMINE JA LÕPPEMINE
-§ 36.  Valduse omandamine
-(1) Valdus omandatakse tegeliku võimu saamisega asja üle või abinõude üle, mis võimaldavad tegelikku võimu asja üle.
-(2) Valduse omandamiseks piisab senise valdaja ja omandaja kokkuleppest, kui omandaja suudab teostada tegelikku võimu asja üle.
-§ 37.  Kaudse valduse omandamine  Kaudne valdus omandatakse asja väljanõudeõiguse loovutamisega omandajale, kui asja võõrandaja ise või kolmas isik jääb asja valdama.
-§ 38.  Valduse üleminek pärijale  Valdus läheb üle pärijale.
-§ 39.  Valduse lõppemine
-(1) Valdus lõpeb, kui valdaja loobub tegelikust võimust asja üle või kaotab selle muul viisil.
-(2) Mööduv takistus või katkestus tegeliku võimu teostamisel valdust ei lõpeta.
-(3)   3. jagu VALDUSE KAITSE
-§ 40.  Omavoli ja omavoliline valdus
-(1) Valdus on seadusega kaitstud omavoli vastu.
-(2) Omavoli on valdaja nõusolekuta seadusvastaselt asja valduse rikkumine või valduse äravõtmine. Sel viisil saadud valdus on omavoliline.
-(3) Valduse rikkumine on valdaja takistamine asja üle tegeliku võimu teostamisel, samuti asja äravõtmise katse või ähvardus, kui on alust karta selle täideviimist.
-(4) Omavolilise valduse tagajärgede eest vastutab ka selle valduse pärija, samuti muu õigusjärglane, kui viimane valduse omandamisel eelkäija valduse omavolilisusest teadis.
-§ 41.  Omaabi
-(1) Valdaja võib oma valdust omavoli vastu jõuga kaitsta, ületamata seejuures hädakaitse piire.
-(2) Kui vallasasi võetakse valdajalt ära omavoliliselt salaja või vägivallaga, on valdajal õigus teolt tabatud või jälitatud omavoli tarvitajalt vallasasi kohe ära võtta.
-(3) Kui kinnisasja valdus võetakse valdajalt ära omavoliliselt salaja või vägivallaga, on valdajal õigus omavoli tarvitaja kinnisasjalt eemaldada ja kinnisasi oma võimu alla tagasi võtta.
-(4) Käesolevas paragrahvis sätestatud valdaja õigust omaabile võib kasutada ka § 33 3. lõikes nimetatud isik.
-§ 42.  Otsimisõigus
-(1) Kui vallasasi on valdaja võimu alt sattunud teise isiku valduses olevale kinnisasjale, on selle valdaja kohustatud lubama asja otsida ja ära viia, kui asi ei ole vahepeal kellegi valdusse võetud.
-(2) Kinnisasja valdajal on õigus nõuda asja otsimisest ja äraviimisest tekkinud kahju hüvitamist. Kui on alust eeldada kahju tekkimist, on kinnisasja valdajal õigus tagatise saamiseni keelduda loa andmisest asja otsida või ära viia. Keeldumine ei ole lubatud, kui viivitamine on ohtlik.
-§ 44.  Valduse rikkumisest tulenev nõue
-(1) Valduse rikkumise korral on valdajal õigus nõuda rikkumise kõrvaldamist ja edasise rikkumise ärahoidmist.
-(2) Nõuet ei rahuldata, kui nõudja valdus on rikkuja või tema eelkäija suhtes omavoliline ja omandatud ühe aasta jooksul enne rikkumist.
-§ 45.  Valduse äravõtmisest tulenev nõue
-(1) Valduse äravõtmisel on valdajal õigus nõuda valduse taastamist isikult, kes on nõudja suhtes omavoliline valdaja.
-(2) Nõuet ei rahuldata, kui nõudja valdus on äravõtja või tema eelkäija suhtes omavoliline ja on omandatud ühe aasta jooksul enne valduse äravõtmist.
-§ 46.  Valdaja vastuväited  Valdaja võib käesoleva seaduse §-des 44 ja 45 nimetatud nõuete rahuldamisest keelduda, kui ta tõendab, et valduse rikkumine või äravõtmine ei olnud omavoliline ja et tal oli õigus valdust rikkuda või asja vallata.
-§ 47.  Kaudse valdaja õigused
-(1) Paragrahvides 44 ja 45 nimetatud nõude võib esitada ka kaudne valdaja.
-(2) Valduse äravõtmisel võib kaudne valdaja nõuda otsese valdaja valduse taastamist. Kui otsene valdaja ei saa või ei taha valdust taastada, võib kaudne valdaja nõuda valduse üleandmist endale.
-(3) Kaudsel valdajal on käesoleva paragrahvi 2. lõikes nimetatud tingimustel otsimisõigus (§ 42).
-§ 48.  Valduse kaitse nõude lõppemine
-(1) Käesoleva seaduse §-des 44 ja 45 nimetatud nõue lõpeb ühe aasta möödumisel valduse rikkumisest või äravõtmisest, kui nõuet ei panda maksma vastava hagi esitamisega kohtule.
-(2) Käesoleva seaduse §-des 44 ja 45 nimetatud nõue lõpeb ka siis, kui pärast omavoli toimepanemist tuvastatakse jõustunud kohtulahendiga, et omavoli toimepanijal on asja suhtes selline õigus, mille alusel ta võib nõuda valdust asjale.
-§ 49.  Osavalduse kaitse  Isik, kes valdab asja reaalosa, võib selle osa valdust kaitsta §-des 40–48 sätestatud korras.
-§ 50.  Kaasvalduse kaitse
-(1) Kui mitu isikut valdab asja ühiselt (kaasvaldus), võib iga kaasvaldaja või kaasvaldajad ühiselt kaitsta valdust §-des 40–48 sätestatud korras.
-(2) Kaasvaldajate vahelises vaidluses valduse kasutamisõiguse ulatuse üle ei kohaldata valduse kaitse sätteid.  2. peatükk KINNISTUSRAAMAT  1. jagu ÜLDSÄTTED
-§ 51.  Kinnistusraamatu mõiste
-(1) Kinnistusraamatut peetakse kinnisasjade ja nendega seotud asjaõiguste kohta.
-§ 53.  Kinnistusraamatusse kantavad andmed
-(1) Kinnistusraamatusse kantakse ainult seaduses ettenähtud andmed.
-§ 54.  Kinnisasjade ühendamine ja jagamine
-(1) Kinnisasju võib ühendada üheks kinnisasjaks või ühte kinnisasja jagada mitmeks kinnisasjaks ainult omaniku soovil.
-(2) Kinnisasjade ühendamisel või kinnisasja jagamisel jäävad kinnistusraamatusse kantud õigused kehtima. Juhul kui õiguste endisel kujul kehtimajäämine ei ole võimalik, jäävad kinnistusraamatusse kantud õigused kehtima vastavalt puudutatud isikute notariaalselt tõestatud kokkuleppele.
-(3) Kinnisasjade ühendamise korral laienevad ühendatud kinnisasju koormanud asjaõigused kogu tekkinud kinnisasjale.
-§ 55.  Kinnistusraamatu avalikkus
-(1) Kinnistusraamat on avalik. Igaühel on õigus tutvuda kinnistusraamatu andmetega ja saada sellest väljavõtteid seaduses sätestatud korras.
-(2) Keegi ei või end vabandada kinnistusraamatu andmete mitteteadmisega.
-§ 56.  Kinnistusraamatu õigsuse eeldamine
-(1) Kinnistusraamatusse kantud andmete õigsust eeldatakse.
-(2) Kui kinnistusraamatusse kantud õigus kustutatakse, siis eeldatakse, et õigus on lõppenud.
-1. Heauskne omandamine
-(1) Kui isik tehinguga omandab kinnisomandi või piiratud asjaõiguse kinnistusraamatusse kantud andmetele tuginedes, loetakse kinnistusraamatusse kantud andmed tema suhtes õigeks, välja arvatud juhul, kui kinnistusraamatusse kantud andmete õigsuse vastu on kinnistusraamatusse kantud vastuväide või kui omandaja teadis või pidi teadma, et kinnistusraamatusse kantud andmed on ebaõiged.
-(2) Kui isiku kinnistusraamatusse kantud õiguse käsutamise õigust on kindla isiku kasuks piiratud, on piirang omandaja suhtes kehtiv vaid juhul, kui see on kantud kinnistusraamatusse või kui omandaja on käsutuspiirangu olemasolust teadlik või peab sellest teadlik olema.
-(3) Kui kinnisomandi või piiratud asjaõiguse omandamiseks on nõutav kande tegemine kinnistusraamatusse, on omandaja heausksuse suhtes määrav kinnistamisavalduse esitamise aeg.
-(4) Käesolevas paragrahvis sätestatut kohaldatakse ka juhul, kui isikule tehakse kinnistusraamatusse kantud andmetele tuginedes sooritus või kui isikuga tehakse kinnistusraamatusse kantud andmetele tuginedes tehing, mis sisaldab käesolevas paragrahvis nimetamata käsutust kinnistusraamatusse kantud õiguse kohta.
-1. Asjaõiguse sisu täpsustamine  Asjaõiguse kinnistusraamatusse kandmisel võib õiguse sisu täpsustamiseks viidata kinnistusraamatu kande tegemise aluseks olevatele dokumentidele, kui seaduses ei ole sätestatud teisiti.
-§ 59.  Asjaõiguse järjekoht
-(1) Asjaõigused saavad järjekoha kinnistusraamatusse kandmisega.
-(2) Kanded kinnistusraamatusse tehakse avalduste saabumise järjekorras.
-1. Mitme õiguse järjekohasuhe
-(1) Kui kinnistusregistri ühte jakku tehakse mitu kannet, saavad need järjekoha, mis vastab registreerimise järjekohale kinnistuspäevikus. Kui avaldused on esitatud samaaegselt, antakse neile üks ja sama järjekoht ning see märgitakse ka vastavatesse kannetesse.
-(2) Kui eri aegadel esitatud kinnistamisavalduste alusel tehakse kandeid eri jagudesse samal päeval, tuleb neis ära näidata, et hiljem taotletud kanne asub varem taotletud kandest järjekohas tagapool.
-(3) Käesoleva paragrahvi 1. ja 2. lõiget ei kohaldata, kui asjaosalised on kokku leppinud teistsuguses järjekohasuhtes ja niisuguse kokkuleppe kohta on tehtud kanne kinnistusraamatusse.
-(4) Hagi tagamise määruse alusel tehtav märge ja kohtulik hüpoteek kantakse kinnistusraamatusse üldises korras.
-§ 60.  Järjekoha muutmine
-(1) Kinnistusraamatusse kantud asjaõiguse järjekohta võib muuta, kui seaduses ei ole sätestatud teisiti.
-(2) Järjekoha muutmiseks on nõutav nende isikute kokkulepe, kelle õiguste järjekoht muutub, ja vastava kande tegemine kinnistusraamatusse. Hüpoteegi järjekohas tagasiastumiseks on nõutav ka kinnisasja omaniku nõusolek. Nõusolek ei ole tagasivõetav.
-(3) Kui muutmisel tagasiastunud õigus lõpeb, siis etteastunud õigus ei kaota selle tagajärjel järjekoha muutmisega saadud kohta.
-(4) Järjekoha muutmine ei või kahjustada õigust, mille järjekoht on tagasiastuvate ja etteastuvate õiguste vahel.
-§ 61.  Eesõigus järjekohale
-(1) Omanik võib kinnisasja koormamisel mõne õigusega jätta endale eesõiguse teise ulatuselt kindlaksmääratud õiguse kandmiseks koormava õiguse ette.
-(2) Eesõigus kantakse märkena kinnistusraamatusse selle õiguse juurde, mis eesõiguse kasutamisel peab tagasi astuma.
-(3) Kinnisasja võõrandamisel, samuti pärimisel läheb käesoleva paragrahvi 1. lõikes nimetatud eesõigus üle igakordsele omandajale.  2. jagu KANNETE LIIGID
-§ 62.  Kanded  Kinnistusraamatusse kantakse asjaõigused ja märked.
-§ 63.  Märge kinnistusraamatus
-(1) Kinnistusraamatusse võib kanda märke:
-1) asjaõiguse omandamise või kustutamise või selle õiguse sisu või järjekoha muutmise nõude, sealhulgas tulevase või tingimusliku nõude tagamiseks (eelmärge);
-2) kinnistusraamatu ebaõige kande muutmise või kustutamise nõude (§ 65) tagamiseks (vastuväide);
-3) omandi või piiratud asjaõiguse käsutamise täielikuks või osaliseks keelamiseks (keelumärge);
-4) muude seadusega kinnistusraamatusse kanda lubatud asjaolude nähtavakstegemiseks (märkus).
-(2) Keelumärge keelab vastavalt märke sisule kannete tegemise kinnistusraamatusse kas täielikult või osaliselt.
-(3) Asjaõiguse käsutamine pärast eelmärke kandmist kinnistusraamatusse on tühine osas, milles see eelmärkega tagatud nõuet kahjustab või piirab. See ei takista kannete tegemist kinnistusraamatusse.
-(4) Käesoleva paragrahvi 3. lõiget rakendatakse ka sundtäitmise käigus, pankrotihalduri poolt või kohtulahendi alusel tehtava käsutuse suhtes.
-(5) Kui käsutamine on käesoleva paragrahvi 3. ja 4. lõikes sätestatud alustel tühine, võib isik, kelle kasuks eelmärge kinnistusraamatusse on kantud, nõuda isikult, kelle kasuks on kinnistatud asjaõigus või märked, nõusolekut eelmärkega tagatud nõude täitmiseks vajaliku kande tegemiseks või kustutamiseks.
-(6) Märke järgi määratakse selle õiguse järjekoht, mille kohta märge oli tehtud.
-(8) Isikul, kelle omandit või piiratud asjaõigust eelmärge või vastuväide puudutab, on õigus nõuda isikult, kelle kasuks märge on tehtud, märke kustutamist, kui märkega tagatud õiguse maksmapanek on välistatud, eelkõige juhul, kui nõue, mille tagamiseks märge tehti, on lõppenud.
-1. Märke kandmine kinnistusraamatusse
-(1) Eelmärge kantakse kinnistusraamatusse selle isiku avalduse alusel või nõusolekul, kelle omandit või piiratud asjaõigust eelmärge puudutab.
-(2) Eelmärke võib kinnistusraamatusse kanda ka hagi tagamise määruse alusel või muul seaduses sätestatud alusel. Hagi tagamise määruse alusel eelmärke kinnistusraamatusse kandmiseks ei ole nõutav, et eelmärke kinnistusraamatusse kandmist nõudev isik tõendaks eelmärkega tagatava nõude täitmise raskendamise või võimatuks muutumise ohtu.
-(3) Eelmärke kandmisel kinnistusraamatusse võib eelmärkega tagatava nõude täpsustamiseks viidata hagi tagamise määrusele või muule kinnistusraamatu kande tegemise aluseks olevale dokumendile.
-(4) Vastuväide kantakse kinnistusraamatusse selle isiku avalduse alusel või nõusolekul, kelle omandit või piiratud asjaõigust see puudutab.
-(5) Vastuväite võib kinnistusraamatusse kanda ka hagi tagamise määruse alusel või muul seaduses sätestatud alusel. Hagi tagamise määruse alusel vastuväite kinnistusraamatusse kandmiseks ei ole nõutav, et vastuväite kinnistusraamatusse kandmist nõudev isik tõendaks vastuväitega tagatava nõude täitmise raskendamise või võimatuks muutumise ohtu.
-(6) Keelumärge kantakse kinnistusraamatusse hagi tagamise määruse või muul seaduses sätestatud alusel.
-(7) Märkus kantakse kinnistusraamatusse seaduses sätestatud juhul.
-(8) Üüri- või rendilepingu kohta tehtavas märkes näidatakse ära tähtajalise üüri- või rendilepingu lõppemise tähtpäev või lepingu korralise ülesütlemise tähtaeg, kui see on pikem seaduses sätestatud ülesütlemistähtajast.
-2. Eelmärke kustutamise nõue
-(1) Kui eelmärkega tagatud nõude võlausaldaja asukoht ei ole teada, võib koormatud kinnisasja omanik või asjaõiguse omaja nõuda eelmärke kustutamist, kui viimase eelmärget puudutava kande tegemisest kinnistusraamatusse on möödunud 10 aastat ja kui eelmärkega tagatud nõude võlgnik ei ole selle aja jooksul eelmärkega tagatud nõuet tunnustanud.
-(2) Käesoleva paragrahvi 1. lõikes nimetatud nõude esitamise korral määrab kohus tähtaja vastuväidete esitamiseks ja avaldab vastava kuulutuse ametlikus väljaandes Ametlikud Teadaanded. Kui määratud tähtaja jooksul vastuväiteid ei esitata või need tagasi lükatakse, teeb kohus eelmärke kustutamise määruse. Muus osas kohaldatakse tsiviilkohtumenetluse seadustikus üleskutsemenetluse kohta sätestatut.    3. jagu ÜLDSÄTTED KINNISASJU PUUDUTAVATE ASJAÕIGUSTE KOHTA
-1. Kinnisomandi üleandmine ja koormamine  Kinnisomandi üleandmiseks ja kinnisasja koormamiseks asjaõigusega, samuti kinnisasja koormava asjaõiguse üleandmiseks, koormamiseks või selle sisu muutmiseks on nõutav õigustatud isiku ja teise poole notariaalselt tõestatud kokkulepe (asjaõigusleping) ja sellekohase kande tegemine kinnistusraamatusse, kui seadus ei sätesta teisiti.
-2. Õiguse lõpetamine  Kinnisasja koormava asjaõiguse lõpetamiseks on nõutav õigustatud isiku notariaalselt kinnitatud avaldus õiguse lõpetamise kohta ja õiguse kustutamine kinnistusraamatust, kui seadus ei sätesta teisiti. Avaldus tuleb anda kinnistusosakonda või isikule, kelle kasuks õigus lõpetatakse.
-§ 65.  Ebaõige kande parandamine
-(1) Isik, kelle õigust on ebaõige kandega rikutud, võib nõuda ebaõige kande parandamiseks nõusolekut isikult, kelle õigusi parandamine puudutab.
-(3) Käesoleva paragrahvi 1. lõikes nimetatud nõuet ei saa esitada kolmanda heauskse isiku poolt omandatud asjaõiguste suhtes, mis on kinnistusraamatusse kantud.
-§ 66.  Kande kustutamine asjaõiguse lõppemisel
-(1) Kui kanne on asjaõiguse lõppemise tõttu kaotanud igasuguse õigusliku tähenduse, on koormatud kinnisasja omanikul õigus nõuda kande kustutamist.
-(2) Kinnistusraamatusse kantud asjaõigus kinnisasjale ei lõpe ainuüksi seetõttu, et kinnisasja omanik omandab selle õiguse või selle õiguse omanik omandab kinnisasja.
-§ 67.    3. osa OMAND  1. peatükk ÜLDSÄTTED  1. jagu OMANDI MÕISTE JA LIIGID
-§ 68.  Omandi mõiste
-(1) Omand on isiku täielik õiguslik võim asja üle. Omanikul on õigus asja vallata, kasutada ja käsutada ning nõuda kõigilt teistelt isikutelt nende õiguste rikkumise vältimist ja rikkumise tagajärgede kõrvaldamist.
-(2) Omaniku õigused võivad olla kitsendatud ainult seaduse või teiste isikute õigustega.
-(3) Omand tekib ainult seaduses sätestatud juhtudel.
-§ 70.  Ühine omand
-(1) Ühine omand on kahele või enamale isikule üheaegselt kuuluv omand.
-(2) Ühine omand on kaasomand või ühisomand.
-(3) Kaasomand on kahele või enamale isikule üheaegselt mõttelistes osades ühises asjas kuuluv omand.
-(4) Ühisomand on kahele või enamale isikule üheaegselt kindlaksmääramata osades ühises asjas kuuluv omand.
-(5) Ühine omand on kaasomand, kui seaduses ei ole sätestatud teisiti.
-(6) Ühisomandile kohaldatakse kaasomandi kohta käivaid sätteid, kui ühisomandit sätestavas seaduses ei ole sätestatud teisiti.
-(7) Kui õigus kuulub mitmele isikule ühiselt (ühisus), kohaldatakse sellele vastavalt ühise omandi kohta käivaid sätteid, kui seadusest ei tulene teisiti.  2. jagu KAASOMAND
-§ 71.  Kaasomandi ulatus
-(1) Kaasomanike osad ühises asjas on võrdsed, kui seaduses või tehinguga ei ole sätestatud teisiti.
-(2) Kaasomanikule kuulub tema osale vastav osa ühisest asjast saadavast kasust, kui kaasomanike kokkuleppega ei nähta ette teisiti.
-(3) Kaasomanikul on teiste kaasomanike suhtes oma osale ühises asjas omaniku õigused, arvestades teiste kaasomanike õigusi.
-(4) Kaasomanikul on ühise asja suhtes kolmandate isikute ees kõik omaniku õigused.
-§ 72.  Kaasomandi valdamine ja kasutamine
-(1) Kaasomanikud valdavad ja kasutavad ühist asja kokkuleppel. Kaasomanike häälteenamusega tehtava otsusega võib otsustada küsimusi, mis jäävad ühise asja tavapärase valdamise ja kasutamise piiridesse. Häälte arv otsuse tegemisel sõltub omandi osa suurusest.
-(2) Kaasomaniku osale vastavat kasu, mida tal on õigus saada, ei või käesoleva paragrahvi 1. lõikes nimetatud enamus kaasomaniku nõusolekuta vähendada.
-(3) Kaasomanikul on õigus ühist asja kasutada niivõrd, kui see ei takista teiste kaasomanike kaaskasutust.
-(4) Kaasomanikul on õigus teha asja säilitamiseks vajalikke toiminguid teiste kaasomanike nõusolekuta, kuid ta võib teistelt kaasomanikelt nõuda asja säilitamiseks vajalike kulutuste hüvitamist võrdeliselt nende osadega.
-(5) Kaasomanikul on õigus nõuda teistelt kaasomanikelt, et kaasomandis oleva asja valdamine ja kasutamine toimuks vastavalt kõigi kaasomanike huvidele. Kaasomanikud peavad üksteise suhtes käituma lähtuvalt hea usu põhimõttest, eelkõige hoiduma teiste kaasomanike õiguste kahjustamisest.
-§ 73.  Kaasomandi mõttelise osa käsutamine
-(1) Kaasomanik võib temale kuuluva mõttelise osa ühises asjas võõrandada, pärandada, pantida või seda muul viisil käsutada.
-(2) Kinnisasja mõttelise osa müümisel isikule, kes ei ole kaasomanik ega seaduse järgi eesõigustatud, on teistel kaasomanikel müüdava mõttelise osa ostu eesõigus.
-(4) Käesoleva paragrahvi 2. lõikes sätestatut ei kohaldata, kui kaasomanik võõrandab kinnisasja mõttelise osa alanejale sugulasele või vanemale.
-§ 74.  Kaasomandi käsutamine tervikuna
-(1) Kaasomandis oleva asja võib võõrandada või koormata, samuti asja või selle majanduslikku otstarvet oluliselt muuta ainult kõigi kaasomanike kokkuleppel.
-§ 75.  Koormatiste ja kulutuste kandmine
-(1) Kaasomanik kannab vastavalt temale kuuluva osa suurusele ühisel asjal lasuvaid koormatisi, samuti selle asja alalhoidmise, valdamise ja kasutamisega seotud kahju ja kulutusi.
-§ 76.  Kaasomandi lõpetamise nõue
-(1) Kaasomanikul on õigus igal ajal nõuda kaasomandi lõpetamist.
-(2) Kaasomanikevahelise kokkuleppega võib kaasomandi lõpetamise nõudeõiguse välistada.
-(3) Kui kaasomandi lõpetamise nõudeõigus on kokkuleppega välistatud, võib lõpetamist nõuda üksnes juhul, kui selleks on oluline põhjus. Kui kaasomandi ülesütlemiseks oli määratud tähtaeg, siis võib olulisel põhjusel kaasomandi üles öelda määratud tähtajast kinni pidamata.
-(4) Käesolevas paragrahvis nimetamata kokkulepe, millega välistatakse või piiratakse kaasomandi lõpetamise nõudeõigust, on tühine.
-§ 77.  Asja jagamine kaasomandi lõpetamisel
-(1) Kaasomandi lõpetamisel jagatakse asi vastavalt kaasomanike kokkuleppele.
-(2) Kui kaasomanikud ei saavuta kokkulepet kaasomandis oleva asja jagamise viisi suhtes, otsustab kohus hageja nõudel kas jagada asi kaasomanike vahel reaalosades, anda asi ühele või mitmele kaasomanikule, pannes neile kohustuse maksta teistele kaasomanikele välja nende osad rahas, või müüa asi avalikul või kaasomanikevahelisel enampakkumisel ning saadud raha jagada kaasomanike vahel vastavalt nende osa suurusele.
-(3) Kaasomandi reaalosadena jagamisel võib kohus, kui reaalosade väärtus ei vasta kaasomanikele kuuluvate mõtteliste osade väärtusele, määrata rahalise tasaarvestuse osade ühtlustamiseks, samuti koormata üksikuid osasid servituudiga teiste osade kasuks.
-(4) Kohtu poolt kindlaksmääratud osade jaotamine reaalselt võib vajaduse korral toimuda ka liisu heitmise teel.
-§ 79.  Kaasomanike kokkuleppe ja enamuse otsuse kehtivus õigusjärglaste suhtes
-(1) Kaasomanikevahelised kaasomandi valdamist, kasutamist ja kaasomandi lõpetamist puudutavad kokkulepped kehtivad ka kaasomanike õigusjärglaste suhtes.
-(2) Kui kaasomandis on kinnisasi, siis kehtivad käesoleva paragrahvi lõikes 1 nimetatud kokkulepped kaasomanike õigusjärglaste suhtes vaid juhul, kui need on kantud märkusena kinnistusraamatusse.    3. jagu OMANDI KAITSE
-§ 80.  Asja väljanõudmine ebaseaduslikust valdusest
-(1) Omanikul on nõudeõigus igaühe vastu, kes õigusliku aluseta tema asja valdab.
-(2) Omaniku nõue on suunatud omandiõiguse tunnustamisele ja asja väljanõudmisele ebaseaduslikust valdusest oma valdusse.
-§ 82.  Valduse tõendamine
-(1) Omanik peab vaidluse korral tõendama, et valdaja valdab temale kuuluvat asja.
-(2) Kui valdaja loobub valdusest nõudest vabanemise eesmärgil, võib kohus teda sellele vaatamata valdajaks lugeda.
-§ 83.  Valdaja vastuväited
-(1) Valdaja võib asja väljaandmisest keelduda, kui tal on omaniku suhtes õigus asja vallata.
-(2) Otsene valdaja võib asja väljaandmisest keelduda, kui kaudsel valdajal, kellelt ta on saanud õiguse asja vallata, on omaniku suhtes õigus asja vallata. Kui kaudne valdaja ei ole valdajale valduse üleandmiseks õigustatud, võib omanik nõuda otseselt valdajalt asja väljaandmist kaudsele valdajale või viimase keeldumise korral valduse ülevõtmisest asja väljaandmist endale.
-(3) Käesoleva seaduse § 93 kohaselt väljaandmisnõude loovutamisega omandatud asja valdaja võib uuele omanikule esitada vastuväited, mida ta võiks esitada loovutatud nõude suhtes.
-§ 84.  Valdaja vastutus asja ja päraldiste eest
-(1) Pahauskne valdaja on kohustatud hüvitama omanikule asja või selle päraldiste hävimise või väärtuse vähenemise tõttu tekkinud kahju vastavalt võlaõigusseaduse (RT I 2001, 81, 487; 2002, 60, 374) kahju õigusvastase tekitamise sätetele.
-(2) Isik, kes on saanud asja valduse omavoliga, vastutab asja ja selle päraldiste hävimise ning nende väärtuse vähenemise eest, välja arvatud, kui hävimine või väärtuse vähenemine oleks toimunud ka juhul, kui asi oleks olnud hageja valduses.
-(3) Kui valdaja on heauskne, ei vastuta ta asja ja selle päraldiste hävimise või väärtuse vähenemise eest, kui hävimine või väärtuse vähenemine on toimunud enne hagi esitamisest teadasaamist. Valdaja vastutab asja või selle päraldiste hävimise või väärtuse vähenemise eest, mis on toimunud tema süül pärast hagi esitamisest teadasaamist.
-(4) Kui valdaja võõrandas asja kohtumenetluse ajal pärast seda, kui ta sai teada või pidi teada saama hagi esitamisest, vastutab ta nagu pahauskne valdaja, välja arvatud juhul, kui võõrandamine oli hädavajalik asja rikkumise ärahoidmiseks.
-§ 85.  Kasu väljaandmine ja hüvitamine
-(1) Valdaja vastutab asjast saadud kasu väljaandmise või hüvitamise eest vastavalt võlaõigusseaduse §-dele 1037–1040.
-(2) Isik, kes on saanud asja valduse omavoliga, on kohustatud lisaks käesoleva paragrahvi 1. lõikes sätestatule hüvitama ka saamata jäänud kasu, mida omanik ise asja vallates oleks saanud.
-§ 86.  – § 87.
-§ 88.  Kulutuste hüvitamine valdajale
-(1) Valdaja võib nõuda tema poolt asjale tehtud vajalike kulutuste hüvitamist, välja arvatud juhul, kui ta on valduse saanud omavoliliselt. Muude kulutuste hüvitamist võib valdaja nõuda vastavalt võlaõigusseaduse §-le 1042.
-(2) Valdajal on õigus asjale tehtud kulutustega loodud parendused asja küljest ära võtta tingimusel, et ta taastab väljaantava asja endise seisundi. Selline õigus on välistatud, kui parenduste äravõtmine ei ole parendusi rikkumata võimalik või kui valdajale hüvitatakse väärtus, mis kulutustega loodud parendusel oleks pärast asjast eraldamist.
-§ 89.  Omandi kaitse valduse kaotusega mitteseotud rikkumise korral  Omanikul on õigus nõuda omandiõiguse igasuguse rikkumise kõrvaldamist, isegi kui rikkumine ei ole seotud valduse kaotusega. Kui on alust eeldada niisuguse rikkumise kordumist, võib omanik nõuda rikkumisest hoidumist. Nõue on välistatud, kui omanik on kohustatud rikkumist taluma.
-§ 90.  Valdaja omandi eeldus
-(1) Vallasasja valdaja, samuti iga varasem valdaja loetakse oma valduse ajal asja omanikuks, kuni ei ole tõendatud vastupidist.
-(2) Kaudse valduse korral kehtib käesoleva paragrahvi 1. lõikes nimetatud eeldus ainult kaudse valdaja suhtes.
-§ 91.    2. peatükk VALLASOMAND  1. jagu VALLASOMANDI TEKKIMINE  1. jaotis Üleandmine
-§ 92.  Vallasomandi tekkimine üleandmisega
-(1) Vallasomand tekib vallasasja üleandmisega, kui võõrandaja annab asja valduse üle omandajale ja nad on kokku leppinud, et omand läheb üle omandajale.
-(2) Kui vallasasi on juba omandaja valduses, piisab omandi tekkimiseks võõrandaja ja omandaja vahelisest kokkuleppest omandi ülemineku kohta.
-1. Kinnistamata merelaev  Omandi tekkimiseks Eesti kohtu juures asuvasse laevakinnistusraamatusse kandmata merelaevale ei ole merelaeva üleandmist vaja, kui võõrandaja ja omandaja on kokku leppinud omandi koheses üleminekus.
-§ 93.  Omandamine asja väljanõudeõiguse loovutamisega  Kui asi on kolmanda isiku valduses, võib võõrandaja kokkuleppel omandajaga asja valduse üleandmise asendada väljanõudeõiguse loovutamisega omandajale.
-§ 94.  Omandamine asja jätmisega võõrandaja valdusse  Kui asja omanik on asja otseseks valdajaks, võib omandi üleandmisel asja valduse üleandmise asendada võõrandaja ja omandaja vahel sõlmitava lepinguga, mille alusel omandaja saab asjale kaudse valduse.
-§ 95.  Heauskne omandamine
-(1) Isik, kes on asja üleandmisega omandanud heauskselt, on asja omanik asja oma valdusse saamise ajast ka siis, kui võõrandaja ei olnud õigustatud omandit üle andma.  (1
-1) Kui käesoleva seaduse § 93 kohaselt võõrandatud asi ei kuulu võõrandajale, saab omandaja nõude loovutamisega asja omanikuks üksnes juhul, kui ta saab asja valduse kolmandalt isikult ja on valduse saamise ajal heauskne.  (1
-2) Kui käesoleva seaduse § 94 kohaselt võõrandatud asi ei kuulu võõrandajale, saab omandaja omanikuks asja temale üleandmisega, kui ta on üleandmise ajal heauskne.
-(2) Omandaja on pahauskne, kui ta teadis või pidi teadma, et võõrandajal ei olnud õigust omandit üle anda.
-(3) Omandamist käesoleva paragrahvi 1.–1 2 . lõike kohaselt ei toimu, kui asi on varastatud, kadunud või muul viisil omaniku tahte vastaselt tema valdusest välja läinud. Kui omanik oli kaudne valdaja, kehtib sama juhul, kui asi oli otseselt valdajalt varastatud, kadunud või muul viisil otsese valdaja tahte vastaselt tema valdusest välja läinud. Käesolevat lõiget ei kohaldata raha või esitajaväärtpaberite, samuti avalikul enampakkumisel omandatud asja suhtes.
-(5) Kui vastavalt käesoleva seaduse §-le 92 1 võõrandatud merelaev ei kuulunud võõrandajale, muutub omandaja omanikuks merelaeva üleandmise hetkest, välja arvatud juhul, kui ta sellel ajal ei olnud heauskne. Kui tehingu objekt on osa laevast, siis on määrav kaasvalduse saamise aeg.
-1. Koormatiste lõppemine
-(1) Omandi üleandmisega lõpevad vallasasja koormanud kolmanda isiku õigused võõrandatud asjale.
-(2) Omandi üleandmisel vastavalt käesoleva seaduse § 92 2. lõikele lõpevad kolmanda isiku õigused üksnes siis, kui omandaja on saanud valduse võõrandajalt. Kui võõrandamine toimub käesoleva seaduse § 92 1 või § 94 kohaselt või kui käesoleva seaduse § 93 kohaselt võõrandatud asi ei olnud võõrandaja kaudses valduses, lõpeb kolmanda isiku õigus üksnes juhul, kui omandaja saab asjale otsese valduse.
-(3) Kolmanda isiku õigus ei lõpe, kui omandaja ei ole omandi üleandmise ajal õiguse suhtes heauskne. Omandaja on heauskne, kui ta ei tea kolmanda isiku õigusest ega pea sellest teadma.
-(4) Kui käesoleva seaduse § 93 järgi kuulub õigus kolmandast isikust valdajale, ei lõpe see ka heauskse omandaja suhtes.    2. jaotis Hõivamine
-§ 96.  Hõivamise sisu
-(1) Vallasomand tekib hõivamisega, kui isik võtab peremehetu vallasasja oma valdusse tahtega saada selle omanikuks.
-(2) Asja ei saa omandada, kui hõivamine on seadusega keelatud või valdusse võtmine rikub teise isiku õigust asi hõivata.
-(3) Asi on peremehetu, kui see ei ole veel olnud kellegi omandis või kui omanik on valduse lõpetanud omandist loobumise tahtega.
-(4) Metsloom on peremehetu, kui ta on looduslikus vabaduses.
-§ 97.    3. jaotis Leid
-§ 98.  Teatamiskohustus
-(1) Isik, kes on kaotatud asja leidnud ja selle oma valdusse võtnud, peab sellest viivitamata teatama kaotajale või omanikule. Kui kaotaja või omanik on leidjale teadmata, on leidja kohustatud teatama leiust politseile, kui asja väärtus ületab 50 eurot.
-(2) Asja leidmisel elamus, avalikus asutuses või transpordivahendis on asja leidnud isik kohustatud asja üle andma majaomanikule, üürnikule, vastava asutuse teenistujale, transpordivahendi juhile või politseile. Majaomanik, üürnik, asutus, transpordiorganisatsioon või politsei, kellele leitud asi üle anti, loetakse leidjaks.
-§ 99.  Leiu hoidmine ja müümine
-(1) Leidja on kohustatud leitud asja hoidma selle säilimist tagaval viisil.
-(2) Leidjal on õigus pärast avalikku teatamist müüa asi avalikul enampakkumisel, kui asja hoidmine on ülemääraselt kulukas või kui asi on kiiresti riknev või kui avalik asutus või politsei on asja hoidnud kuus kuud.
-(3) Enampakkumisel saadud raha, millest on maha arvatud hoiu- ja müügikulud, asendab asja.
-§ 100.  Leiu omandamine
-(1) Kui leidja on oma kohustused täitnud ja omanik ei ole selgunud ühe aasta jooksul, arvates leiust teatamisest, omandab leidja asja või seda asendava raha.
-(2) Kui asja väärtus ei ületa 50 eurot, algab käesoleva paragrahvi 1. lõikes sätestatud tähtaja kulgemine leiupäevast.
-(3) Leiukoha kohalik omavalitsus omandab asja või seda asendava raha, kui politsei on leidu hoidnud ühe aasta jooksul, arvates asja valdusse võtmisest.
-(4) Leidja ei omanda asja, kui ta rikub teatamiskohustust või varjab leidu.
-(5) Leiu omandamisega lõpevad asja koormanud kolmanda isiku õigused.
-§ 101.  Leiutasu ja kulutuste hüvitamine
-(1) Kui leidja ei ole asja veel omandanud, saab omanik asja või seda asendava raha tagasi, kui ta hüvitab vajalikud kulutused ja maksab leidjale leiutasu. Leiutasu määratakse leidja ja omaniku kokkuleppel. Vaidluse korral määrab leiutasu kohus, kuid mitte suuremas kui ühe kolmandiku ulatuses leiu väärtusest, millest on maha arvatud leidja poolt leiuga seoses tehtud vajalikud kulutused.  (1
-1) Leiutasu ei saa nõuda, kui leidja rikub teatamiskohustust või kui ta leidu varjab.
-(2) Käesoleva paragrahvi 1. lõikes nimetatud vajalikud kulutused on kulutused, mida leidja teeb leitud asja säilitamiseks, õigustatud isiku otsimiseks ja leitud asja müümiseks.
-(3) Paragrahvi 98 2. lõikes nimetatud isikud leiutasu ei saa.
-1. Leidja vastutus  Leidja vastutab oma kohustuste rikkumise eest üksnes tahtluse või raske hooletuse korral.
-§ 102.    4. jaotis Peitvara
-§ 103.  Peitvara mõiste
-(1) Peitvara on maasse kaevatud või muul viisil peidetud raha või väärtasi nagu kalliskivid, pärlid või väärismetallid, mille omanikku ei saa kindlaks teha.
-(2) Peitvara kuulub isikule, kelle kinnis- või vallasasjast see leiti.
-§ 104.  Leiutasu
-(1) Peitvara leidjal on õigus saada leiutasu peitvara pooles väärtuses.
-(2) Peitvara väärtus määratakse leidja ja omaniku kokkuleppel, vaidluse korral määrab selle kohus.
-(3) Leidja, kes otsis peitvara kinnis- või vallasasja omaniku nõusolekuta, leiutasu ei saa.
-§ 105.    5. jaotis Ümbertöötamine, segamine, ühendamine
-§ 106.  Ümbertöötamine
-(1) Kui keegi heauskselt töötas ümber võõra vallasasja, kuulub uus asi ümbertöötajale, kui töö on väärtuslikum esialgsest asjast, vastasel juhul aga esialgse asja omanikule.
-(2) Kui ümbertöötaja tegutses pahauskselt, on esialgse asja omanikul õigus uus asi endale nõuda, sõltumata sellest, kas töö on väärtuslikum esialgsest asjast või mitte.
-§ 107.  Ühendamine ja segamine
-(1) Kui mitme omaniku vallasasjad ühendatakse selliselt, et need muutuvad ühe tervikliku asja olulisteks osadeks, tekib asjade senistel omanikel kaasomand ühendamise teel tekkinud terviklikule asjale. Kaasomandi osade suurused määratakse väärtuse järgi, mis ühendatud asjadel oli ühendamise ajal.
-(2) Kui üht ühendatud asjadest tuleb lugeda peaasjaks, saab selle omanik ühendamise teel tekkinud tervikliku asja ainuomanikuks.
-(3) Kui vallasasi ühendatakse maatükiga sel viisil, et ta muutub maatüki oluliseks osaks, laieneb maatüki omand maatükiga ühendatud asjale.
-(4) Käesoleva paragrahvi 1. ja 2. lõikes sätestatut kohaldatakse ka juhul, kui mitme omaniku vallasasjad segatakse lahutamatult või sel viisil, et nende eraldamine on seotud ebamõistlike kulutustega.
-(5) Kui omand asjale lõpeb vastavalt käesoleva paragrahvi 1.–4. lõikele, lõpevad ka muud asja koormanud õigused. Kui koormatud asja omanik saab ühendamise teel tekkinud tervikliku asja kaasomanikuks, kehtivad asja koormanud õigused edasi tema kaasomandi osa suhtes. Kui koormatud asja omanik saab ühendamise teel tekkinud tervikliku asja ainuomanikuks, kehtivad asja koormanud õigused tervikliku asja suhtes edasi.
-§ 108.  – § 109.   6. jaotis Igamine
-§ 110.  Igamise sisu
-(1) Vallasomand tekib igamisega, kui isik valdab vallasasja katkematult viie aasta jooksul nagu omanik.
-§ 111.  Igamise välistamine
-(1) Igamine on välistatud, kui valdaja on pahauskne.
-(2) Valdaja on pahauskne, kui ta valduse saamisel teadis või pidi teadma, et ta valduse saamisega ei omandanud asja, või kui ta sai seda teada enne igamistähtaja möödumist.
-§ 112.  Igamisaja arvutamine
-(1) Eeldatakse, et isik, kelle valduses asi on olnud teatava ajavahemiku alguses ja lõpus, on olnud valdaja ka vahepeal.
-(2) Valduse omandamisel õigusjärglasena võib valdaja enda ja oma eelkäija igamisajad liita.
-§ 113.  Igamise peatumine  Igamine ei alga või peatub alates hetkest, mil vallasasja omaniku omandi kaitse nõude aegumine on peatunud.
-§ 114.  Igamise katkemine
-(1) Igamine katkeb:
-1) kui igamisvaldaja kaotab §-s 110 sätestatud valduse;
-2) nõude esitamisel omandi kaitseks otsese või kaudse valdaja vastu;
-3) nõude esitamisel omandi kaitseks § 33 3. lõikes nimetatud isiku vastu, keda omanik ekslikult peab valdajaks;
-4) kui omanik asub omandiõigust teostama igamisvaldaja teadmisel ja viimane ei ole sellele vastu vaielnud.
-(2) Igamise katkemine käesoleva paragrahvi 1. lõike punktides 2–4 sätestatud alustel kehtib ainult katkemise põhjustanud isiku suhtes.
-(3) Igamine ei katke, kui igamisvaldaja kaotas valduse oma tahte vastaselt ja sai valduse ühe aasta jooksul tagasi või sai valduse tagasi selle tähtaja jooksul esitatud hagi alusel.
-(4) Pärast igamise katkemist algab igamisaja kulg uuesti. Igamise katkemiseni möödunud aega uue igamisaja hulka ei arvata.
-1. Kolmandate isikute õigused  Igamise teel omandi tekkimisel lõpevad kolmandate isikute õigused asjale, mis on tekkinud enne igamistähtaja kulgema hakkamist. Õigus ei lõpe, kui valdaja teab valduse omandamisel kolmanda isiku õigusest või peab sellest teadma, samuti juhul, kui valdaja saab kolmanda isiku õigusest teada igamistähtaja jooksul.    7. jaotis Loodusvili
-§ 115.  Loodusvilja omandamine
-(1) Asja omanik või võõra asja valdaja, kellel on õigus omandada loodusvilja, saab selle omanikuks vilja asjast eraldumisel.
-(2) Kui isikul, kes ei valda võõrast asja, on õigus omandada selle asja loodusvilja, saab ta selle omanikuks vilja valdusse võtmisega.  2. jagu KOLMANDA ISIKU ÕIGUSED
-§ 116.  – § 117.   3. peatükk KINNISOMAND  1. jagu KINNISOMANDI TEKKIMINE JA LÕPPEMINE
-§ 118.
-§ 119.  Kinnisasja omandamise tehing
-(1) Tehing, millega kohustutakse omandama või võõrandama kinnisasja, peab olema notariaalselt tõestatud.
-(2) Käesoleva paragrahvi 1. lõikes sätestatud vorminõuet järgimata tehtud kohustustehing muutub kehtivaks, kui tehingu täitmiseks on sõlmitud asjaõigusleping ja tehtud vastav kanne kinnistusraamatusse.
-§ 120.  Asjaõigusleping kinnisomandi üleandmiseks
-(1) Kinnisomandi üleandmiseks vajalik asjaõigusleping peab olema notariaalselt tõestatud. Asjaõigusleping võib sisalduda ka kohtulikus kompromissis.
-(2) Asjaõigusleping kinnisomandi üleandmiseks, mis on tehtud tingimuslikult või tähtpäeva määrates, on tühine.
-(3) Notar tõestab käesoleva paragrahvi 1. lõikes nimetatud asjaõiguslepingu üksnes juhul, kui talle esitatakse käesoleva seaduse § 119 1. lõikes nimetatud dokument või kui see dokument tõestatakse samaaegselt asjaõiguslepinguga.
-§ 121.  – § 122.
-§ 123.  Kinnisasja omandamine kinnistusraamatu kande igamisega
-(1) Kui isik on kantud kinnistusraamatusse kinnisasja omanikuna õigusliku aluseta, saab ta kinnisasja omanikuks, kui ta valdab kinnisasja 10 aasta jooksul katkematult nagu omanik.
-(2) Käesoleva paragrahvi 1. lõikes nimetatud tähtaja arvutamisele kohaldatakse vallasasja igamise sätteid. Tähtaja kulgemine peatub ajaks, kuni kinnistusraamatusse on kinnistusraamatu kande õigsuse suhtes kantud vastuväide.
-§ 124.  Kinnisasja omandamine igamisega
-(1) Kui isik on 30 aastat katkematult vallanud kinnisasja, mis ei ole kantud kinnistusraamatusse või mille omanikku kinnistusraamatust ei nähtu või mille omanik oli enne valdaja poolt valduse saamist surnud ja 30 aasta jooksul ei ole tehtud kinnistusraamatusse niisugust kannet, mille tegemiseks on vajalik omaniku nõusolek, võib valdaja nõuda enda kandmist kinnistusraamatusse kinnisasja omanikuna.
-(2) Nõue kande tegemiseks käesoleva paragrahvi 1. lõikes märgitud alustel esitatakse kohtule, kes määrab üleskutsemenetluses aja vastuväidete esitamiseks ja avaldab vastava kuulutuse. Kui määratud tähtajal vastuväiteid ei esitata või need tagasi lükatakse, teeb kohus määruse, mis on kinnistusraamatusse kande tegemise aluseks.
-(3) Käesoleva paragrahvi 1. lõikes nimetatud tähtaja arvutamisele ja valduse katkematusele kohaldatakse vallasasja igamise sätteid.
-(4) Kui enne käesoleva paragrahvi 2. lõike teises lauses nimetatud määruse avalikustamist on kolmas isik omanikuna kinnistusraamatusse kantud või kolmanda isiku omandi tõttu on kinnistusraamatusse kantud vastuväide kinnistusraamatu kande õigsuse suhtes, ei ole käesoleva paragrahvi 2. lõike teises lauses nimetatud määrusel selle kolmanda isiku suhtes õiguslikke tagajärgi.
-§ 125.
-§ 126.  Kinnisomandist loobumine
-(1) Kinnisasja omanik võib kinnisomandist loobuda.
-(2) Tehing, millega kinnisomandist loobutakse, peab olema notariaalselt tõestatud vormis.
-(3) Kui kinnisasjast on loobutud, läheb kinnisasja omand üle riigile alates vastava kande tegemisest kinnistusraamatusse. Riigi kui puudutatud isiku nõusolek ei ole sellise kande tegemiseks vajalik.
-(4) Kui riik on omandanud kinnisasja käesolevas paragrahvis sätestatud alusel ja kinnisasi on koormatud reaalkoormatisega, on riigi vastutus reaalkoormatisest tulenevate kohustuste täitmise eest piiratud kinnisasja väärtusega.    2. jagu KINNISOMANDI ULATUS
-§ 127.  Kinnisomandi ruumiline ulatus
-(1) Kinnisomand ulatub maapinnale ning õhuruumile ülalpool ja maapõuele allpool seda pinda sellise kõrguse või sügavuseni, milleni ulatub omaniku huvi kinnisasja kasutamisel.
-(2) Kinnisasja omanik ei või keelata tegevust, mis toimub sellises kõrguses või sügavuses, milleni tema huvi vastavalt kinnisasja kasutamise otstarbele ei ulatu.
-§ 128.  Piir
-(1) Piir külgnevate maatükkide vahel määratakse plaanide ja piirimärkidega seaduses sätestatud korras.
-(2) Kinnisasja omanik peab tagama piirimärgistuse säilimise. Ta ei või piirimärke muuta ega ümber paigutada.
-(3) Kinnisasja omanik võib naaberkinnisasja omanikult igal ajal nõuda kinnisasjade piirile piirimärkide paigaldamist. Sellega seonduvad kulutused kannavad naaberkinnisasjade omanikud võrdsetes osades.
-§ 129.  Piiri kindlakstegemine
-(1) Kinnisasja omanik peab naabri põhjendatud nõudmisel aitama piiri kindlaks teha.
-(2) Kui piiri ei saa kindlaks teha muul viisil, võetakse aluseks valduse ulatus. Kui valduse ulatust ei saa kindlaks teha, lisatakse igale kinnisasjale vaidlusalusest maast ühesuurune osa.
-(3) Kui piiri kindlakstegemine käesoleva paragrahvi 2. lõikes sätestatud viisil annab tulemuse, mis on vastuolus kindlakstehtud andmetega kinnisasja suuruse ja muude olude kohta, määratakse piir kinnisasja suurust ja muid asjaolusid arvestades.
-(4) Piiri kindlakstegemise kulud kannavad naabrid võrdselt, kui seadusest, kohtulahendist või tehingust ei tulene teisiti.
-§ 130.  Kinnisomandi ulatus maavaradele
-(1) Kinnisomand ei ulatu maavaradele, mille loetelu sätestatakse seaduses.
-(2) Maavarade kasutamise kord ja kinnisasja omaniku eelisõigus käesoleva paragrahvi 1. lõikes nimetatud maavarade kasutamisel sätestatakse seaduses.
-§ 131.  Kinnisomandi ulatus veekogule
-(1) Ühe kinnisasja piires olev veekogu kuulub selle kinnisasja omanikule.
-(2) Mitme kinnisasja piires olevast veekogust kuulub igale kaldaomanikule see osa, mis on veekogu keskele tõmmatava mõttelise joone ning sellelt joonelt vastava omaniku kaldapiiripunktidele risti tõmmatavate mõtteliste joonte vahel või veekogu keskpunktist vastava omaniku kaldapiiripunktidele tõmmatavate mõtteliste joonte vahel, kui seaduses või lepinguga ei ole sätestatud teisiti.
-§ 132.  Kinnisomandi ulatus veekogust tekkinud maale
-(1) Kuivanud jõesäng või jões tekkinud saar on lähemate kallaste omanike omandis.
-(2) Iga kaldaomaniku omandis on see osa jõesängist või saarest, mis on keset jõge tõmmatava mõttelise joone ning sellelt joonelt vastava omaniku kaldapiiripunktidele risti tõmmatavate mõtteliste joonte vahel.
-(3) Maatükk, mis veevoolu või muu loodusjõuga on kistud ühelt kinnisasjalt ja viidud teisele, muutub teise kinnisasja osaks, kui ta sellega kindlalt liitub. Ärakistud maatüki eest võib endine omanik nõuda hüvitist vastavalt uue omaniku kasule.
-(4) Pinnas, mis kaldale uhutakse või millega kallast täidetakse, jääb kalda osaks.
-§ 133.  Avaliku veekogu kaldajoon
-(1) Kinnisomand ulatub avaliku veekogu kaldajooneni. Kaldajoon on veekogu tavaline veepiir.
-(3) Avaliku veekogu põhjaga püsivalt ühendatud ehitis, mis on püsivalt ühendatud kaldaga, on kaldakinnisasja oluline osa.
-§ 134.  Põhjavesi  Kinnisomand ei ulatu põhjaveele.
-§ 135.  – § 139.   3. jagu KINNISOMANDI KITSENDUSED  1. jaotis Üldsätted
-§ 140.  Kitsenduste liigid  Kinnisomandi kitsendused on seadusjärgsed või need seatakse kohtulahendi või tehinguga.
-§ 141.  Kitsenduste kehtivus
-(1) Seadusjärgne kitsendus kehtib kinnistusraamatusse kandmata.    (1
-1) Eraõiguslikku seadusjärgset kitsendust võib muuta kinnisasja omaniku ja õigustatud isiku kokkuleppega. Kokkulepe kantakse kinnistusraamatusse asjaõigusena, eelkõige servituudina.
-(2) Avalik-õiguslikku seadusjärgset kitsendust võib muuta või lõpetada ainult seaduses sätestatud juhtudel. Kitsenduste muutmine või lõpetamine kehtib kinnistusraamatusse kandmata.
-(3) Kohtulahendi või tehinguga seatud kitsendus, samuti selle kitsenduse muutmine või lõpetamine kehtib kolmandate isikute suhtes, kui see on kinnistusraamatusse kantud.
-§ 142.  Võõral maatükil viibimine     2. jaotis Naabrusõigused
-§ 143.  Kahjulikud mõjutused
-(1) Kinnisasja omanikul ei ole õigust keelata gaasi, suitsu, auru, lõhna, tahma, soojuse, müra, põrutuste ja muude seesuguste teiselt kinnisasjalt tulevate mõjutuste levimist oma kinnisasjale, kui see ei kahjusta oluliselt tema kinnisasja kasutamist ega ole vastuolus keskkonnakaitse nõuetega. Mõjutuste tahtlik suunamine naaberkinnisasjale on keelatud.
-(2) Kui käesoleva paragrahvi 1. lõikes nimetatud mõjutused kahjustavad oluliselt kinnisasja kasutamist, kuid niisuguste mõjutuste kõrvaldamist ei saa mõjutajalt majanduslikult eeldada, on mõjutatava kinnisasja omanikul õigus nõuda mõjutuse põhjustanud kinnisasja omanikult mõistlikku hüvitist.
-§ 144.  Keelatud rajatis ja seadeldis
-(1) Kinnisasja omanikul on õigus nõuda, et naaberkinnisasjale ei püstitataks või seal ei säilitataks rajatist või seadeldist, mille suhtes on alust eeldada, et see tekitab keelatud mõjutuse tema kinnisasjale.
-(2) Kui käesoleva paragrahvi 1. lõikes nimetatud rajatis või seadeldis on püstitatud kooskõlas seadusega, on õigus nõuda rajatise või seadeldise eemaldamist ainult pärast keelatud mõjutuse tegelikku toimumist.
-§ 145.  Varisemisohtlik ehitis
-(1) Ehitist tuleb hoida sellises korras, et selle varisemisel või osade eraldumisel oleks välistatud naaberkinnisasja kahjustamine.
-(2) Omanik, kelle kinnisasja ohustavad käesoleva paragrahvi 1. lõikes nimetatud asjaolud, võib nõuda kahjuliku toime eest vastutavalt isikult ohu kõrvaldamist. Kui kahjuliku toime eest vastutav isik ei ole teada, võib ta nõuda ohu kõrvaldamist valdajalt.
-§ 146.  Keelatud süvendamine
-(1) Maatükki ei või süvendada selliselt, et naaberkinnisasi kaotaks vajaliku maapõuetoe või et muul viisil kahjustataks seal asuvaid ehitisi.
-(2) Süvendamine on lubatud, kui süvendaja paigaldab muu toe või võtab tarvitusele ohtu või kahju ärahoidvad abinõud.
-§ 147.  Naaberkinnisasja kasutamine  Kui ehitada või ehitist parandada saab ainult nii, et naaberkinnisasjale või selle kohale tuleb ehitada tellingud või et üle selle kinnisasja tuleb vedada või sellele asetada ehitusmaterjali või kinnisasjast üle käia või sõita, peab naaberkinnisasja omanik seda lubama, kui see on hädavajalik, tingimusel, et temale tagatakse kahju hüvitamine.
-§ 148.  Ehitis üle naaberkinnisasja piiri
-(1) Ehitis, mis ulatub üle kinnisasja piiri, on selle kinnisasja osa, mille piirest ta väljub, kui kinnistusraamatusse on kantud kinnisasja piiriülest ehitamist lubav asjaõigus või kui naaberkinnisasja omanik peab piiriülest ehitamist vastavalt käesoleva paragrahvi 2. lõikele lubama.
-(2) Kui käesoleva paragrahvi 1. lõikes nimetatud ehitis on püstitatud asjaõiguseta, kuid heauskselt, peab naaberkinnisasja omanik seda lubama. Sel juhul on tal õigus nõuda ehitajalt tema kinnisasja piiridesse ulatuva ehitise osa alla jääva maatüki omandamist või perioodilist hüvitist.
-(3) Naaberkinnisasja omanik võib nõuda ehitajalt oma kinnisasja piiridesse ulatuva ehitise osa kõrvaldamist, kui ehitaja on pahauskne või kui kinnisasja omanik enne ehitamise algust või hiljemalt ajal, mil selle osa kõrvaldamine ei olnud seotud ülemääraste kulutustega, sellele vastu vaidles.
-(4) Hüvitise saamise nõue on eelistatud kõigile teistele nõuetele, mis lasuvad kinnisasjal, mille piiridest ehitis väljub. Kokkulepe hüvitise suuruse või hüvitisest loobumise kohta kehtib, kui see on kantud märkusena kinnistusraamatusse.
-(5) Lisaks käesoleva paragrahvi 4. lõikes sätestatule kohaldatakse hüvitisele ka reaalkoormatiste sätteid.
-(6) Kui üle kinnisasja piiri ulatuva ehitise tõttu kahjustatakse hoonestusõigust või servituuti, kohaldatakse õigustatud isiku suhtes vastavalt 1.–5. lõikes sätestatut.
-§ 149.  Üle piiri ulatuvad juured, oksad ja viljad
-(1) Kinnisasja omanikul on õigus ära lõigata ja endale võtta naaberkinnisasjalt tema kinnisasjale ulatuvad puude ja põõsaste juured, oksad ja viljad, kui need kahjustavad kinnisasja kasutamist ja naaber ei ole neid hoiatusele vaatamata selleks vajaliku aja jooksul kõrvaldanud.
-(2) Kui kinnisasja omanik lubab alles jätta tema kinnisasjale ulatuvaid oksi, on tal õigus nende okste viljadele tema kinnisasja piirides oleva oksa ulatuses.
-(3) Kinnisasja omanikul on õigus viljadele, mis on kukkunud tema kinnisasjale naaberkinnisasjalt kasvavalt puult või põõsalt.
-(4) Kinnisasja piiril kasvava puu vili, samuti puu maharaiumisel või mahalangemisel ka puu ise kuulub naabritele võrdsetes osades.
-§ 150.  Piiril kasvavad puud ja põõsad  Piiril kasvavad puud ja põõsad on naabrite kaasomandis.
-§ 151.  Piirirajatis
-(1) Kui kaks kinnisasja on teineteisest eraldatud müüri, heki, kraavi, peenra või muu sellise asjaga, on see naabrite ühiskasutuses, sõltumata asja kuuluvusest.
-(2) Käesoleva paragrahvi 1. lõikes nimetatud asja kasutamine ei tohi olla vastuolus asja otstarbega ega tekitada kahju naabrile.
-(3) Kui käesoleva paragrahvi 1. lõikes nimetatud asja kasutavad mõlemad naabrid, kannavad nad korrashoiukulud võrdselt. Kui asi on vajalik ühe naabri huvides, ei või seda asja tema nõusolekuta kõrvaldada ega muuta.
-§ 152.  – § 154.   3. jaotis Teed ning tehnovõrgud ja -rajatised
-§ 155.  Avalikult kasutatav tee
-(1) Omanik, kelle kinnisasja läbib avalikult kasutatav tee, ei või takistada ega lõpetada selle tee kasutamist ka siis, kui tee ei ole kantud kinnistusraamatusse avalikult kasutatava teena.
-(2) Kinnisasja omanik peab avalikult kasutatava tee äärses ribas järgima seadusjärgseid kitsendusi.
-(3) Eratee määratakse avalikuks kasutamiseks seaduses sätestatud korras.
-§ 156.  Juurdepääs avalikult kasutatavale teele
-(1) Omanikul, kelle kinnisasjale puudub vajalik juurdepääs avalikult kasutatavalt teelt või kinnisasja eraldi seisvalt osalt, on õigus nõuda juurdepääsu üle võõra kinnisasja. Juurdepääsu asukoht, kasutamise tähtaeg ja tasu määratakse kokkuleppel. Kui kokkulepet ei saavutata, määrab juurdepääsu ja selle kasutamise tasu kohus. Juurdepääsu määramisel tuleb arvestada koormatava kinnisasja omaniku huve.
-(2) Kui kinnisasja osalise võõrandamise tagajärjel võõrandatud või allesjäänud osa kaotab ühenduse avalikult kasutatava teega, peab selle osa omanik, mille kaudu ühendus seni toimus, võimaldama teise osa omanikul ühendust pidada oma kinnisasja kaudu käesoleva paragrahvi 1. lõikes nimetatud tingimustel.
-(3) Kinnisasja omanikul ei ole õigust juurdepääsu nõuda, kui senine ühendus avalikult kasutatava teega või kinnisasja osade vahel on katkenud tema tahtel.
-§ 157.
-§ 158.  Tehnovõrgud ja -rajatised
-(1) Kinnisasja omanik on kohustatud taluma tema kinnisasjal maapinnal, maapõues ning õhuruumis ehitatavaid tehnovõrke ja -rajatisi (kütte-, veevarustus- või kanalisatsioonitorustikku, elektroonilise side või elektrivõrku, nõrkvoolu-, küttegaasi- või elektripaigaldist või surveseadmestikku ja nende teenindamiseks vajalikke ehitisi), kui need on teiste kinnisasjade eesmärgipäraseks kasutamiseks või majandamiseks vajalikud, nende ehitamine ei ole kinnisasja kasutamata võimalik või nende ehitamine teises kohas põhjustab ülemääraseid kulutusi.
-(2) Käesoleva paragrahvi lõikes 1 sätestatud juhul võib kinnisasja omanik nõuda teise kinnisasja omanikult kinnisasja koormamist reaalservituudiga.
-(3) Reaalservituudi täpsem sisu, tehnovõrgu või -rajatise asukoht, tähtaeg ja tasu määratakse kokkuleppel. Kui kokkulepet ei saavutata, määrab servituudi sisu, vajaduse korral tähtaja ja tasu suuruse kohus. Servituudi seadmisel tuleb arvestada koormatava kinnisasja omaniku huve.
-(4) Kui tehnovõrgu või -rajatise ehitamise või hooldamisega kaasneb kahju tekkimine kinnisasjale, on tehnovõrgu või -rajatise omanik kohustatud kahju tagajärjed kõrvaldama või kinnisasja omanikule tekkinud kahju hüvitama. Kahjuks käesoleva sätte mõistes ei peeta talumiskohustuse tekkimisest tingitud kinnisasja väärtuse vähenemist.
-(5) Kinnisasja omanik võib nõuda tehnovõrgu või -rajatise omanikult tehnovõrgu või -rajatise ümberpaigutamist temale kuuluval kinnisasjal, kui see on tehniliselt võimalik ja kinnisasja omanik hüvitab tehnovõrgu või -rajatise ümberpaigutamisega seotud kulud.
-1. Avalikes huvides vajalikud tehnovõrgud ja -rajatised
-(1) Kinnisasja omanik on kohustatud taluma oma kinnisasjal tehnovõrku või -rajatist ja lubama selle ehitamist kinnisasjale, kui tehnovõrk või -rajatis on vajalik avalikes huvides ja puudub muu tehniliselt ning majanduslikult otstarbekam võimalus tehnovõrguga või -rajatisega liituda sooviva isiku tarbimiskoha ühendamiseks tehnovõrguga või -rajatisega või tehnovõrgu või -rajatise arendamiseks. Kui universaalteenuse osutamise leping lõpeb, siis ei lõpe talumiskohustus juhul, kui vastava tehnorajatise kaudu kõikidele isikutele pakutavat teenust üldistel alustel edasi osutatakse. Käesolevas lõikes sätestatud talumiskohustus tekib kinnisasja sundvõõrandamise seaduses sätestatud korras sundvalduse seadmisega.    (1
-1) Tehnovõrk või -rajatis on ehitatud avalikes huvides, kui selle kaudu osutatakse avalikku teenust ja see kuulub isikule, kellele laieneb elektrituruseaduse § 65 lõikes 1 sätestatud kohustus või kes on vee-ettevõtja ühisveevärgi ja -kanalisatsiooni seaduse tähenduses või võrguettevõtja kaugkütteseaduse või maagaasiseaduse tähenduses või vastavas piirkonnas tegutsev võrguettevõtja kaugkütteseaduse tähenduses. Tehnovõrk või -rajatis on ehitatud avalikes huvides ka siis, kui selle kaudu osutatakse üldkasutatavat elektroonilise side teenust elektroonilise side seaduse tähenduses.
-(2) Käesoleva paragrahvi lõikes 1 sätestatud talumiskohustust ei ole isikul juhul, kui tehnovõrgust või -rajatisest tulenev kitsendus kinnisasja omanikule on oluliselt suurem kui avalik huvi tehnovõrgu või -rajatise vastu või tehnovõrguga liituda soovija huvi tehnovõrguga liitumise vastu ja on olemas võimalus ehitada tehnovõrk või -rajatis nii, et teise kinnisasja omanik ei satu samaväärsesse või halvemasse olukorda.
-(3) Käesolevas paragrahvis sätestatu ei välista talumiskohustuse seadmist kokkuleppe teel.
-2. Tehnorajatise talumise eest tasu maksmine
-(1) Kinnisasja omanikul on õigus nõuda tasu käesoleva seaduse § 158 1 lõikes 1 sätestatud tehnovõrgu või -rajatise talumise eest. Riigile kuuluvale maale ehitatud § 158 1 lõikes 1 sätestatud tehnovõrgu või -rajatise talumise eest tasu ei maksta.
-(2) Tehnovõrgu või -rajatise talumise eest tasu saamiseks käesoleva paragrahvi lõikes 1 sätestatud alustel esitab kinnisasja omanik taotluse tehnovõrgu või -rajatise omanikule. Taotluse vormi ja esitamise korra kehtestab valdkonna eest vastutav minister.
-(3) Jooksva aasta eest on tasu saamise õigus isikul, kes oli vastava kinnisasja omanik sama aasta 1. märtsi seisuga, juhul kui ta esitab käesoleva paragrahvi lõikes 2 sätestatud taotluse jooksva aasta 1. juuliks.
-(4) Käesoleva paragrahvi lõikes 2 sätestatud taotluse alusel makstakse tasu ka järgmistel aastatel kuni uue taotluse esitamiseni. Tasu saamise aluseks olevate asjaolude muutumisel tekib õigus suuremale tasule pärast täiendava taotluse esitamist lõikes 3 sätestatud korras. Kinnisasja omaniku vahetumisel tekib uuel omanikul tasu saamise õigus pärast lõikes 2 sätestatud taotluse esitamist lõikes 3 sätestatud tähtaegadest lähtudes.
-(5) Tasu jooksva aasta eest makstakse välja hiljemalt sama aasta 1. detsembriks.
-(6) Korteriomanditeks jagatud kinnisasja puhul võib käesoleva paragrahvi lõikes 2 sätestatud taotluse esitada korteriühistu või korteriomandite valitseja. Sellisel juhul makstakse hüvitis korteriühistule või korteriomandite valitsejale, kes on kohustatud vastava hüvitise maksma korteriomanikele või tasaarvestama selle majandamiskulude nõudega.
-(7) Tasu saamise nõude aegumistähtaeg on kolm aastat. Aegumistähtaeg algab iga aasta 1. juulist.    4. jaotis Veed
-§ 159.  Avalikud veekogud
-§ 160.  Kaldaomaniku õiguste kitsendamine
-§ 161.  Kallasrada
-§ 162.  – § 165.   5. jaotis Mets
-§ 166.
-§ 167.  Võõra metsa kasutamine
-§ 168.    6. jaotis Muud kitsendused
-§ 169.  – § 171.   4. osa SERVITUUDID  1. peatükk REAALSERVITUUDID  1. jagu MÕISTE, TEKKIMINE, LÕPPEMINE
-§ 172.  Reaalservituudi mõiste
-(1) Reaalservituut koormab teenivat kinnisasja valitseva kinnisasja kasuks selliselt, et valitseva kinnisasja igakordne omanik on õigustatud teenivat kinnisasja teatud viisil kasutama või et teeniva kinnisasja igakordne omanik on kohustatud oma omandiõiguse teostamisest valitseva kinnisasja kasuks teatavas osas hoiduma.
-(2) Reaalservituut ei või teeniva kinnisasja omanikku kohustada mingiteks tegudeks, välja arvatud teod, mis on reaalservituudi teostamisel abistava tähendusega.
-§ 173.  Reaalservituudi tekkimine
-(1) Reaalservituudi seadmiseks vajalik asjaõigusleping peab olema notariaalselt tõestatud.
-(4) Hoonestusõiguse või kasutusvaldusega koormatud kinnisasja võib omanik reaalservituudiga koormata ainult hoonestaja või kasutusvaldaja nõusolekul.
-(5) Reaalservituut ei teki igamisega.
-§ 174.  – § 175.
-§ 176.  Reaalservituudi lõpetamine valitseva kinnisasja omaniku nõudel
-(1) Kui reaalservituudi lõpetamise kokkulepet ei saavutata, on valitseva kinnisasja omanikul olulisel põhjusel õigus nõuda teeniva kinnisasja omanikult nõusolekut reaalservituudi lõpetamiseks tingimusel, et ta hüvitab teeniva kinnisasja omanikule servituudi lõpetamise tõttu tekkiva kahju.
-(2) Valitseva kinnisasja omanik peab teeniva kinnisasja omanikule teatama tähtajatu reaalservituudi lõpetamisest või tähtajalise reaalservituudi ennetähtaegsest lõpetamisest kuus kuud ette.
-§ 177.  Reaalservituudi lõpetamine teeniva kinnisasja omaniku nõudel
-(1) Kui reaalservituudist saadav kasu on teeniva kinnisasja koormatisega võrreldes ebamõistlikult väike, on teeniva kinnisasja omanikul õigus nõuda valitseva kinnisasja omanikult nõusolekut reaalservituudi lõpetamiseks tingimusel, et ta hüvitab valitseva kinnisasja omanikule servituudi lõpetamise tõttu tekkiva kahju.
-(2) Kui valitseva kinnisasja omanik on kaotanud huvi reaalservituudist tulenevate õiguste teostamise vastu, on teeniva kinnisasja omanikul õigus nõuda valitseva kinnisasja omanikult nõusolekut reaalservituudi lõpetamiseks. Huvi kaotamist eeldatakse, kui valitseva kinnisasja omanik ei ole 10 aasta jooksul reaalservituuti kasutanud või kui ta on sama aja jooksul lubanud teeniva kinnisasja kasutamist viisil, mis on vastuolus reaalservituudiga.    2. jagu SISU
-§ 178.  Reaalservituudi teostamise viis
-(1) Reaalservituut annab õiguse teha üksnes neid tegusid, mis servituudi sisust tulenevalt on valitseva kinnisasja huvides vajalikud. Reaalservituudi sisu määratakse poolte kokkuleppega, kui seaduses ei ole sätestatud teisiti.
-(2) Reaalservituuti tuleb teostada viisil, mis on teenivale kinnisasjale kõige vähem koormav.
-(3) Valitseva kinnisasja vajaduste suurenemine ei suurenda iseenesest teenival kinnisasjal lasuvat koormatist.
-§ 179.  Reaalservituudi teostamine ehitise või seadeldise abil
-(1) Kui reaalservituuti teostatakse teenival kinnisasjal mingi ehitise või seadeldise abil, on valitseva kinnisasja omanik kohustatud selle rajama ja korras hoidma ning servituudi lõppemisel selle teeniva kinnisasja omaniku nõudel omal kulul ära vedama, kui seaduses või servituudi seadmise tehinguga ei ole sätestatud teisiti.
-(2) Kui ehitis või seadeldis on käiku antud ka teeniva kinnisasja huvides, kannavad valitseva ja teeniva kinnisasja omanikud ehitamise ja korrashoiu kulud vastavuses saadava kasuga.
-(3) Kui ehitise või seadeldise korrashoiu kohustus lasub teeniva kinnisasja omanikul, kohaldatakse vastavaid reaalkoormatise sätteid.
-(4) Valitseva kinnisasja omanikul on õigus servituudi kasutamiseks vajalike ehitus- ja korrastustööde tegemiseks kasutada teenivat kinnisasja.
-§ 180.  Reaalservituudi teostamise viisi muutmine
-(1) Teeniva kinnisasja omanikul on õigus nõuda enda kulul reaalservituudi teostamise viisi muutmist, kui reaalservituudi senist majanduslikku otstarvet võib saavutada ka teostamise viisi muutmise korral ja kui senine teostamise viis on teeniva kinnisasja omaniku huvidele uue viisiga võrreldes tunduvalt kahjulikum. Servituudi teostamise viisi muutmisega seotud kulud peab teeniva kinnisasja omanik ette tasuma.
-§ 181.  Reaalservituudi teostamise koha muutmine
-(1) Kui reaalservituudi teostamine piirdub teeniva kinnisasja ühe osa kasutamisega ja mõni teine osa on selleks niisama sobiv ning reaalservituudi teostamine senisel osal on teeniva kinnisasja omanikule mõne teise osaga võrreldes tunduvalt kahjulikum, on tal õigus nõuda, et reaalservituuti teostataks kinnisasja teisel osal. Ümberpaigutamisega seotud kulud peab teeniva kinnisasja omanik ette tasuma.
-§ 182.  Reaalservituudi jagamatus
-(1) Reaalservituut on jagamatu.
-(2) Kui valitsev kinnisasi jagatakse, jääb reaalservituut kehtima kõikide osade kasuks. Pärast valitseva kinnisasja jagamist ei ole reaalservituudi teostamine lubatud ulatuses, milles see muutub teeniva kinnisasja suhtes koormavamaks.
-(3) Kui reaalservituudi teostamine pärast valitseva kinnisasja jagamist piirdub ühe osa huviga, on teeniva kinnisasja omanikul õigus nõuda reaalservituudi kustutamist kinnistusraamatust teiste osade suhtes.
-(4) Teeniva kinnisasja jagamisel jääb reaalservituut kehtima kõikide osade suhtes.
-(5) Kui reaalservituut pärast teeniva kinnisasja jagamist mõnda selle osa ei koorma või koormata ei saa, on koormamata osa omanikul õigus nõuda oma osa suhtes reaalservituudi kustutamist kinnistusraamatust.
-§ 183.  Ühe ja sama järjekoha kasutusõigused  Kui mitu servituuti või servituut ning muu kasutusõigus koormavad kinnisasja kinnistusraamatu ühel ja samal järjekohal ning neid õigusi ei saa koos kas täielikult või osaliselt teostada, võib iga õigustatud isik nõuda õiguste teostamist viisil, mis vastab kõige enam kõigi õigustatud isikute huvidele.
-§ 184.  Reaalservituudi takistuse kõrvaldamine  Reaalservituudi teostamise takistamise korral on õigustatud isikul käesoleva seaduse §-s 89 nimetatud õigused.
-1. Reaalservituudi teostaja valduse kaitse  Kui valitseva kinnisasja valdajat takistatakse mõne valitseva kinnisasja igakordse omaniku kasuks kinnistusraamatusse kantud servituudi teostamisel, siis kohaldatakse vastavalt valduse kaitse kohta kehtivaid sätteid, kui servituuti on ühe aasta jooksul enne rikkumist vähemalt üks kord teostatud.
-§ 185.    3. jagu ÜKSIKUD REAALSERVITUUDID
-§ 186.  – § 200.   2. peatükk ISIKLIKUD SERVITUUDID  1. jagu KASUTUSVALDUS  1. jaotis Mõiste, tekkimine, lõppemine
-§ 201.  Kasutusvalduse mõiste
-(1) Kasutusvaldus koormab kinnisasja selliselt, et isik, kelle kasuks kasutusvaldus on seatud, on õigustatud kasutama kinnisasja ja omandama selle vilju.
-(3) Kasutusvaldust võib piirata mõne kasutusviisi välistamisega.
-§ 202.
-§ 203.  Kasutusvalduse tekkimine  Kasutusvalduse seadmiseks sõlmitav asjaõigusleping peab olema notariaalselt tõestatud.
-§ 204.  – § 209.
-§ 210.  Kasutusvalduse lõppemine kasutusvaldaja surmaga
-(1) Kasutusvaldus lõpeb kasutusvaldaja surmaga, kui seaduses ei ole sätestatud teisiti.  (1
-1) Kui kasutusvaldus on seatud mitme isiku kasuks, suurenevad ühe kasutusvaldaja surma või lõppemise korral teiste kasutusvaldajate kasutusvalduse osad vastavalt nende osade suurusele, kui ei ole kokku lepitud teisiti.
-(2) Kui seaduse või tehinguga on määratud, et kasutusvaldus läheb üle kasutusvaldaja pärijale, kehtib kasutusvaldus pärija suhtes edasi.
-§ 211.  Kasutusvalduse lõppemine juriidilise isiku suhtes
-(1) Kasutusvaldus lõpeb kasutusvaldajast juriidilise isiku lõppemisega.
-(2) Juriidilise isiku kasutusvaldus lõpeb igal juhul 100 aasta möödumisel kasutusvalduse tekkimisest.
-§ 212.  Kasutusvalduse lõpetamine
-(1) Kasutusvalduse võib lõpetada kasutusvaldaja ja omaniku kokkuleppel.  (1
-1) Kasutusvaldajal on õigus nõuda kasutusvalduse lõpetamist tingimusel, et ta hüvitab kinnisasja omanikule kasutusvalduse lõppemise tõttu tekkiva kahju. Kasutusvaldaja peab kasutusvalduse lõpetamise soovist teatama kinnisasja omanikule kuus kuud ette.
-(2) Kinnisasja omanik võib nõuda kasutusvalduse lõpetamist, kui:
-1) kasutusvaldus on kaotanud kasutusvaldaja jaoks igasuguse tähtsuse;
-2) tema kahju on oluliselt suurem kasutusvaldaja kasust;
-3) kasutusvaldaja ei anna kinnisasja omanikule tagatist (§ 224).
-(3) Käesoleva paragrahvi 1.–2. lõikes nimetatud juhtudel kohaldatakse vastavaid reaalservituudi lõpetamise sätteid, kui seaduses ei ole sätestatud teisiti.    2. jaotis Sisu
-§ 213.  Kasutusvalduse sisu kindlaksmääramine  Kasutusvaldusest tulenevad õigused ja kohustused määratakse kindlaks kasutusvalduse tekkimise aluseks oleva seaduse või tehinguga.
-§ 214.  Kasutusvaldaja õigused
-(1) Kasutusvaldajal on õigus asja vallata ja kasutada.
-(3) Kasutusvaldajal on õigus asja viljale.
-(4) Kasutusvaldajale kuulub loodusvili, mis on valminud ja eraldatud kasutusvalduse ajal.
-(5) Kasutusvaldajale kuulub õigusvili, mis tekkis kasutusvalduse ajal, sõltumata selle sissenõudmise ajast.
-§ 215.  Kasutusvalduse üleandmise keeld  Kasutusvaldus ei ole üleantav. Kasutusvaldusest tulenevaid õigusi ja kohustusi võib teostada teine isik, kui kasutusvalduse tekkimise aluseks oleva seaduse või tehinguga ei ole sätestatud teisiti.
-§ 216.  Kasutusvalduse eseme tagastamine  Kasutusvalduse lõppemisel on kasutusvaldaja või tema õigusjärglane kohustatud kasutusvalduse eseme omanikule tagastama § 218 1. lõikes sätestatud seisukorras.
-§ 217.  Kasutusvalduses oleva kinnisasja jagamine  Kasutusvalduses oleva kinnisasja jagamisel kohaldatakse teeniva kinnisasja jagamise kohta käivaid reaalservituudi sätteid (§ 182 lg 4 ja 5).
-§ 218.  Asja säilitamine ja kasutamine
-(1) Kasutusvaldaja on kohustatud säilitama asja senise majandusliku otstarbe ning kasutama seda korrapäraselt ja heaperemehelikult. Ta ei või asja oluliselt muuta ega ümber kujundada.
-(2) Kasutusvaldaja õigused kasutusvalduses oleva asja kasutamise suhtes ei saa olla suuremad kui omaniku enda õigused.
-(3) Kasutusvaldaja võib seadusega sätestatud korras kasutada maavarasid, samuti metsa kinnisasja korrapäraseks majandamiseks vajalikul määral.
-§ 219.  Asja korrashoid
-(1) Kasutusvaldaja on kohustatud kasutusvalduses olevat asja omal kulul korras hoidma ja asja tavaliseks korrashoiuks vajalikke parandusi ning uuendusi tegema.
-(3) Kasutusvaldaja ei vastuta asja muutumise ja väärtuse vähenemise eest, mis kaasneb kasutusvalduse korrapärase teostamisega.
-§ 220.  Kasutusvaldaja teatamiskohustus
-(1) Kui kasutusvalduses olevat asja kahjustatakse või selle alalhoiuks on vaja teha parandusi või uuendusi, mis ületavad tavalise korrashoiu, on kasutusvaldaja kohustatud sellest omanikule viivitamata teatama.
-(2) Kui kolmas isik teatab oma õigusest kasutusvalduses olevale asjale, on kasutusvaldaja kohustatud sellest omanikule teatama.
-§ 221.  Kinnisasja päraldiste käsutamine
-(1) Kasutusvaldajal on õigus käsutada kinnisasja päraldisi.
-(2) Kasutusvaldaja on kohustatud kinnisasja korrapärasest majandamisest tingitud päraldiste vähenemise või eraldamise korral asendama need asjad uutega. Päraldisi asendavad asjad lähevad kinnisasja omaniku omandisse. Kui päraldised ei kuulunud kinnisasja omanikule, lähevad asjad, millega päraldised asendatakse, seniste päraldiste omaniku omandisse.
-§ 222.
-§ 223.  Kasutusvaldaja maksekohustus ja koormatised
-(1) Kasutusvalduse esemel lasuvad maksud ja võlaintressid tasub ning koormatised, majandamis- ja muud kulud kannab kasutusvaldaja vastavalt oma õiguste kestusele.
-(2) Kui maksud, koormatised või kulutused on sisse nõutud omanikult, on kasutusvaldaja kohustatud talle need samas ulatuses hüvitama.
-§ 224.  Omaniku õigus nõuda tagatist  Asja omanikul on õigus nõuda kasutusvaldajalt tagatist, kui kasutusvaldaja tegevusest ilmneb omaniku õiguste olulise rikkumise oht.  2. jagu ISIKLIK KASUTUSÕIGUS
-§ 225.  Isikliku kasutusõiguse mõiste
-(1) Isiklik kasutusõigus koormab kinnisasja selliselt, et isik, kelle kasuks see on seatud, on õigustatud kinnisasja teatud viisil kasutama või teostama kinnisasja suhtes teatud õigust, mis oma sisult vastab mõnele reaalservituudile.
-(2) Isikliku kasutusõiguse ulatus määratakse kahtluse korral vastavalt õigustatud isiku vajadustele.
-§ 226.  Isikliku kasutusõiguse üleandmine
-(1) Isikliku kasutusõiguse võib kinnisasja omaniku nõusolekul teisele isikule üle anda, muutmata seejuures isikliku kasutusõiguse kestust. Isikliku kasutusõiguse omandaja ja esialgne omaja vastutavad kinnisasja omaniku ees isiklikust kasutusõigusest tekkivate kohustuste täitmise eest solidaarselt.
-(2) Kui isikliku kasutusõiguse esemeks on tehnovõrk või -rajatis, ei ole isikliku kasutusõiguse üleandmiseks või koormamiseks kinnisasja omaniku nõusolek vajalik.
-§ 227.  Isiklik kasutusõigus elamule
-(1) Isiklik kasutusõigus elamule koormab kinnisasja selliselt, et isikul, kelle kasuks see on seatud, on õigus kasutada elamiseks kinnisasjal asuvat elamut või selle osa.
-(2) Isik, kellel on käesoleva paragrahvi 1. lõikes nimetatud õigus, võib elamusse majutada oma perekonnaliikmeid, samuti isikuid, keda on vaja tema eest hoolitsemiseks.
-(3) Kui kasutusõigus on antud mitmele isikule ühiselt, kestab kasutusõigus seni, kuni on elus kas või üks neist isikuist, kui kasutusõiguse tekkimise alusega ei ole sätestatud teisiti.
-(4) Kui kasutusõigus on antud elamu osale, võib õigustatud isik kasutada ka elanikele ühiseks kasutamiseks määratud ruume, sisustust ja seadmeid.
-§ 228.  Reaalservituudi ja kasutusvalduse sätete kohaldamine  Lisaks §-des 225–227 sätestatule kohaldatakse isiklikule kasutusõigusele reaalservituudi vastavaid sätteid. Kui isiklik kasutusõigus on seotud valdamisega, kohaldatakse kasutusvalduse vastavaid sätteid.  5. osa REAALKOORMATISED  1. peatükk MÕISTE, TEKKIMINE, LÕPPEMINE
-§ 229.  Reaalkoormatise mõiste
-(1) Kinnisasja võib koormata selliselt, et kinnisasja igakordne omanik peab tasuma isikule, kelle kasuks reaalkoormatis on seatud, perioodilisi makseid rahas või natuuras või tegema teatud tegusid.
-(2) Reaalkoormatist võib seada ka teise kinnisasja igakordse omaniku kasuks.
-§ 230.  Reaalkoormatise liigid
-(1) Reaalkoormatis on avalik-õiguslik, kui see on seatud seaduse alusel riigi, kohaliku omavalitsuse või muu avalik-õigusliku juriidilise isiku kasuks.
-(2) Reaalkoormatis on eraõiguslik, kui see on seatud füüsilise isiku, eraõigusliku juriidilise isiku või teise kinnisasja igakordse omaniku kasuks.
-§ 231.  Reaalkoormatise tekkimine
-(1) Reaalkoormatise seadmiseks sõlmitav asjaõigusleping peab olema notariaalselt tõestatud.
-(2) Reaalkoormatise seadmisel tuleb võimaluse korral määrata reaalkoormatise rahaline väärtus ja see kinnistusraamatusse kanda.
-§ 232.
-§ 233.  Reaalkoormatise lõpetamine õigustatud isiku nõudel  Õigustatud isik võib nõuda reaalkoormatise lõpetamist ja selle väljaostmist kohustatud isiku poolt, kui:
-1) koormatud kinnisasi jagatakse ning sellega kahjustatakse tunduvalt õigustatud isiku õigusi või
-2) kohustatud isik vähendab tunduvalt koormatud kinnisasja väärtust ega anna tagatist reaalkoormatisest tulenevate kohustuste täitmiseks või
-3) kohustatud isik on jätnud reaalkoormatisest tulenevad kohustused järjest kolme aasta jooksul täitmata.
-§ 234.  Reaalkoormatise lõpetamine kohustatud isiku nõudel
-(1) Kohustatud isik võib nõuda reaalkoormatise lõpetamist selle väljaostmisega õigustatud isikult, kui:
-1) õigustatud isik ei täida reaalkoormatise tekkimise aluseks olevat lepingut või
-2) reaalkoormatis on kestnud 30 aastat, olenemata kinnistusraamatu kandes märgitud pikemast tähtajast või väljaostu lubamatusest.
-(2) Kui reaalkoormatise väljaostu nõutakse käesoleva paragrahvi 1. lõike punktis 2 sätestatud alusel, peab sellest üks aasta ette teatama.
-(3) Väljaostu ei või nõuda, kui reaalkoormatis on seatud teatud füüsilise isiku kasuks või on seatud seaduse alusel või on seotud reaalservituudiga.
-§ 235.  Väljaostuhind
-(1) Reaalkoormatise väljaostuhinna määramisel võetakse aluseks kinnistusraamatu kandes märgitud reaalkoormatise väärtus.
-(2) Kui reaalkoormatise väärtus ei ole kinnistusraamatusse kantud või kanne on puudulik või reaalkoormatisest tulenevate tegude rahaline väärtus on oluliselt muutunud, määrab väljaostuhinna kohus, arvestades tegelikke olusid ning võttes reaalkoormatise kestuseks 30 aastat.
-§ 236.  Reaalkoormatisest tuleneva kohustuse aegumine
-(1) Reaalkoormatis ei teki igamisega ega lõpe aegumisega.
-(2) Reaalkoormatisest tulenev iga üksik kohustus aegub nõude aegumise üldise tähtaja jooksul, arvates ajast, mil see muutus kohustatud isiku isiklikuks võlaks (§ 239 lg 1).    2. peatükk SISU
-§ 237.  Reaalkoormatise seotus kinnisasjaga
-(1) Reaalkoormatis läheb koos koormatud kinnisasjaga üle igale kinnisasja omandajale tema nõusolekust sõltumata.
-(2) Kinnisasja igakordse omaniku kasuks seatud reaalkoormatist ei või lahutada sellest kinnisasjast.
-(3) Teatud isiku kasuks seatud reaalkoormatist ei või siduda kinnisasjaga.
-§ 238.  Reaalkoormatise üleantavus
-(1) Teatud isiku kasuks seatud reaalkoormatist võib teisele isikule üle anda, kui reaalkoormatis oma olemuselt on üleantav ega suurene sellega.
-(2) Reaalkoormatis ei ole üleantav, kui üleantav ei ole reaalkoormatisest tulenev üksikkohustus.
-§ 239.  Vastutus reaalkoormatisest tulenevate kohustuste eest
-(1) Reaalkoormatisest tulenevate üksikkohustuste täitmise eest vastutab omanik koormatud kinnisasjaga. Kinnisasja omanik vastutab tema omandi kestuse jooksul sissenõutavaks muutunud üksikkohustuste täitmise eest ka isiklikult, kui ei ole kokku lepitud teisiti.    (1
-1) Kui reaalkoormatisega tagatud rahalist nõuet ei täideta, on õigustatud isikul õigus nõuda sundtäitmist täitemenetluse seadustikus sätestatud korras.
-(3) Kui koormatud kinnisasi jagatakse, kehtib reaalkoormatis üksikosade suhtes edasi ja kohustuste täitmise eest vastutavad üksikosade omanikud solidaarselt.
-§ 240.  Reaalkoormatise kehtivus valitseva kinnisasja jagamisel
-(1) Kui jagatakse kinnisasi, mille igakordse omaniku kasuks reaalkoormatis on seatud (valitsev kinnisasi), kehtib reaalkoormatis osade kasuks edasi.
-(2) Kui reaalkoormatisest tekkivad kohustused on jagatavad, siis jagatakse reaalkoormatis käesoleva paragrahvi 1. lõikes nimetatud osade vahel vastavalt nende suurusele. Kui kohustused ei ole jagatavad, siis on nende osade omanikud õigustatud nõudma täitmist solidaarselt.
-(3) Kinnisasja omanik võib valitseva kinnisasja jagamisel määrata reaalkoormatise kehtivaks ainult ühe või mitme osa suhtes. Määramine tuleb kanda kinnistusraamatusse.
-(4) Kui valitseva kinnisasja omanik võõrandab ühe osa kinnisasjast, tegemata reaalkoormatise jagamise korraldust, jääb reaalkoormatis kehtima selle kinnisasja osa suhtes, mille omanik endale jätab.
-(5) Kui reaalkoormatis on oma olemuse tõttu seotud kinnisasja jagamisel tekkinud ühe osaga, võib kohustatud isik nõuda reaalkoormatise lõpetamist teiste osade suhtes.  6. osa HOONESTUSÕIGUS  1. peatükk MÕISTE, TEKKIMINE, LÕPPEMINE
-§ 241.  Hoonestusõiguse mõiste ja ulatus
-(1) Kinnisasja võib koormata selliselt, et isikul, kelle kasuks hoonestusõigus on seatud, on võõrandatav ja pärandatav tähtajaline õigus omada kinnisasjal sellega püsivalt ühendatud ehitist. Ühele kinnisasjale võib seada ainult ühe hoonestusõiguse.
-(2) Hoonestusõigus ulatub lisaks ehitisealusele maale ka kinnisasja osale, mis on vajalik ehitise kasutamiseks.
-(3) Hoonestusõiguse ulatus ei või piirduda ehitise ühe osaga nagu korrus.
-(4) Hoonestusõigusele kohaldatakse kinnisasja sätteid, kui seaduses ei ole sätestatud teisiti.
-(5) Ehitis, mis on hoonestusõiguse alusel ehitatud või oli selle seadmisel olemas ja millele hoonestusõigus laieneb, on hoonestusõiguse oluline osa.
-§ 242.  Hoonestusõiguse seadmine ja üleandmine
-(1) Hoonestusõiguse seadmiseks või üleandmiseks kohustav tehing peab olema notariaalselt tõestatud.
-(2) Hoonestusõiguse seadmiseks või üleandmiseks sõlmitav asjaõigusleping peab olema notariaalselt tõestatud.
-§ 243.
-§ 244.  Hoonestusõiguse lõpetamine kokkuleppel  Hoonestusõiguse lõpetamiseks on vajalik kinnisasja omaniku nõusolek. Nõusolek tuleb anda kinnistusosakonnale või hoonestusõiguse omajale (hoonestaja). Nõusolek ei ole tagasivõetav.
-1. Hoonestusõiguse omanikule langemine
-(1) Kui hoonestaja ei ole hoonestusõiguse seadmisel kokkulepitud tähtaja jooksul nõutavat ehitist püstitanud või kui hoonestaja rikub oluliselt oma lepingulisi kohustusi, on kinnisasja omanikul õigus nõuda hoonestajalt nõusolekut hoonestusõiguse enda nimele kandmiseks (omanikule langemine).
-(2) Omaniku õigust nõuda hoonestusõiguse kandmist enda nimele ei või lahutada kinnisasjast.  (2
-1) Omanik võib hoonestusõiguse enda nimele kandmise asemel nõuda hoonestusõiguse üleandmist tema poolt nimetatud isikule.
-(3) Käesoleva paragrahvi 1. lõikes nimetatud nõue aegub kuue kuu möödumisel hetkest, mil kinnisasja omanik saab teada vastava eelduse olemasolust, kuid mitte hiljem kui kahe aasta möödumisel nõude tekkimisest.
-2. Hüvitis hoonestusõiguse eest
-(1) Hoonestusõiguse langemisel omanikule peab omanik tasuma hoonestajale hüvitise. Hoonestusõiguse sisuks võib olla kokkulepe hüvitise suuruse ja maksmise viisi, samuti hüvitise välistamise kohta. Kui hüvitise suurus ei ole kokku lepitud, loetakse selleks hoonestusõiguse harilik väärtus.
-(2) Kui hoonestusõigus on seatud elamu püstitamiseks, ei või kokku leppida väiksema hüvitise maksmises kui kaks kolmandikku hoonestusõiguse harilikust väärtusest.
-3. Koormatise püsimajäämine
-(1) Hoonestusõiguse omanikule langemisel jääb püsima hoonestusõigust koormav:
-1) hüpoteek ja reaalkoormatis, mis ei kuulu hoonestajale endale;
-2) muu piiratud asjaõigus, mis koormab ka hoonestusõigusega koormatud kinnisasja.
-(2) Teised hoonestusõigust koormavad asjaõigused kaotavad kehtivuse.
-§ 245.  Hoonestusõiguse lõpetamine selle omandamisel kinnisasja omaniku poolt
-(1) Kui hoonestusõiguse ja maatüki omanikuks saab üks ja sama isik, kustutatakse hoonestusõigus kinnistusraamatust tema avalduse alusel. Kande kustutamiseni jääb hoonestusõigus asjaõigusena püsima, kui omanik ei esita avaldust hoonestusõiguse kustutamiseks.
-§ 246.  Hoonestusõiguse säilimine ehitise hävimisel  Hoonestusõigus ei lõpe ehitise hävimisega.  2. peatükk HOONESTUSÕIGUSE SISU
-§ 247.  Hoonestaja õiguste teostamine
-(1) Hoonestaja ei või oma õiguste teostamisel rikkuda koormatud kinnisasja omaniku õigusi.
-(2) Hoonestaja peab tagama ehitise säilimise, kui ta ei ole kinnisasja omanikuga kokku leppinud teisiti.
-§ 248.  Hoonestusõiguse kitsendamise keeld
-(1) Hoonestusõigust ei või kitsendada selle õiguse olemusega vastuolus olevate tingimustega.
-(2) Hoonestusõigust ei või seada äramuutva tingimusega. Kokkulepe, millega hoonestusõiguse lõppemine seotakse äramuutva tingimusega, samuti kokkulepe, mille kohaselt hoonestusõiguse lõppemine seotakse hoonestaja surmaga, on tühine.
-§ 249.  Hoonestusõiguse käsutamine
-(1) Hoonestajal on õigus hoonestusõigust võõrandada või pärandada või koormata kinnispandi, servituudi, reaalkoormatise või ostueesõigusega. Hoonestusõigust ei või koormata hoonestusõigusega.    (1
-1) Hoonestusõiguse võõrandamiseks on vajalik omaniku nõusolek, kui selline tingimus on kinnistusraamatusse kantud. Omanik võib seada nõusoleku andmise tingimuseks ka kõigi tema ja hoonestaja vahel sõlmitud võlaõiguslike kokkulepete ülevõtmise hoonestusõiguse omandaja poolt.
-(2) Hoonestusõiguse koormamiseks asjaõigusega on vajalik omaniku nõusolek, kui selline tingimus on kinnistusraamatusse kantud.
-1. Nõusoleku andmine
-(1) Kui võib eeldada, et § 249 1 1 . lõikes sätestatud juhul hoonestusõiguse seadmisega taotletud eesmärki oluliselt ei muudeta ega ohustata ja et omandaja tagab hoonestusõiguse sisust tulenevate kohustuste nõuetekohase täitmise, võib hoonestaja nõuda omanikult hoonestusõiguse võõrandamise nõusolekut.
-(2) Kui võib eeldada, et § 249 2. lõikes sätestatud juhul on koormatis ühendatav korrapärase majandamisega ja et hoonestusõiguse seadmisega taotletud eesmärki oluliselt ei muudeta ega ohustata, võib hoonestaja nõuda omanikult hoonestusõiguse koormamise nõusolekut.
-§ 250.  Hoonestusõiguse järjekoht  Hoonestusõiguse võib kinnistusraamatus seada ainult esimesele järjekohale. Hoonestusõigusega ei või samal järjekohal olla muid asjaõigusi või märkeid
-§ 251.  Hoonestusõiguse tähtaeg
-(1) Hoonestusõigust võib seada ainult kindlaks tähtajaks, kuid mitte kauemaks kui 99 aastaks.
-(2) Kui tähtaeg on määramata või pikem kui 99 aastat, loetakse tähtajaks 99 aastat.
-(3) Tähtaja möödumisel võivad kinnisasja omanik ja hoonestaja kokkuleppel hoonestusõiguse tähtaega pikendada, kuid mitte rohkem kui 99 aastaks. Hoonestusõiguse pikendamine tuleb kanda kinnistusraamatusse.
-§ 252.  Ehitise saatus hoonestusõiguse tähtaja saabumisel
-(1) Hoonestajal on õigus oma ehitis ühe aasta jooksul enne hoonestusõiguse tähtpäeva saabumist ära vedada, kui kinnisasja omanik ei ole kasutanud käesoleva paragrahvi 3. lõikes nimetatud õigust. Kui kinnisasja omanik on esitanud äravedamise nõude hiljemalt neli kuud enne tähtaja lõppu, on hoonestaja kohustatud seda tegema.
-(2) Ehitis, mis tähtaja lõpuks ei ole ära veetud, muutub kinnisasja oluliseks osaks ja läheb kinnisasja omaniku omandisse. Kui kinnisasja omanik on esitanud äravedamise nõude õigeaegselt, võib ta hoonestajalt nõuda tasu ehitise äravedamise eest, kui kinnisasja omanik on selle ära vedanud ühe aasta jooksul pärast tähtaja lõppu.
-(3) Kinnisasja omanikul on õigus mitte hiljem kui üks aasta enne tähtpäeva saabumist nõuda ehitise jätmist endale tasu eest, mis võrdub hoonestajale käesoleva paragrahvi 1. lõikes nimetatud äravedamise õiguse kaotamise tõttu tekkiva kahjuga.
-(4) Käesoleva paragrahvi lõigetes 1–3 sätestatu kehtib niivõrd, kui kinnistusraamatu kanne ei määra teisiti.
-§ 253.  Hüvitis hoonestusõiguse tähtaja möödumisel
-(1) Hoonestusõiguse lõppemisel selle tähtaja möödumise tõttu peab kinnisasja omanik maksma hoonestajale hüvitise kinnisasjale jääva ehitise eest. Hoonestusõiguse seadmisel võib kokku leppida hüvitise suuruse ja maksmise viisi, samuti hüvitise maksmise välistada. Kui hüvitise suurus ei ole kokku lepitud, loetakse selleks hoonestusõiguse harilik väärtus.  (1
-1) Kui hoonestusõigus on seatud elamu püstitamiseks, ei või kokku leppida väiksema hüvitise maksmises kui kaks kolmandikku hoonestusõiguse väärtusest.
-(2) Kinnisasja omanik vabaneb hüvitise maksmise kohustusest, kui ta pikendab hoonestusõiguse tähtaega ehitise eeldatava püsimise aja lõpuni. Kui hoonestaja ei nõustu tähtaja pikendamisega, kaotab ta õiguse hüvitisele.
-§ 254.  Tasu hoonestusõiguse eest
-(1) Hoonestaja maksab kinnisasja omanikule hoonestusõiguse eest tasu, kui ei ole kokku lepitud teisiti.
-(2) Tasu hoonestusõiguse eest makstakse vastavalt kokkuleppele rahas või muudes asendatavates asjades, kusjuures hoonestusõiguse seadmisel võib tasu suurus või suuruse arvutamise alused kogu hoonestusõiguse ajaks ette kindlaks määrata.
-(3) Hoonestusõiguse seadmisel võib kokku leppida hoonestusõiguse tasu suuruse muutmises vastavalt muutuvatele tingimustele, kui tingimuste muutumine on ajaliselt ja ulatuselt määratav.
-(4) Hoonestusõiguse eest tasu maksmise kohustuse võib kanda reaalkoormatisena kinnistusraamatusse.  (4
-1) Hoonestusõiguse tasu tagamiseks seatud reaalkoormatise muutmiseks seoses hoonestusõiguse tasu muutmisega vastavalt käesoleva paragrahvi 3. lõikele on vaja kinnistusraamatus järjekohas tagapool olevate õiguste omanike nõusolekut vaid siis, kui tasu suurenemine ületab oluliselt tingimuste muutumise.  (4
-2) Hoonestusõiguse tasu osas võib kokku leppida, et:
-1) tasu tagav reaalkoormatis jääb erinevalt täitemenetluse seadustiku § 158 lõikes 3 sätestatust püsima, kui omanik reaalkoormatise alusel või mõne teise eespool või samal järjekohal asuva piiratud asjaõiguse omanik hoonestusõigusele sissenõude pöörab;
-2) igakordsel hoonestajal on igakordse reaalkoormatise omaniku suhtes õigus hoonestusõigust koormata reaalkoormatisest järjekohas eespool või samal järjekohal oleva kindlaksmääratud ulatusega hüpoteegiga.  (4
-3) Kui hoonestusõigus on koormatud piiratud asjaõigusega, mis asub hoonestusõiguse tasu tagava reaalkoormatisega samal järjekohal, on käesoleva paragrahvi 4 2 . lõike punktis 2 nimetatud hüpoteegi kandmiseks kinnistusraamatusse vaja selle isiku nõusolekut, kelle kasuks nimetatud piiratud asjaõigus on seatud.
-(6) Hoonestusõiguse kaasomanikud vastutavad hoonestusõiguse tasu maksmise eest solidaarselt.
-§ 255.  Maksud ja koormatised  Kõik hoonestusõigusega koormatud maatükil lasuvad maksud tasub ja avalik-õiguslikud reaalkoormatised kannab hoonestaja, kui ei ole kokku lepitud teisiti.
-1. Kokkulepped  Hoonestusõiguse sisu hulka kuuluvad ka omaniku ja hoonestaja kokkulepped:
-1) ehitise püstitamise, korrashoiu ja kasutamise kohta;
-2) ehitise kindlustamise ja ülesehitamise kohta selle hävimisel;
-3) hoonestaja kohustuse kohta maksta leppetrahvi;
-4) hoonestaja kohustuse kohta kanda vastava eelduse tekkimisel hoonestusõigus üle omanikule;
-5) hoonestusõiguse lõppemisel või hoonestusõiguse omanikule langemisel hoonestajale ehitise eest makstava hüvitise kohta;
-6) avalik-õiguslike ja eraõiguslike koormatiste kandmise ja maksude tasumise kohta;
-7) hoonestajale hoonestusõiguse uuendamiseks pärast selle lõppemist eesõiguse andmise kohta;
-8) kinnisasja omaniku kohustuse kohta müüa kinnisasi selle igakordsele hoonestajale.    7. osa OSTUEESÕIGUS  1. peatükk MÕISTE, TEKKIMINE JA LÕPPEMINE
-§ 256.  Ostueesõiguse mõiste
-(1) Kinnisasja võib koormata asjaõigusliku ostueesõigusega.
-(2) Ostueesõiguse võib seada teatud isiku või teise kinnisasja igakordse omaniku kasuks.
-(3) Kinnisasja mõttelist osa võib ostueesõigusega koormata ainult siis, kui see on kaasomaniku osa.
-§ 257.  Ostueesõiguse seadmine ja tähendus
-(1) Ostueesõiguse seadmiseks kohustav tehing peab olema notariaalselt tõestatud.
-(2) Ostueesõiguse seadmiseks nõutav asjaõigusleping peab olema notariaalselt tõestatud.
-(3) Kinnistusraamatusse kantud ostueesõigus omab kolmandate isikute suhtes samasugust tähendust nagu eelmärge omandi üleandmise nõude tagamiseks. Sama tähendust omab ka seaduse alusel tekkinud kinnisasja ostueesõigus, mille kohta on kinnistusraamatusse kantud märkus, samuti kinnisasja kaasomaniku ostueesõigus.
-(4) Omaniku ning ostueesõigusega isiku vahelisele suhtele kohaldatakse võlaõigusseaduses ostueesõiguse kohta sätestatut, kui käesolevas seaduses ei ole sätestatud teisiti.
-§ 258.
-§ 259.
-§ 260.  Ostueesõiguse üleandmise piirangud
-(1) Kinnisasja igakordse omaniku kasuks seatud ostueesõigust ei või lahutada sellest kinnisasjast.
-(2) Teatud isiku kasuks seatud ostueesõigust ei või siduda mingi teise kinnisasjaga.
-(3) Teatud isiku kasuks seatud ostueesõigus ei ole võõrandatav ega pärandatav.  2. peatükk SISU
-§ 261.
-1. Ostja õigused
-(1) Ostja või ostja õigusjärglane võib keelduda ostueesõigusega isiku omanikuna kinnistusraamatusse kandmiseks nõusoleku andmisest ja kinnisasja üleandmisest, kuni talle hüvitatakse tasutud ostuhind.
-(2) Pärast ostueesõigusega isiku omanikuna kinnistusraamatusse kandmist võib ostja keelduda kinnisasja üleandmisest, kuni talle hüvitatakse tema poolt tasutud ostuhind.
-2. Ostuhinna tasumine  Kui ostueesõigusega isikul tuleb vastavalt käesoleva seaduse §-le 261 1 tasuda ostuhind ostjale või ostja õigusjärglasele, vabaneb ta kohustusest tasuda ostuhind müüjale.
-3. Ostja vabanemine ostuhinna tasumise kohustusest  Kui ostja või tema õigusjärglane kaotab ostueesõiguse teostamise tõttu kinnisomandi, vabaneb ta ostuhinna tasumise kohustusest. Juba tasutud ostuhinna võib ostja müüjalt tagasi nõuda üksnes juhul, kui ta taganeb müügilepingust.
-4. Ostueesõigus kinnisasja jagamisel  Kinnisasja jagamisel jääb ostueesõigus püsima iga jagamise teel tekkinud kinnisasja suhtes.
-§ 262.  – § 275.   8. osa PANDIÕIGUS  1. peatükk ÜLDSÄTTED
-§ 276.  Pandi mõiste ja liigid
-(1) Asja võib pandiga (pandiõigusega) koormata selliselt, et isikul, kelle kasuks pant on seatud, on õigus pandiga tagatud nõude rahuldamisele panditud vara arvel, kui nõuet ei ole kohaselt täidetud.
-(2) Pant on vallaspant või kinnispant.
-§ 277.  Pandi ese
-(1) Pantida võib asju ja varalisi õigusi, mille pantimine ei ole seadusega keelatud (pandi ese).
-(2) Pantida ei saa vara, millele seadusega ei ole lubatud sissenõuet pöörata.
-(3) Ühele ja samale pandi esemele võib seada mitu panti ühe või mitme võlausaldaja kasuks, kui seaduses või pandilepinguga ei ole sätestatud teisiti.
-(4) Kaasomanikule kuuluvat mõttelist osa asjas võib koormata ainult tervikuna.
-§ 278.  Pantija  Pantija võib olla võlgnik või kolmas isik.
-§ 279.  Pandiga tagatav nõue
-(1) Pandiga võib tagada iga rahaliselt hinnatavat nõuet.
-(2) Pandiga võib tagada ka tingimuslikku nõuet.
-(3) Pandiga võib tagada tulevikus tekkivat nõuet.
-(4) Pandiga on tagatud ka nõudega seotud kõrvalnõuded, sealhulgas intressid ja leppetrahv, kui seaduses või lepinguga ei ole sätestatud teisiti.
-(5) Pärast pandi seadmist tehtud tehing, millega suurendatakse pandiga tagatud nõude võlgniku vastutust, ei kehti pandiga koormatud asja omaniku suhtes, kui lepinguga ei ole sätestatud teisiti.
-(6) Pandiga on tagatud ka menetluskulud, asja müügiga seotud kulutused ja pandipidaja poolt pandieseme säilitamiseks tehtud vajalikud kulutused.
-(7) Pantija, kes ei ole võlgnik, võib esitada pandiga tagatud nõude vastu samu vastuväiteid, mida võib esitada võlgnik või käendaja. Ta võib vastuväiteid esitada ka siis, kui võlgnik nõudele vastu ei vaidle.
-§ 280.  Pandiga tagatud nõude eelistus  Pandiga tagatud nõue on eelistatud kõikidele teistele nõuetele panditud vara suhtes, kui seaduses ei ole sätestatud teisiti.  2. peatükk VALLASPANT  1. jagu KÄSIPANT  1. jaotis Mõiste, tekkimine, lõppemine
-§ 281.  Käsipandi mõiste
-(1) Vallasasja võib pandiga koormata selliselt, et panditud asi antakse üle pandipidaja valdusse ja lepitakse kokku käsipandi seadmises. Asja võib pandiga koormata ka selliselt, et asi antakse üle kolmandale isikule ja pandipidaja saab panditud asjale kaudse valduse.
-(2) Käsipandi kohta sätestatut kohaldatakse vastavalt ka seaduse alusel tekkinud vallaspandiõigusele, kui seaduses ei ole sätestatud teisiti.
-(3) Kui vallasasi on koormatud mitme pandiõigusega, määratakse pandiõiguse järjekoht pandiõiguse tekkimise ajaga.
-§ 282.  Käsipandi tekkimine
-(1) Käsipant tekib asja valduse üleandmisega pantijalt pandipidajale, kui nad on pandi seadmises kokku leppinud. Kui asi on juba pandipidaja valduses, tekib pant pandilepingu sõlmimisega.  (1
-1) Käsipant ei teki, kui pandipidaja saab käsipandi seadmisel pandiga koormatud asjale koos pandiga koormatud asja omanikuga kaasvalduse.    (1
-2) Asja pantimisel, mille kohta on välja antud kaubaväärtpaber, loetakse kaubaväärtpaberi üleandmine võrdseks asja valduse üleandmisega.
-(2) Pandi seadmise kokkulepe (käsipandi leping) tuleb sõlmida kirjalikult, kui panditud asja väärtus ületab 50 eurot.
-(3) Samale vallasasjale ei või seada mitut käsipanti.
-1. Pandiõiguse heauskne omandamine
-(1) Pandipidaja omandab käesoleva seaduse §-s 282 sätestatud juhtudel pandiõiguse ka siis, kui pantija ei olnud pandi seadmiseks õigustatud, välja arvatud juhul, kui pandipidaja ei olnud eseme pandiõigusega koormamisel heauskne.
-(2) Pandipidaja on pahauskne, kui ta eseme pandiõigusega koormamisel teadis või pidi teadma, et pantijal ei olnud eseme pandiga koormamise õigust.
-(3) Pandiõiguse heauskset omandamist käesoleva paragrahvi 1. lõike kohaselt ei toimu, kui asi oli varastatud, kadunud või muul viisil omaniku tahte vastaselt tema valdusest välja läinud. See säte ei kehti esitajaväärtpaberite pantimise korral.
-(4) Kui panditud asi on koormatud kolmanda isiku õigusega, astub pandiõigus sellest õigusest eespool asuvale järjekohale, välja arvatud juhul, kui pandipidaja teadis või pidi pandiõiguse omandamise hetkel õiguse olemasolust teadma.
-§ 283.  Käsipant mitmele asjale
-(1) Käsipandi seadmisel mitmele asjale on kogu nõue tagatud iga asjaga.
-(2) Pandipidaja võib panditud asjale sissenõude pöörata oma valikul, kui pandilepingus ei ole sätestatud teisiti.
-§ 284.  Käsipandi lõppemine nõude lõppemisega  Käsipant lõpeb tagatud nõude lõppemisega.
-§ 285.  Käsipandi lõppemine vallasasja hävimisega
-(1) Käsipant lõpeb panditud vallasasja hävimisega.
-(2) Kui panditud asi oli kindlustatud, on pandipidajal õigus asja täieliku või osalise hävimise korral saada oma valdusse kindlustushüvitis. Pantija nõudel kindlustushüvis deponeeritakse.
-(3) Pandipidaja võib pandieseme osalise või täieliku hävimise korral nõuda pandieseme omanikult eseme hävimise eest hüvitisena omandatu üleandmist või deponeerimist.
-§ 286.  Käsipandi lõppemise muud alused  Käsipant lõpeb kui:
-1) pandipidajaks ja panditud asja omanikuks saab üks ja sama isik, välja arvatud juhul, kui omanikul on õigustatud huvi pandiõiguse edasikestmise suhtes;
-2) panditud asi on pandipidaja valdusest välja läinud ja ta ei saa asja tagasi nõuda;
-3) pandipidaja tagastab pantijale panditud asja või teatab talle pandist loobumisest;
-4) käesoleva seaduse § 281 1. lõikes nimetatud kolmas isik tagastab panditud asja pantijale.    2. jaotis Sisu
-§ 287.  Pandipidaja kohustused panditud asja hoidmisel
-(1) Pandipidaja on kohustatud:
-1) panditud asja säilitama ja korras hoidma;
-2) asja hävimise ohust viivitamata pantijale teatama.
-(2) Panditud asja säilitamise ja korrashoiu kulutused kannab pantija, kui pandilepingus ei ole sätestatud teisiti.
-(3) Kui pandipidaja rikub kohustusi panditud asja hoidmisel, on pantijal õigus nõue rahuldada ja nõuda panditud asja tagastamist.
-§ 288.  Pandipidaja õigus panditud asja kasutada
-(1) Pandipidajal ei ole õigust panditud asja kasutada, kui pandilepinguga ei ole ette nähtud teisiti.
-(2) Pandipidaja, kes kasutab panditud asja, on kohustatud sellest pantijale aru andma pandilepinguga sätestatud korras.
-(3) Panditud asja kasutamisest saadud tulu arvestatakse kulutuste, intresside ja võla katteks, kui lepingus ei ole sätestatud teisiti.
-§ 289.  Käsipandi üleminek koos nõudega
-(1) Nõude üleminekul uuele võlausaldajale läheb temale üle ka käsipant ning tal on õigus panditud asi pandipidajalt välja nõuda.
-(2) Panditud asja valduse saamisega lähevad uuele pandipidajale üle senise pandipidaja õigused ja kohustused.
-(3) Kui nõude üleminekul on kokku lepitud, et käsipant üle ei lähe, käsipant lõpeb.
-(4) Käsipant ei või üle minna ilma nõudeta.
-§ 290.  Panditud asja tagastamine  Käsipandi lõppemisel on pandipidaja kohustatud panditud asja pantijale tagastama.
-§ 291.  Nõude üleminek pantijale  Kui võla on tasunud pantija, kes ei ole võlgnik, läheb nõue rahuldatud ulatuses talle üle. Sellisel juhul kohaldatakse käenduse kohta käivaid sätteid.
-§ 292.  Müügiõiguse tekkimine pandipidajal
-(1) Pandipidaja nõude rahuldamine toimub panditud asja müügiga.
-(2) Pandipidajal tekib panditud asja müügi õigus, kui pandiga tagatud nõue ei ole selle nõude kohaselt täidetud.
-(3) Enne müügiõiguse tekkimist sõlmitud kokkulepe, mille kohaselt pandipidaja omandab panditud asja pandiga tagatud nõude rahuldamiseks, on tühine.
-§ 293.  Müügist teatamine
-(1) Pandipidaja on kohustatud pantijale panditud asja müügist teatama üks kuu ette. Ette teatada võib pärast müügiõiguse tekkimist.
-(2) Käesoleva paragrahvi lõikes 1 nimetatud teatamisest võib loobuda, kui teatada pole võimalik. Sellisel juhul ei tohi panditud asja müüa enne ühe kuu möödumist müügiõiguse tekkimisest.
-(3) Käesoleva paragrahvi lõigetes 1 ja 2 nimetatud tähtajast võib kõrvale kalduda, kui pandiese on riknemisohus ja müümisega viivitades asja väärtus ilmselt väheneks või asi häviks.
-§ 294.  Panditud asja müük
-(1) Panditud asi müüakse avalikul enampakkumisel.
-(2) Avaliku enampakkumise aeg ja koht tuleb teatavaks teha pantijale ja kolmandale isikule, kellel on panditud asjale õigusi.
-(3) Avalikust enampakkumisest võivad osa võtta ka pandipidaja ja pantija. Kui asi müüakse pandipidajale, tasaarvestatakse tema nõude rahaline väärtus müügihinnaga.
-(4) Pantija ja pandipidaja võivad kokku leppida käesoleva paragrahvi 1. lõikes nimetatust erinevas panditud asja müügi viisis. Kui kolmandal isikul on panditud asjale õigus, mis asja müügi korral lõpeb, on müügiviisi muutmiseks vajalik tema nõusolek.
-(5) Panditud asja müügi viisi kokkulepet rikkunud pandipidaja vastutab sellest tekkinud kahju eest.
-§ 295.  Panditud asja müügist saadud raha
-(1) Pantija kohustus loetakse täidetuks panditud asja müügist saadud raha ulatuses, millest on maha arvatud vajalikud müügikulud.
-(2) Pärast müügikulude tasumist ja pandipidaja nõude rahuldamist ülejäänud raha tagastatakse pantijale.
-§ 296.    2. jagu REGISTERPANT  1. jaotis Üldsätted
-§ 297.  Registerpandi mõiste
-(1) Patenti, kaubamärki, tööstusdisainilahendust, kasulikku mudelit, sorti, mikrolülituse topoloogiat, mootorsõidukit ja õhusõidukit, mis on kantud registrisse, mille andmed on avalikud ja mille pidamine on reguleeritud seadusega sätestatud korras, võib koormata registerpandiga selliselt, et isikul, kelle kasuks registerpant on seatud, on õigus pandiga tagatud nõude rahuldamisele panditud eseme arvel.
-(2) Käesoleva paragrahvi 1. lõikes nimetatud pandieseme mõttelist osa saab registerpandiga koormata vaid juhul, kui see on kaasomaniku osa.
-(3) Registerpant ei eelda tagatava nõude olemasolu.
-1. Registrisse kantavad andmed  Registerpandi kohta kantakse registrisse ainult seadusega sätestatud andmed.
-2. Kohtulik registerpant
-(1) Hagi tagamiseks võib kohus seada haginõude ulatuses registerpandi, mis peab olema registrisse kantud kohtuliku registerpandina. Kohtulikule registerpandile kohaldatakse registerpandi kohta käivaid sätteid.
-(2) Kohtuliku registerpandiga on tagatud kohtuotsuse alusel rahuldatud nõue.
-(3) Kohtulik registerpant kantakse registrisse üldises korras.
-(4) Kohtulikule registerpandile kohaldatakse kohtuliku hüpoteegi kohta sätestatut, kui seadusest ei tulene teisiti.
-3. Kande tegemine registrisse
-(1) Registerpandi seadmiseks, sisu muutmiseks või lõpetamiseks tehakse registrisse kanne avalduse alusel. Avaldus on ühepoolne ja selles on väljendatud soov teha kanne registrisse. Avaldus võib sisalduda ka asjaõiguslepingus.
-(2) Kui kande tegemiseks on vajalik isiku avaldus või nõusolek, asendab seda ka jõustunud või viivitamatule täitmisele kuuluv kohtulahend, millega on tuvastatud isiku kohustus kande tegemisele kaasa aidata, või õigussuhe, millest tulenevalt tuleb kanne teha.
-(3) Seadusega sätestatud juhtudel tehakse kanne ilma avalduseta ametiülesannete korras.
-§ 298.  Laevahüpoteegi sätete kohaldamine
-(1) Registerpandile kohaldatakse laeva asjaõigusseaduse III osa 1. peatükis laevahüpoteegi kohta sätestatut, kui seadusest ei tulene teisiti.
-(2) Registerpandile ei kohaldata laeva asjaõigusseaduse III osa 1. peatüki §-des 15–17 ja 19–22, § 28 lõikes 2 ning §-des 43, 44, 46, 48, 50, 53 ja 60–66 sätestatut.
-§ 299.  Registerpandi tekkimine
-(1) Registerpandi tekkimiseks on vajalik pandieseme omaja ja pandipidaja kokkulepe eseme koormamise kohta registerpandiga ja pantimise kohta kande tegemine vastavasse registrisse.
-(2) Registreerimisel kantakse registrisse pandipidaja ja registerpandi rahaline suurus.
-1. Registerpandi lõppemine
-(1) Registerpant lõpeb registerpandiga koormatud eseme omaja ja pandipidaja kokkuleppel ning registerpandi kohta tehtud kande kustutamisel.
-(2) Registerpant ei lõpe pandieseme registrist kustutamisel, kui seadusega ei ole sätestatud teisiti.
-2. Pandieseme kustutamine registrist
-(1) Registripidaja teavitab registerpandi pidajat viivitamata pandieseme kustutamisest registrist.
-(2) Pandieseme kustutamisel registrist teeb registripidaja registerpandi juurde märkuse pandieseme kustutamise kohta.
-§ 300.  Registerpandi järjekoht
-(1) Registerpandi järjekoht määratakse registrisse kandmise ajaga.
-(2) Kui ühele ja samale esemele seatud pantide registreerimise avaldused on esitatud üheaegselt, antakse neile üks ja sama järjekoht ning see kantakse vastavasse registrisse.
-(3) Käesoleva paragrahvi 1. ja 2. lõiget ei kohaldata, kui asjaosalised on kokku leppinud teistsuguses järjekohasuhtes ja niisuguse kokkuleppe kohta on tehtud kanne registrisse.
-(4) Registerpandi järjekoha muutmisele kohaldatakse vastavalt käesoleva seaduse §-s 60 sätestatut.
-(5) Registerpandi eseme omaja ja pandipidaja poolt registerpandi seadmisel sõlmitud kokkulepe, mille kohaselt registerpandi eseme omajal on õigus seada registerpandi esemele registerpandist järjekohas eespool asuv kindlaksmääratud ulatusega õigus, on kehtiv vaid juhul, kui selle kohta on tehtud kanne registrisse.
-1. Kande muutmine
-(1) Registerpandi kohta tehtud kande muutmiseks või kustutamiseks on nõutav pandipidaja kirjalik nõusolek, kui seadusega ei ole sätestatud teisiti.
-(2) Ebaõige kande muutmisel või kustutamisel kohaldatakse käesoleva seaduse § 65 lõikes 1 sätestatut.
-2. Osaregisterpant
-(1) Registerpandi võib jagada osadeks.
-(2) Registerpandi osadeks jagamisel on vaja teha kanne registrisse. Kanne tehakse pandipidaja avalduse alusel, kui seadusega ei ole sätestatud teisiti.
-(3) Osaregisterpandid asuvad jagatud registerpandi järjekohal.
-(4) Osaregisterpandid on omavahel võrdsed ja asuvad samal järjekohal, kui seadusest või kandest ei tulene teisiti.
-3. Registerpandi üleandmine  Registerpandi üleandmiseks on vaja pandipidaja kirjalikku nõusolekut ja kannet registris.
-4. Registerpandist loobumine
-(1) Kui pandipidaja registerpandist loobub, omandab selle registerpandiga koormatud eseme omaja. Registerpandist loobumiseks esitab pandipidaja registrile kirjaliku avalduse, mille alusel tehakse kanne registrisse.
-(2) Kui pandipidaja loobub registerpandist osaliselt, omandab registerpandiga koormatud eseme omaja registerpandi vastava osa. Registerpandiga koormatud eseme omajale üleläinud osaregisterpandist tulenevaid õigusi kasutades ei tohi kahjustada pandipidaja huve.
-5. Registerpandi pantimine
-(1) Registerpant panditakse tervikuna.
-(2) Registerpandi pantimisel kohaldatakse nõuete pantimise kohta sätestatut.
-§ 301.
-§ 302.  Pandipidajate nõuete rahuldamine
-(1) Kui registerpandiga tagatud nõuet ei täideta, on pandipidajal õigus nõuda sundtäitmist sundenampakkumise teel.
-(2) Enne registerpandiga tagatud nõude sissenõutavaks muutumist sõlmitud kokkulepe, mille kohaselt pandipidaja omandab registerpandiga koormatud eseme registerpandiga tagatud nõude rahuldamiseks, on tühine.
-(3) Registerpandiga koormatud ese müüakse täitedokumendi alusel seaduses sätestatud korras avalikul enampakkumisel, kui seaduses ei ole sätestatud teisiti.
-(4) Nõuded rahuldatakse vastavalt pantide järjekohtadele, kui seadusest ei tulene teisiti.
-(5) Ühel ja samal järjekohal asuvate pantidega tagatud nõuded rahuldatakse võrdeliselt nõuete suurusega.
-§ 303.  Registerpandi avalikkus  Igaühel on õigus tutvuda registrisse kantud andmetega registerpandi kohta.
-§ 304.
-§ 305.
-§ 306.    2. jaotis Transpordivahendite pantimine
-§ 307.  – § 308.   3. jaotis Kommertspant
-§ 309.
-§ 310.  – § 312.     4. jaotis Intellektuaalse omandi pantimine
-§ 313.    3. jagu Õiguste pantimine
-§ 314.  Õigused pandi esemena
-(1) Varaline õigus võib olla pandi esemeks, kui see on üleantav.
-(2) Õiguste pantimisele kohaldatakse käsipandi sätteid, kui seaduses ei ole sätestatud teisiti. Õiguste pantimisele ei kohaldata käesoleva seaduse § 282 3. lõikes sätestatut.
-1. Finantstagatis
-(1) Finantstagatiseks loetakse kontol oleva raha nõudeõiguse, väärtpaberi või krediidinõude koormamist pandiõigusega, kui nii tagatise andjaks kui ka tagatise võtjaks on üks alljärgnevatest isikutest või organisatsioonidest:
-1) väärtpaberituru seaduse § 6 2. lõike punktides 1 ja 2 nimetatud isik või asutus;
-2) Euroopa Parlamendi ja nõukogu direktiivi 2002/47/EÜ finantstagatiskokkulepete kohta (EÜT L 168, 27.6.2002, lk 43–50) artikli 1 2. lõike punktis b või d nimetatud isik või organisatsioon;
-3) väärtpaberituru seaduse § 213 1 1. lõikes nimetatud süsteemiühenduse korraldaja;
-4) väärtpaberituru seaduse § 214 2. lõikes nimetatud väärtpaberiarveldussüsteemi korraldaja;
-5) muu käesoleva lõike punktides 1–4 nimetatud isikuga sarnane välisriigi isik või organisatsioon, kellele on Euroopa Majanduspiirkonna lepinguriigi või Euroopa Liidu õigusakti kohaselt antud õigus olla finantstagatise andjaks või võtjaks.
-(2) Finantstagatiseks loetakse kontol oleva raha nõudeõiguse, väärtpaberi või krediidinõude koormamist pandiõigusega ka juhul, kui tehingu üheks pooleks on käesoleva paragrahvi 1. lõike punktides 1–5 nimetatud isik või organisatsioon ja tagatise andjaks või võtjaks on äriühing, kes oma viimase majandusaasta või konsolideeritud aruande kohaselt vastab vähemalt kahele alljärgnevatest tingimustest.
-1) äriühingul on majandusaasta jooksul keskmiselt rohkem kui 250 töötajat;
-2) äriühingu aasta bilansimaht ületab 43 miljonit eurot;
-3) äriühingu aastakäive ületab 50 miljonit eurot.
-(3) Finantstagatisega võib koormata üksnes väärtpaberit, mis on nimetatud väärtpaberituru seaduse § 2 1. lõike punktides 1–5 ja punktis 7 ning sama paragrahvi 3. lõikes, samuti muud eelnimetatud väärtpaberitega seotud õigust või nõuet tingimusel, et väärtpaberit või väärtpaberiga seotud õigust või nõuet väljendatakse ja see kantakse üle üksnes registrikande vahendusel võlaõigusseaduse § 917 2. lõike tähenduses.
-(4) Krediidinõue käesoleva seaduse tähenduses on nõue, mis tuleneb krediidiasutuse või Euroopa Parlamendi ja nõukogu direktiivi 2006/48/EÜ krediidiasutuste asutamise ja tegevuse kohta (ELT L 177, 30.6.2006, lk 1–200) 2. artiklis nimetatud isiku või organisatsiooni poolt väljaantud laenust või krediidist, välja arvatud nõue, mis tuleneb tarbijakrediidilepingust või krediidilepingust mikro- või väikeettevõtjaga. Mikro- või väikeettevõtjana käsitatakse ettevõtjat, kellel on majandusaasta jooksul keskmiselt vähem kui 50 töötajat ja tema aasta bilansimaht või aastakäive ei ületa 10 miljonit eurot
-(5) Finantstagatiseks loetakse ka kontol oleva raha nõudeõiguse, väärtpaberi või krediidinõude käesoleva paragrahvi 1. või 2. lõikes nimetatud isikule või organisatsioonile tagatise andmise eesmärgil ülekandmist võlaõigusseaduses sätestatud alustel ja kooskõlas käesoleva seaduse § 314 2 1. lõikes sätestatuga
-2. Finantstagatise seadmine
-(1) Finantstagatise kokkuleppe sõlmimist peab saama tõendada kirjalikus või muus õiguslikult samaväärses vormis ja finantstagatise seadmise viis peab tagatise võtjal võimaldama finantstagatise eset kontrollida. Käesoleva lõike esimeses lauses sätestatu rikkumine ei mõjuta finantstagatise kokkuleppe kehtivust.
-(2) Krediidinõuete finantstagatiseks andmisel käesoleva seaduse § 314 1 alusel esitatakse tagatise võtjale tagatiseks antud krediidinõuete nimekiri kirjalikus vormis.
-(3) Krediidinõuete finantstagatiseks andmisel ei kohaldata käesoleva seaduse § 315 3. lõikes ega võlaõigusseaduse §-s 168 sätestatut. Kui pandipidaja vajab lisateavet võlgniku vastu nõude esitamiseks, peab pantija võimaluse korral andma pandipidajale vajalikku teavet.
-(4) Tagatise võtja kasuks seatud finantstagatise kehtivust ei mõjuta tagatise andja õigus finantstagatis asendada, finantstagatis ületagatud osas tagasi võtta ega krediidinõuete puhul õigus intressidele ja muudele kõrvalnõuetele.
-3. Finantstagatise käsutamine
-(1) Pandipidaja võib finantstagatise kokkuleppe alusel käsutada finantstagatise eset, välja arvatud krediidinõuet.
-(2) Kui pandipidaja kasutab talle finantstagatise kokkuleppega antud õigust finantstagatise eset käsutada, on ta kohustatud hiljemalt finantstagatisega tagatud nõude sissenõutavaks muutumisel asendama algse finantstagatise eseme samaväärse esemega, kusjuures raha tuleb asendada samas vääringus rahaga ja väärtpaber sama emitendi väärtpaberiga, mis kuulub samasse emissiooni või liiki ning mille nimiväärtus, vääring ja laad on samad, kui pooled ei ole kokku leppinud teisiti.
-§ 315.  Pandi seadmine
-(1) Õiguse pantimiseks on vajalik pantija ja pandipidaja vaheline kokkulepe pandi seadmise kohta, kui seaduses ei ole sätestatud teisiti.
-(2) Käesoleva paragrahvi 1. lõikes nimetatud kokkulepe peab olema kirjalikus vormis, kui seaduses ei ole sätestatud teisiti.  (2
-(3) Kui pandipidaja saab seoses pantimisega õiguse nõuda panditud nõude täitmist ja täitmine vastu võtta, peab pantija pandipidajale üle andma nõuet ja kõrvalkohustusi tõendavad dokumendid, samuti andma võlgniku vastu nõude esitamiseks vajalikku teavet.
-§ 316.  Panditud õiguse lõpetamine ja muutmine
-(1) Panditud õigust saab tehinguga lõpetada üksnes pandipidaja nõusolekul. Nõusolek tuleb anda isikule, kelle kasuks lõpetamine toimub. Nõusolekut ei saa tagasi võtta.
-(2) Panditud õiguse muutmiseks on vajalik pandipidaja nõusolek, kui sellega kaasneb panditud õiguse väärtuse vähenemine või kui muutmine vähendab muul viisil pandipidaja tagatist. Nõusolek tuleb anda isikule, kelle kasuks muutmine toimub.
-(3) Käesoleva paragrahvi 1. ja 2. lõikes sätestatu ei laiene õigusena panditud aktsia, osa, investeerimisfondi osaku või muu sellesarnase õiguse lõpetamisele või muutumisele, mille aluseks on vastava aktsiaseltsi, osaühingu või investeerimisfondi organi otsus. Kui õiguse muutmise või lõpetamise eelduseks on lisaks sellise organi otsuse vastuvõtmisele ka õigustatud isikuks oleva pantija nõusolek, on sellise nõusoleku andmiseks käesoleva paragrahvi 1. ja 2. lõikes sätestatu kohaselt õigustatud pandipidaja.
-§ 317.  Nõude pantimisest teatamine
-(1) Nõude pantimisest peab pantija teatama panditud nõude võlgnikule, kui pandilepingus ei ole kokku lepitud teisiti.
-(2) Pantija poolt nõude pantimisest teatamisel või pandipidaja poolt võlgnikule pantija poolt pantimise kohta väljaantud dokumendi esitamisel on samad tagajärjed nagu nõude loovutamisest teatamisel.
-(3) Võlgnik on pantija või pandipidaja nõudmisel kohustatud andma kirjaliku kinnituse temale pantimisest teatamise kohta.
-§ 318.  Pantimise tagajärjed võlgnikule nõude pantimise korral  Nõude pantimise korral kohaldatakse pandipidaja ja panditud nõude võlgniku vahelisele õigussuhtele nõude loovutamise korral omandaja ja võlgniku vahelise suhte kohta sätestatut, kui seaduses ei ole sätestatud teisiti.
-§ 319.  Kohustuse täitmine nõude pantimise korral
-(1) Nõude pantimise korral võivad pantija ning pandipidaja enne müügiõiguse tekkimist nõuda võlgnikult kohustuse täitmist üksnes ühiselt ja võlgnik võib täita üksnes pantijale ning pandipidajale ühiselt.
-(2) Pärast müügiõiguse tekkimist võib panditud nõude täitmist nõuda üksnes pandipidaja ja võlgnik võib täita üksnes pandipidajale. Kohustuse täitmisel pandipidajale on samasugune tähendus, kui täitmisel võlausaldajale.
-(3) Kui pandiesemeks on osa nõudest, jääb teistsuguse kokkuleppe puudumisel pantijale pandiga koormamata nõudeosa rahuldamise eesõigus, samuti eelisjärjekoht kõrvalõigustele ja tagatistele.
-(4) Kui pantija ja pandipidaja ei ole teisiti kokku leppinud, ulatub nõudele seatud pandiõigus ka võlgniku poolt tasumisele kuuluvatele panditud nõude intressile ja muudele kõrvalnõuetele.
-1. Etteteatamisõigus
-(1) Kui panditud nõude sissenõutavus sõltub etteteatamisest, võib enne müügiõiguse tekkimist ette teatada võlausaldaja.
-(2) Võlgniku etteteatamine on kehtiv, kui see on tehtud nii pandipidajale kui ka võlausaldajale.
-(3) Pärast müügiõiguse tekkimist (§ 292) võivad ette teatada nii võlausaldaja kui ka pandipidaja. Võlgniku puhul piisab teatamisest pandipidajale.
-2. Kõrvalekalduva kokkuleppe lubatavus
-(1) Pantija ja pandipidaja võivad kokku leppida seaduses sätestatust erinevas pandieseme müügi viisis. Kui kolmandal isikul on pandiesemele õigus, mis pandieseme müügi korral lõpeb, on müügi viisi muutmiseks vajalik tema nõusolek.
-(2) Kokkuleppega ei või kõrvale kalduda käesoleva seaduse § 292 3. lõikes sätestatust, välja arvatud juhul, kui tegemist on käesoleva seaduse §-s 314 1 nimetatud finantstagatisega ja poolte kokkulepe võimaldab panditud eseme väärtuse määrata majanduslikult põhjendatud viisil.
-(3) Kui finantstagatise seadmisel on sõlmitud käesoleva paragrahvi 2. lõikes nimetatud kokkulepe, loetakse müügiõiguse tekkimisel pandiga tagatud nõue rahuldatuks ulatuses, mis vastab panditud eseme kokkulepitud väärtusele.
-(4) Finantstagatise kokkuleppe alusel võib pandieseme müümisest etteteatamise tähtaeg olla lühem käesoleva seaduse § 293 1. lõikes sätestatust.
-3. Sissenõudmisele kaasaaitamine
-(1) Kui täita tuleb pandipidajale ja võlausaldajale ühiselt ja kui nõue on sissenõutav, on pandipidaja ja võlausaldaja kohustatud täitmise ühiselt vastu võtma.
-(2) Kui pandipidajal on õigus nõue iseseisvalt sisse nõuda, peab ta tegutsema mõistlikul viisil ja vajaliku hoolsusega. Pandipidaja peab sissenõudmisest viivitamata teatama võlausaldajale.
-4. Täitmise toime  Kui võlgnik täidab oma kohustuse vastavalt käesoleva seaduse § 319 1. või 2. lõikele, omandab võlausaldaja täitmisega saadud eseme ja pandipidaja pandiõiguse sellele esemele. Kui täitmine seisneb kinnisasja omandi üleandmises, siis on pandipidajal õigus hüpoteegile, kui täitmine seisneb kinnistatud laeva või ehitatava laeva omandi üleandmises, on pandipidajal õigus laevahüpoteegile.
-5. Sissenõutud raha deponeerimine
-(1) Kui rahaline nõue nõutakse sisse vastavalt käesoleva seaduse § 319 1. lõikele, tuleb saadud raha pandipidaja kasuks deponeerida selliselt, et pandipidajal tekib õigus deponeeritud summale müügiõiguse tekkimise päeval käesoleva seaduse § 292 kohaselt.
-(2) Kui rahaline nõue nõutakse sisse vastavalt käesoleva seaduse § 319 2. lõikele, siis jääb sissenõutud summa pandipidajale ulatuses, milles see on vajalik tema nõude rahuldamiseks. Ülejäänud raha peab pandipidaja pantijale välja andma.
-6. Muude õiguste müük  Muude panditud õiguste müük toimub vastavalt käsipandi sätetele.
-7.   4. jagu KINNIPIDAMISÕIGUS
-§ 320.  – § 324.   3. peatükk KINNISPANT  1. jagu HÜPOTEEK  1. jaotis Mõiste, tekkimine ja lõppemine
-§ 325.  Hüpoteegi mõiste
-(1) Kinnisasja võib hüpoteegiga koormata selliselt, et isikul, kelle kasuks hüpoteek on seatud (hüpoteegipidajal), on õigus hüpoteegiga tagatud nõude rahuldamisele panditud kinnisasja arvel.
-(2) Kinnisasja mõttelist osa võib hüpoteegiga koormata ainult siis, kui see on kaasomaniku osa.
-(3) Hüpoteeki ei või seada ainult kinnisasja reaalosale ega osale kaasomaniku mõttelisest osast.
-(4) Hüpoteek ei eelda tagatava nõude olemasolu.
-(5) Kui hüpoteegiga tagatud nõue on lõppenud võlgnikuks olnud juriidilise isiku lõppemise tõttu, loetakse nõue pandiga koormatud kinnisasja omaniku suhtes edasikestvaks.
-§ 326.  Hüpoteegi seadmise kokkuleppe vorm  Hüpoteegi seadmiseks sõlmitav asjaõigusleping peab olema notariaalselt tõestatud.
-§ 327.  Hüpoteegi kanne  Kinnistusraamatu kandes hüpoteegi seadmise kohta tuleb märkida hüpoteegipidaja ja hüpoteegi rahaline suurus (hüpoteegisumma).
-§ 328.  Algne omanikuhüpoteek
-(1) Kinnisasja omanik võib hüpoteegi seada enda kasuks.
-(2) Omanikuhüpoteegi seadmine toimub omaniku notariaalselt kinnitatud avalduse alusel kande tegemisega kinnistusraamatusse.
-§ 329.  Hüpoteegipidaja loobumine hüpoteegist
-(1) Kui hüpoteegipidaja hüpoteegist loobub, omandab hüpoteegi koormatud kinnisasja omanik. Loobumiseks tuleb teha hüpoteegipidaja notariaalselt kinnitatud avalduse alusel kanne kinnistusraamatusse.
-(2) Kui hüpoteegipidaja loobub hüpoteegist osaliselt, kohaldatakse § 349 2. lõike sätteid.
-§ 330.  Hüpoteegi lõpetamine  Hüpoteegi lõpetamiseks on vajalik kinnisasja omaniku notariaalselt kinnitatud nõusolek. Nõusolek tuleb avaldada kinnistusosakonnale või hüpoteegipidajale. Nõusolek ei ole tagasivõetav.
-§ 331.  Hüpoteegi lõpetamine omaniku nõudel
-(1) Kui hüpoteegipidaja elu- või asukoht ei ole teada, võib koormatud kinnisasja omanik nõuda hüpoteegi kustutamist või muutmist omanikuhüpoteegiks, kui omanikul on õigus nõude rahuldamisele ja ta deponeerib kogu hüpoteegisumma.
-(2) Intress tuleb deponeerida, kui intressimäär on kinnistusraamatusse kantud, kuid mitte suuremas ulatuses kui kolme aasta eest, arvates päevast, mil kinnisasja omanik esitas kohtule avalduse hüpoteegi kustutamiseks või omanikuhüpoteegiks muutmiseks.
-(3) Kui esitatakse käesoleva paragrahvi 1. lõikes nimetatud nõue, määrab kohus tähtaja vastuväidete esitamiseks ja avaldab vastava kuulutuse. Kui määratud tähtaja jooksul vastuväiteid ei esitata või need tagasi lükatakse, teeb kohus otsuse hüpoteegi kustutamise kohta, mis on kinnistusraamatu kande tegemise aluseks.    (3
-1) Kinnisasja omanikul on õigus taotleda, et käesoleva paragrahvi lõigetes 1 ja 2 nimetatud hüpoteegisumma ja intresside deponeerimise asemel määraks kohus vastuväidete esitamiseks viieaastase tähtaja. Viieaastase tähtaja möödumisel avaldab kohus korduva kuulutuse ning määrab vastuväidete esitamiseks uue tähtaja kestusega kolm kuud. Eelnimetatud uue tähtaja jooksul peab kohus ka omal algatusel koguma andmeid hüpoteegipidaja elu- või asukoha kohta ning nende tuvastamise korral üritama hüpoteegipidajaga kontakteeruda. Kui ka korduvalt määratud tähtaja jooksul vastuväiteid ei esitata või need lükatakse tagasi, teeb kohus otsuse hüpoteegi kustutamise kohta, mis on kinnistusraamatu kande tegemise aluseks.
-(4) Hüpoteegipidajal on õigus deponeeritud raha kätte saada viie aasta jooksul, arvates hüpoteegi kustutamise või omanikuhüpoteegiks muutmise päevast. Kui hüpoteegipidaja ei ole selle tähtaja jooksul raha välja võtnud, on kinnisasja omanikul õigus see tagasi saada.
-§ 332.  Omanikuhüpoteegi kustutamine hüpoteegipidaja nõudel
-(1) Kui hüpoteegi ja koormatud kinnisasja omanikuks saab üks ja sama isik, võib sama või tagapool asuva järjekohaga hüpoteegipidaja nõuda sellise hüpoteegi kustutamist.
-(2) Käesoleva paragrahvi 1. lõikes sätestatu ei kehti § 328 alusel tekkinud hüpoteegi kohta.
-(3) Käesoleva paragrahvi 1. lõikes sätestatud nõue ei kehti hüpoteegi suhtes, mille kandest nähtub selle mittekehtimine antud hüpoteegi suhtes.
-(4) Käesoleva paragrahvi 1. lõikes sätestatud nõude tagamiseks võib kinnistusraamatusse kanda eelmärke pärast omanikuhüpoteegi tekkimist.    2. jaotis Sisu  1. alljaotis Üldsätted
-§ 333.  Koormatud kinnisasja omaniku õigused  Hüpoteegiga koormatud kinnisasja omanikul on õigus koormatud kinnisasja vallata, kasutada ja käsutada, kui ta sellega ei vähenda koormatud kinnisasja väärtust ega kahjusta hüpoteegipidaja õigusi muul viisil, välja arvatud juhul, kui see toimub korrapärase majandamise tulemusena.
-§ 334.  Hüpoteegipidaja õigused kinnisasja väärtuse vähenemise ärahoidmiseks
-(1) Kui omaniku tegevuse tulemusena väheneb koormatud kinnisasja väärtus, on hüpoteegipidajal õigus nõuda, et kinnisasja omanik edasise kahjuliku tegevuse lõpetaks.
-(2) Hüpoteegipidaja võib koormatud kinnisasja väärtuse vähenemise ärahoidmiseks teha kohtulahendi alusel selleks vajalikke tegusid. Hüpoteegipidaja võib teha selliseid tegusid ka kohtulahendita, kui viivitamisel oluliselt väheneks koormatud kinnisasja väärtus.
-(3) Hüpoteegipidajal on õigus nõuda käesoleva paragrahvi 2. lõikes nimetatud tegudega seotud kulutuste hüvitamist. Nimetatud tegudega seotud kulutuste hüvitamise tagamiseks kuulub talle kinnistusraamatusse kandmata hüpoteek, mis asub tema hüpoteegiga samal järjekohal.
-§ 335.  Hüpoteegipidaja õigused kinnisasja väärtuse vähenemisel
-(1) Kui võib eeldada koormatud kinnisasja väärtuse vähenemist või kui see on juba toimunud, võib hüpoteegipidaja nõuda kinnisasja omanikult endise olukorra taastamist või täiendavat tagatist.
-(2) Kui kinnisasja omanik hüpoteegipidaja nõudel endist olukorda ei taasta ega anna täiendavat tagatist, võib hüpoteegipidaja nõuda hüpoteegiga tagatud nõude rahuldamist ulatuses, mille võrra koormatud kinnisasja väärtus on vähenenud. Rahuldamise nõudest tuleb üks kuu ette teatada.
-(3) Kui koormatud kinnisasja väärtus on vähenenud omaniku süüta, võib hüpoteegipidaja täiendavat tagatist või võla osalist tasumist nõuda ulatuses, milles kinnisasja omanikule on väärtuse vähenemine hüvitatud. Hüpoteegipidaja ei või nõuda täiendavat tagatist ega võla osalist tasumist, kui kinnisasja, millel asub füüsilise isiku põhiline eluase, väärtus väheneb kinnisasjade turuolukorra muutumise tõttu.
-§ 336.  Päraldiste väärtuse vähendamine  Koormatud kinnisasja päraldiste väärtuse vähendamine või korrapärase majandamise nõuete vastane eemaldamine kinnisasjast annab hüpoteegipidajale samad õigused nagu kinnisasja väärtuse vähenemisel.
-§ 337.  Koormatud kinnisasja käsutamine
-(1) Omaniku loobumine õigusest hüpoteegiga koormatud kinnisasja võõrandada või täiendavalt koormata on kehtetu.
-(2) Kui pärast hüpoteegi seadmist on samale kinnisasjale seatud servituut või reaalkoormatis hüpoteegipidaja nõusolekuta, eelistatakse hüpoteeki hiljem seatud servituudile või reaalkoormatisele. Nimetatud servituut või reaalkoormatis kustutatakse ulatuses, milles see kahjustab hüpoteegi teostamist.
-§ 338.  Hüpoteegi käsutamine
-(2) Hüpoteegi üleandmiseks on nõutavad hüpoteegipidaja ja hüpoteegi omandaja notariaalselt kinnitatud kokkulepe ning kande tegemine kinnistusraamatusse.
-(3) Hüpoteek panditakse tervikuna. Pantimise kohta kantakse kinnistusraamatusse pandipidaja kohta vastav märkus.
-1. Hüpoteegi pantimine
-(1) Hüpoteegi pantimisel kohaldatakse vastavalt nõuete pantimise kohta sätestatut.
-(2) Hüpoteegiga tagatud nõude pantimise korral on pandipidajal õigus nõuda ka nõuet tagava hüpoteegi pantimist, kui pooled ei ole kokku leppinud teisiti.
-(3) Müügiõiguse tekkimisel on pandipidajal õigus teostada hüpoteegipidaja õigusi.
-§ 339.    2. alljaotis Järjekoht
-§ 340.  – § 341.   3. alljaotis Hüpoteegi ulatus
-§ 342.
-§ 343.  Hüpoteegi ulatus kinnisasjale
-(1) Hüpoteek ulatub kinnisasja osadele, päraldistele ja viljadele. Hüpoteek ei ulatu kinnisasja päraldistele, mis ei ole kinnisasja omaniku omandis.
-(2) Hüpoteek ei ulatu päraldistele, osadele ja loodusviljadele, mis on enne kinnisasja arestimist korrapärase majandamise kohaselt võõrandatud või kinnisasjast alatiseks eemaldatud.
-§ 344.  Hüpoteegi ulatus rendi- ja üürinõudele  Kui hüpoteegiga koormatud kinnisasi on antud rendile või üürile, ulatub hüpoteek ka rendi- või üürinõudele, mis tekib ajavahemikul kinnisasja arestimisest või võlgniku pankroti väljakuulutamisest kuni kinnisasja müümiseni või mis on tekkinud ühe aasta jooksul enne kinnisasja arestimist või võlgniku pankroti väljakuulutamist ja on sisse nõudmata.
-§ 345.  Hüpoteegi ulatus kindlustushüvitisele
-(1) Kui hüpoteegiga koormatud kinnisasi on kindlustatud, ulatub hüpoteek ka kindlustushüvitise nõudele.
-(4)   4. alljaotis Nõuete rahuldamine
-§ 346.  Nõuete ulatus
-(1) Hüpoteegiga on hüpoteegisumma ulatuses tagatud nõue, intressid (muu hulgas viivis) kuni kolme aasta eest enne kinnisasja müümist täitemenetluses, samuti võla sissenõudmise kulutused, sealhulgas täitemenetluse kulud ja täituri tasud ning hüpoteegipidaja poolt kinnisasja omaniku eest tasutud kindlustusmaksed.
-(2) Kokkulepe, millega määratakse, milline nõue on hüpoteegiga tagatud, peab olema notariaalselt tõestatud. Tagatiskokkulepe kehtib hüpoteegiga koormatud kinnisasja omaniku vahetumisel ka uue omaniku suhtes ning hüpoteegipidaja vahetumisel uue hüpoteegipidaja suhtes.
-§ 347.  – § 348.
-§ 349.  Hüpoteegi üleminek omanikule
-(1) Kui hüpoteegiga tagatud nõue rahuldatakse või nõuet ei ole tekkinud, võib koormatud kinnisasja igakordne omanik nõuda hüpoteegi kandmist enda nimele või selle kustutamist, kui ei ole kokku lepitud teisiti.
-(2) Kui hüpoteegiga tagatud nõue rahuldatakse osaliselt, võib koormatud kinnisasja igakordne omanik nõuda rahuldatud nõude ulatuses enda kasuks osahüpoteegi kinnistusraamatusse kandmist või hüpoteegi kustutamist.
-(3) Kui võla on tasunud hüpoteegiga koormatud kinnisasja omanik, kes ei ole võlgnik, läheb nõue rahuldatud ulatuses talle üle. Sellisel juhul kohaldatakse käenduse kohta käivaid sätteid.
-§ 350.
-§ 351.  Kinnisasja omaniku vastuväited
-(1) Kinnisasja omanik võib hüpoteegipidaja vastu esitada ainult selliseid vastuväiteid, mis põhinevad kinnistusraamatu kandel või mis on tal sissenõude esitanud võlausaldaja vastu võlaõiguslikul alusel.
-(2) Kinnisasja omanik võib käesoleva paragrahvi 1. lõikes nimetatud vastuväiteid esitada ka võlausaldaja õigusjärglasele või isikule, kellele hüpoteegipidaja hüpoteegi üle andis (§ 338).
-§ 352.  Sundtäitmine
-(1) Kui hüpoteegiga tagatud nõuet ei täideta, on hüpoteegipidajal õigus nõuda sundtäitmist täitemenetluse seadustikus sätestatud korras.
-(2) Enne hüpoteegiga tagatud nõude sissenõutavaks muutmist sõlmitud kokkulepe, mille kohaselt hüpoteegipidaja omandab hüpoteegiga koormatud kinnisasja hüpoteegiga tagatud nõude rahuldamiseks, on tühine.
-§ 353.  Hüpoteegipidajate nõuete rahuldamise järjekord
-(1) Kinnisasja sundtäitmisest saadud rahast rahuldatakse hüpoteegipidajate hüpoteegiga tagatud nõuded, mille rahuldamiseks sundtäitmine täide viidi, vastavalt hüpoteekide järjekohtadele.
-(2) Järgneval järjekohal asuva hüpoteegiga tagatud nõue rahuldatakse pärast eelneval järjekohal oleva hüpoteegiga tagatud nõude rahuldamist.
-(3) Ühel ja samal järjekohal olevate hüpoteekidega tagatud nõuded rahuldatakse üheaegselt ja võrdeliselt nõuete suurusele.
-§ 354.  Omanikuhüpoteegi iseärasused sundtäitmisel
-(1) Omanikuhüpoteegi korral ei või koormatud kinnisasja omanik nõuda oma nõude rahuldamiseks sundtäitmist.
-(2)   5. alljaotis Hüpoteegi jagamine ja ühendamine
-§ 355.  Osahüpoteek
-(1) Hüpoteeki võib jagada osadeks.
-(2) Hüpoteegi jagamiseks osadeks, samuti osahüpoteekide omavahelise järjekoha muutmiseks ei ole omaniku nõusolek nõutav.
-(3) Osahüpoteegid asuvad senise hüpoteegi järjekohale.
-§ 356.  Hüpoteegiga koormatud kinnisasja jagamine
-(1) Hüpoteegiga koormatud kinnisasja jagamiseks on nõutav hüpoteegipidaja ja kinnisasja omaniku notariaalselt tõestatud kokkulepe.
-(2) Hüpoteek jääb jagamisel tekkinud kinnisasjade suhtes kehtima vastavalt käesoleva paragrahvi 1. lõikes nimetatud kokkuleppele.
-§ 357.
-§ 358.  Hüpoteegi üleviimine
-(1) Riigi või omavalitsuse poolt teostatava maakorralduse ja ümberplaneerimise puhul viiakse äraantavaid kinnisasju koormavad hüpoteegid nende senises järjekohas üle asemele antavatele kinnisasjadele.
-(2) Kui hüpoteegiga koormatud kinnisasja sundvõõrandamisel asendatakse kinnisasi teisega, seatakse võõrandatud kinnisasja koormanud hüpoteegid asendatud kinnisasjale vastavalt senistele järjekohtadele.
-(3) Kui üheks kinnisasjaks ühendatakse mitu kinnisasja, mis on koormatud mitme hüpoteegiga või millest mõned ei ole koormatud hüpoteegiga, viiakse hüpoteegid ühendatud kinnisasjale üle nende seniseid järjekohti võimalikult säilitades.  6. alljaotis Ühishüpoteek
-§ 359.  Ühishüpoteegi mõiste
-(1) Ühe hüpoteegiga võib koormata mitut kinnisasja. Sellisel juhul vastutab iga kinnisasi kogu hüpoteegiga tagatud nõude eest.    (1
-1) Ühishüpoteegi suhtes loetakse kinnisasjaks ka kaasomaniku mõtteline osa kinnisasjas.
-(2) Ühishüpoteegi seadmisel tuleb kinnistusraamatus iga koormatava kinnisasja osas ära märkida teised ühishüpoteegiga koormatud kinnisasjad.
-§ 360.  Ühishüpoteegiga tagatud nõude rahuldamine
-(1) Hüpoteegipidajal on õigus nõude täielikule või osalisele rahuldamisele iga ühishüpoteegiga koormatud kinnisasja arvel.
-(2) Hüpoteegipidaja võib hüpoteegi summa jaotada koormatud kinnisasjade vahel, määrates kindlaks, millises ulatuses iga kinnisasi hüpoteegi eest vastutab. Nimetatud juhul kohaldatakse hüpoteegiga koormatud kinnisasja jagamise kohta käivaid sätteid (§ 356).
-§ 361.  Nõude rahuldamine ühe kinnisasja omaniku poolt
-(1) Kui ühishüpoteegiga koormatud kinnisasja omanik rahuldab hüpoteegipidaja nõude, võib ta nõuda tema kinnisasja koormava ühishüpoteegi enda nimele kandmist. Ühishüpoteegid teistel kinnisasjadel tuleb kustutada.
-(2) Kui kinnisasja omanik, kes hüpoteegipidaja nõude rahuldas, võib nõuda teiste ühishüpoteegiga koormatud kinnisasjade omanikelt hüvitist, võib ta ka nõuda hüvitise ulatuses teisi kinnisasju koormavate ühishüpoteekide enda nimele kandmist.
-§ 362.  Omaniku ühishüpoteek
-(1) Kui nõue, mille tagamiseks ühishüpoteek on seatud, ei teki või lõpeb või kui hüpoteegipidaja ühishüpoteegist loobub, võivad ühishüpoteegiga koormatud kinnisasjade omanikud nõuda ühishüpoteegi kandmist kinnistusraamatusse endi nimele ühiselt.
-(2) Käesoleva paragrahvi 1. lõikes nimetatud juhul võib iga ühishüpoteegiga koormatud kinnisasja omanik nõuda, et tema kinnisasja koormatakse omanikuhüpoteegiga võrdeliselt tema kinnisasja väärtusega, kui ei ole kokku lepitud teisiti (§ 356).  2. jagu KOHTULIK HÜPOTEEK
-§ 363.  Kohtuliku hüpoteegi mõiste
-(1) Hagi tagamiseks võib kohus seada haginõude ulatuses hüpoteegi, mis peab olema kinnistusraamatusse kantud kohtuliku hüpoteegina.
-(2) Kohtuliku hüpoteegiga on tagatud kohtulahendi alusel rahuldatud nõue.
-(3) Käesoleva paragrahvi lõigetes 1 ja 2 sätestatut kohaldatakse vastavalt muu seadusega selleks õigustatud ametiisiku määruse alusel kinnisasjale hüpoteegi seadmise korral.
-1. Kohtulik hüpoteek mitmele kinnisasjale  Kui kohtulik hüpoteek seatakse omaniku mitmele kinnisasjale, jagatakse tagatav nõue kinnisasjade vahel võlausaldaja poolt määratud osades.
-§ 364.  Hüpoteegi sätete kohaldamine  Muus osas kohaldatakse kohtulikule hüpoteegile hüpoteegi kohta käivaid sätteid.  9. osa SEADUSE RAKENDAMINE   . peatükk
-§ 365.  Seaduse jõustumine  Käesolev seadus jõustub tema rakendusseaduses ettenähtud korras ja tingimustel. 1 Euroopa Parlamendi ja nõukogu direktiiv 2002/47/EÜ finantstagatiskokkulepete kohta (EÜT L 168, 27.6.2002, lk 43–50), viimati muudetud direktiiviga 2009/44/EÜ (ELT L 146, 10.6.2009, lk 37–43).

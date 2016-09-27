@@ -7,3 +7,9 @@ Remove newline if next does not start with number
 
 sed -n '$!{ 1{x;d}; H}; ${ H;x;s|\n\([^0-9]\)| \1|g;p}' parsed.txt > t.txt
 sed -n '$!{ 1{x;d}; H}; ${ H;x;s|\n\([^0-9|(]| \1|g;p}' parsed.txt > t.txt
+
+
+# TODO:
+
+* Add redips/merge-split
+* Add in place editor

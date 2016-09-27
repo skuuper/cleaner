@@ -7,10 +7,10 @@ use Sabre\Xml\Writer;
 
 class TmxEntry implements XmlSerializable {
 
-    public $language0;
-    public $text0;
-    public $language1;
-    public $text1;
+    public $source_language;
+    public $source_text;
+    public $destination_language;
+    public $destination_text;
 
     public function xmlSerialize(Writer $writer)
     {
