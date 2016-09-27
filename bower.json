@@ -18,6 +18,8 @@
   "dependencies": {
     "bootstrap-filestyle": "^1.2.1",
     "bootstrap": "^3.3.6",
-    "font-awesome": "fontawesome#^4.6.3"
+    "font-awesome": "fontawesome#^4.6.3",
+    "vue": "^1.0.27",
+    "vue-resource": "^1.0.3"
   }
 }
