@@ -120,8 +120,8 @@ class TmxController extends BaseController {
      */
 
     public function get_chunks($request, $response) {
-        $file = 'sample.tmx';
         $file = 'generated.tmx';
+        $file = 'sample.tmx';
         $raw = $this->file->read_file($file);
         $tmx = $this->tmx->parse_split($raw);
 

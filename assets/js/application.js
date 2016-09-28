@@ -87,6 +87,10 @@ new Vue({
 ***/
 
 
+var Unit = function(text) {
+    this.text = text;
+}
+
 
 var demo = new Vue({
     el: '#aligner-editor',
@@ -100,10 +104,16 @@ var demo = new Vue({
     methods: {
         load_tmx: function() {
             this.$http.get('/tmx/get_chunks').then((response) => {
-                this.$set('language0', response.body.language_0);
-                this.$set('language1', response.body.language_1);
+                this.map_items("language0", response.body.language_0);
+                this.map_items("language1", response.body.language_1);
             }, (response) => {
                 console.error("Error: " + response.status);
+            });
+        },
+        map_items: function(variable, list) {
+            var self = this;
+            list.forEach(function(item) {
+                self.$get(variable).push(new Unit(item));
             });
         },
         save: function() {

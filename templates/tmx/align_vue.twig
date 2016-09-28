@@ -16,7 +16,7 @@
                         v-on:click="select(item)"
                         v-on:keyup.enter="split"
                         >
-                        {{ item }}
+                        {{ item.text }}
                     </div>
                     <div class="tools">
                         <i v-on:click="remove('language0', item)" class="fa fa-remove"></i>
@@ -28,7 +28,7 @@
             <div class="col">
                 <div class="item" v-for="item in language1" track-by="$index">
                     <div contenteditable="true" class="contents" v-on:click="select(item)">
-                        {{ item }}
+                        {{ item.text }}
                     </div>
                     <div class="tools">
                         <i v-on:click="remove('language1', item)" class="fa fa-remove"></i>
