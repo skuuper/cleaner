@@ -110,34 +110,7 @@ class TmxController extends BaseController {
 
         $this->file->download($file);
     }
-
-
-    /**
-     * API call to provide chunks
-     * 
-     * @param $request
-     * @param $response
-     */
-
-    public function get_chunks($request, $response) {
-        $file = 'generated.tmx';
-        $file = 'sample.tmx';
-        $raw = $this->file->read_file($file);
-        $tmx = $this->tmx->parse_split($raw);
-
-        $contents = [];
-        foreach ($tmx as $unit) {
-            $contents['language_0'][] = (string)$unit->tuv[0]->seg;
-            $contents['language_1'][] = (string)$unit->tuv[1]->seg;
-        }
-
-        return $response->withJson($contents);
-    }
-
-
-    public function save_chunks($request, $response) {
-        dd( __METHOD__ );
-    }
+    
 
 
     public function align($request, $response) {

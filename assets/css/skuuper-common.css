@@ -1,0 +1,160 @@
+(node) util.print is deprecated. Use console.log instead.
+body {
+  margin: 0;
+  margin-top: 90px;
+}
+footer {
+  height: 190px;
+  width: 100%;
+  padding-top: 30px;
+  background-color: #226179;
+  white-space: nowrap;
+}
+footer ul {
+  padding: 0;
+}
+footer .col-md-3:last-of-type {
+  text-align: right;
+  padding-right: 0;
+  width: 28%;
+}
+footer .col-md-3:last-of-type ul {
+  padding: 0;
+}
+footer a {
+  color: white;
+}
+footer .contacts {
+  color: #ade0f6;
+  text-align: center;
+  margin: 10px 20px;
+  font-size: 85%;
+}
+footer .contacts a {
+  color: #ade0f6;
+}
+footer .contacts span {
+  display: inline-block;
+  margin: 0 12px;
+}
+footer .social {
+  text-align: center;
+}
+footer .social a,
+footer .social i {
+  color: white;
+}
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid #ade0f6;
+}
+.navbar-default {
+  background-color: #ffffff;
+  border-color: transparent;
+  height: 91px;
+  z-index: 10000;
+  border-bottom: 1px solid #ade0f6;
+}
+.navbar-default .navbar-left {
+  margin-left: 40px;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+.navbar-default .navbar-brand {
+  color: #b3b3b3;
+}
+.navbar-default .navbar-nav {
+  margin-top: 20px;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #99cd9a;
+  background: transparent;
+  font-weight: 500;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #b3b3b3;
+}
+.navbar-default .navbar-nav > li > a:focus {
+  color: #236279;
+}
+.navbar-default .navbar-nav > li > a.btn-green {
+  margin-top: 10px;
+  padding: 5px 20px;
+  color: white;
+  background-color: #99cd9a;
+}
+.navbar-default .navbar-nav > li > a.btn-green:hover,
+.navbar-default .navbar-nav > li > a.btn-green:focus,
+.navbar-default .navbar-nav > li > a.btn-green:active {
+  color: #eee;
+  background-color: #99cd9a;
+  text-decoration: none;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus .navbar-nav > li > a.active {
+  color: #236279;
+  text-decoration: underline;
+}
+.navbar-default .navbar-collapse {
+  background: #ffffff;
+  text-align: right;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+.wrapper {
+  min-height: 100%;
+  margin: 90px auto -190px auto;
+  /* the bottom margin is the negative value of the footer's height */
+
+}
+footer,
+.push {
+  height: 190px;
+  /* '.push' must be the same height as 'footer' */
+
+}
+.push {
+  margin-top: 30px;
+}
+@media (max-width: 990px) {
+  .collapse .btn-green {
+    display: none;
+  }
+  .collapse .navbar-left {
+    margin-left: 0;
+  }
+  .header {
+    height: auto !important;
+    min-height: auto !important;
+  }
+  .header .headline {
+    margin-top: 0;
+  }
+  footer {
+    display: none;
+  }
+  .call-to-action {
+    display: none;
+  }
+  .feature-bullets {
+    width: 90vw !important;
+  }
+  .feature-bullets img {
+    display: none;
+  }
+  .feature-bullets .caption {
+    margin-left: 0 !important;
+  }
+}

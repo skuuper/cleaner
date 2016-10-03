@@ -1,7 +1,11 @@
 {% extends 'layouts/app.twig' %}
 
 {% block content %}
-    <h1 class="text-center">Skuuper Cleaner</h1>
+    <h1 class="text-center">Clean Files</h1>
+
+    <div class="call-to-action">
+        Upload a document or paste a link and receive a cleaned text.
+    </div>
 
     <div id="form">
         <div class="content">
@@ -13,14 +17,14 @@
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="url">
             <!-- URL form -->
-            <form method="post" class="form" action="{{ base_uri }}">
+            <form method="post" class="form" action="{{ base_uri }}documents">
                 <div class="col-md-12">
                     <div class="form-group">
                         <label for="url_address">Link address:</label>
                         <input type="text" name="url_address" id="url_address" required="required" value="{{ url }}" class="form-control input-lg">
                     </div>
                     <button type="submit" class="btn btn-lg btn-primary">
-                        <i class='fa fa-arrow-right'></i>
+                        <i class='fa fa-arrow-right'></i> Process link
                     </button>
                 </div>
             </form>
@@ -35,7 +39,7 @@
                         <input type="file" name="upload_file" id="upload_file" data-buttonName="btn-default" data-input="false" class="filestyle">
                     </div>
                     <button type="submit" class="btn btn-lg btn-primary">
-                        <i class='fa fa-upload'></i>
+                        <i class='fa fa-upload'></i> Process file
                     </button>
                 </div>
             </form>
@@ -48,11 +52,6 @@
             <hr><a href="/download/{{ file }}" class="btn btn-success btn-sm"><i class="fa fa-download"></i> Download: {{ file }}</a>
         </div>
     {% endif %}
-
-            <div class="col-md-12 text-center">
-                <hr><a href="/tmx" class="btn btn-primary">Generate TMX</a>
-            </div>
-
         </div>
     </div>
 

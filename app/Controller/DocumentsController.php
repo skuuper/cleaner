@@ -75,7 +75,7 @@ class DocumentsController extends BaseController {
         $data = $request->getParsedBody();
 
         $url = $data['url_address'];
-        $filename = $this->get_file_name($url);
+        $filename = $this->file->get_file_name($url);
 
         $raw_contents = file_get_contents($url);
 

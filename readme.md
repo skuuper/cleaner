@@ -1,15 +1,8 @@
-Text processing
+# Installation
 
-- Remove double empty lines, the remaining lines are paragraphs
-
-
-Remove newline if next does not start with number
-
-sed -n '$!{ 1{x;d}; H}; ${ H;x;s|\n\([^0-9]\)| \1|g;p}' parsed.txt > t.txt
-sed -n '$!{ 1{x;d}; H}; ${ H;x;s|\n\([^0-9|(]| \1|g;p}' parsed.txt > t.txt
-
-
-# TODO:
-
-* Add redips/merge-split
-* Add in place editor
+* Clone the project to the directory you want it to run
+* Run 'composer update' to install PHP dependecies and configure autoloader
+* Run 'bower install' to install Javascript dependenceies
+* Chmod /downloads directory to be writable by web server
+* In case of running the application under subdirectory (generally not recommended for Slim Framework), change the $base_uri variable in index.php
+* If needed change the path for Python API in app/Service/NltkService $this->api_file variable

@@ -1,0 +1,18 @@
+{% extends 'layouts/app.twig' %}
+
+{% block content %}
+<h1>Skuuper TMX Toolkit</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <a href="{{ base_uri }}tmx" class="btn btn-success">Create TMX</a>
+    </div>
+    <div class="col-md-4">
+        <a href="{{ base_uri }}aligner" class="btn btn-success">Align existing TMX</a>
+    </div>
+    <div class="col-md-4">
+        <a href="{{ base_uri }}documents" class="btn btn-primary">Clean files</a>
+    </div>
+</div>
+
+{% endblock %}

@@ -12,13 +12,14 @@
     <link rel="manifest" href="{{ base_uri }}manifest.json">
 
     <title>Skuuper Cleaner</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="{{ base_uri }}bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="{{ base_uri }}bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{ base_uri }}assets/css/application.css">
 </head>
 <body>
-<div class="container">
+{% include "partials/navbar.twig" %}
+<div class="container wrapper">
     {% block content %}{% endblock %}
 </div>
 

@@ -17,14 +17,8 @@ class StaticController extends BaseController {
     }
 
 
-    
-    public function terms($request, $response) {
-        return $this->container->view->render($response, 'terms.twig');
-    }
-    
-    
     public function index($request, $response) {
-        return $this->view->render($response, 'index.twig');
+        return $this->view->render($response, 'static/index.twig');
     }
     
 }
