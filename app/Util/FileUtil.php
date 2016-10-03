@@ -54,10 +54,14 @@ class FileUtil {
      */
 
 
-    public function read_file($filename)  {
+    public function read_file($filename, $extension = '')  {
 
         if (!file_exists($this->dl_path)) {
             dd('Path does not exist: ' . $this->dl_path);
+        }
+
+        if ('' != $extension) {
+            $filename .= '.' . $extension;
         }
 
         $file = strval(str_replace("\0", "", $this->dl_path . $filename));

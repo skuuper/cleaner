@@ -53,6 +53,7 @@ class TmxService {
             array_push($entries, $entry);
         }
 
+
         $dom = new \DOMDocument();
         $rootEl = $dom->createElement('tmx');
         $root = $dom->appendChild($rootEl);
@@ -78,15 +79,39 @@ class TmxService {
 
 
 
-    private function _createTuvNode($dom, $language, $text) {
+    private function _createTuvNode($dom, $language, $text = "") {
         $tuv = $dom->createElement('tuv');
         $tuv->setAttribute('xml:lang', $language);
+
+        $text = (string)$text;
 
         $seg = $dom->createElement('seg');
         $seg->nodeValue = $text;
 
         $tuv->appendChild($seg);
         return $tuv;
+    }
+
+
+    /**
+     * Extract the languages from raw TMX file
+     *
+     * @param $raw
+     * @return array
+     */
+
+    public function get_languages($raw)
+    {
+        $xml = new \SimpleXMLElement($raw);
+        $units = $xml->body->tu[0];
+
+        $unit = $units->tuv[0]['lang'];
+
+        $langs = $xml->xpath('body/tu/tuv[@xml:lang]/@xml:lang');
+        $langs = array_map("strval", $langs);
+
+        $ret = [$langs[0], $langs[1]];
+        return $ret;
     }
 
 }

@@ -114,6 +114,10 @@ class DocumentsController extends BaseController {
 
 
     public function test($request, $response) {
+
+
+        return $this->view->render($response, 'documents/test.twig');
+
         $nltk = new NltkService(1);
         $tmx = new TmxService();
 

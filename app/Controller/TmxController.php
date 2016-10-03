@@ -14,6 +14,7 @@ use App\Util\FileUtil;
 use Exception;
 use Interop\Container\ContainerInterface;
 use App\Service\DocumentProcessorService;
+use App\Service\SessionService;
 
 class TmxController extends BaseController {
 
@@ -34,6 +35,7 @@ class TmxController extends BaseController {
         $this->file = FileUtil::getInstance();
         $this->tika = new SkuuperTikaService();
         $this->processor = new DocumentProcessorService($this->debug);
+        $this->session = new SessionService();
     }
 
 
@@ -66,6 +68,8 @@ class TmxController extends BaseController {
         $source_raw = $files['source_text']->getStream()->getContents();
         $destination_raw = $files['destination_text']->getStream()->getContents();
 
+        
+        
         $source_raw = $this->tika->get_contents_stream($source_raw);
         $destination_raw = $this->tika->get_contents_stream($destination_raw);
 
@@ -83,6 +87,7 @@ class TmxController extends BaseController {
         $filename = 'generated';
         file_put_contents($this->dl_path . $filename . '.tmx', $tmx);
 
+        $this->session->set('filename', $filename );
 
         $raw = $this->file->read_file('generated.tmx');
         $contents = $this->tmx->parse($raw);
@@ -94,7 +99,7 @@ class TmxController extends BaseController {
             'tmx' => $contents
         ];
 
-        return $this->view->render($response, 'tmx/align.twig', $data);
+        return $this->view->render($response, 'tmx/preview.twig', $data);
     }
 
 

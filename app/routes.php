@@ -1,6 +1,6 @@
 <?php
 
-$app->get('/', 'App\Controller\StaticController:index');
+$app->get('/', 'App\Controller\TmxController:index');
 
 $app->get('/documents', 'App\Controller\DocumentsController:index');
 $app->post('/documents', 'App\Controller\DocumentsController:process');
@@ -18,5 +18,6 @@ $app->get('/tmx/test', 'App\Controller\TmxController:test');
 
 $app->get('/aligner', 'App\Controller\AlignerController:index');
 $app->post('/aligner/process', 'App\Controller\AlignerController:process');
+$app->get('/aligner/align', 'App\Controller\AlignerController:align');
 $app->get('/aligner/get_chunks', 'App\Controller\AlignerController:get_chunks');
 $app->post('/aligner/save_chunks', 'App\Controller\AlignerController:save_chunks');

@@ -5,6 +5,7 @@ namespace App\Controller;
 use Interop\Container\ContainerInterface;
 use App\Service\TmxService;
 use App\Util\FileUtil;
+use App\Service\SessionService;
 
 class AlignerController extends BaseController {
 
@@ -16,6 +17,7 @@ class AlignerController extends BaseController {
         parent::__construct($container);
         $this->tmx = new TmxService();
         $this->file = FileUtil::getInstance();
+        $this->session = new SessionService();
     }
 
 
@@ -41,20 +43,27 @@ class AlignerController extends BaseController {
 
         $filename = $this->file->get_file_name($file->getClientFilename());
 
-        if ($this->debug > 0) {
-            file_put_contents($this->dl_path . 'init_' . $filename . '.tmx', $contents);
-        }
-
         file_put_contents($this->dl_path . $filename . '.tmx', $contents);
 
-        $this->Session->set('filename', $filename );
+        $this->session->set('filename', $filename );
 
         $data = [
             'file' => $filename
         ];
 
-        return $this->view->render($response, 'aligner/align_vue.twig', $data);
+        return $this->view->render($response, 'aligner/align.twig', $data);
     }
+
+
+
+    public function align($request, $response) {
+        $filename = $this->session->get('filename');
+        $data = [
+            'file' => $filename
+        ];
+        return $this->view->render($response, 'aligner/align.twig', $data);
+    }
+
 
 
     /**
@@ -65,9 +74,9 @@ class AlignerController extends BaseController {
      */
 
     public function get_chunks($request, $response) {
-        $file = 'generated.tmx';
-        $file = 'sample.tmx';
-        $raw = $this->file->read_file($file);
+        $file = $this->session->get('filename');
+
+        $raw = $this->file->read_file($file, "tmx");
         $tmx = $this->tmx->parse_split($raw);
 
         $contents = [];
@@ -88,15 +97,27 @@ class AlignerController extends BaseController {
      */
 
     public function save_chunks($request, $response) {
+
+        $file = $this->session->get('filename');
+        $raw = $this->file->read_file($file, 'tmx');
+        $languages = $this->tmx->get_languages($raw);
+
         $data = $request->getParsedBody();
-        $source_language = 'et';
-        $destination_language = 'en';
-        $source = $data['language0'];
-        $destination = $data['language1'];
+        $source_language = $languages[0];
+        $destination_language = $languages[1];
+        $l0 = $data['language0'];
+        $l1 = $data['language1'];
+
+        foreach ($l0 as $item) {
+            $source[] = $item['text'];
+        }
+        foreach ($l1 as $item) {
+            $destination[] = $item['text'];
+        }
 
         $tmx = $this->tmx->create($source_language, $destination_language, $source, $destination);
 
-        $filename = 'generated';
+        $filename =  $this->session->get('filename');
         file_put_contents($this->dl_path . $filename . '.tmx', $tmx);
 
         return $response->withJson(['status' => 'ok']);

@@ -1,0 +1,33 @@
+{% extends 'layouts/app.twig' %}
+
+{% block content %}
+    <h1>Preview Generated TMX</h1>
+
+    <div class="call-to-action">
+        Here you can preview the generated TMX file. Download it to upload to CAT tool or align it in aligner.
+    </div>
+
+    {% if file %}
+        <div class="row generated-actions">
+            <div class="col-md-6 text-right">
+                <a href="{{ base_uri }}tmx/download/{{ file }}" class="btn btn-primary btn-sm"><i class="fa fa-download"></i> Download: {{ file }}.tmx</a>
+            </div>
+            <div class="col-md-6 text-left">
+                <a href="{{ base_uri }}aligner/align" class="btn btn-success btn-sm"><i class="fa fa-pencil"></i> Align generated TMX</a>
+            </div>
+        </div>
+    {% endif %}
+
+    <table class="table table-condensed table-bordered" id="tbl-align">
+        <colgroup>
+            <col>
+            <col>
+        </colgroup>
+    {% for x in tmx %}
+        <tr>
+            <td class="col-md-6">{{ x.tuv.0.seg }}</td>
+            <td class="col-md-6">{{ x.tuv.1.seg }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock %}

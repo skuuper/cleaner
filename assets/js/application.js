@@ -14,37 +14,17 @@ $( document ).ready(function() {
 var Unit = function(text) {
     this.text = text;
     this.class = "";
+    this.target = "";
+    this.position = 0;
     this.toggleClass = function(className) {
         if (this.class === className) {
             this.class = "";
         } else {
             this.class = className;
         }
-        console.log("Set class to: " + this.class);
     }
 };
 
-var onkeydown = (function (ev) {
-    var key;
-    var isShift;
-    if (window.event) {
-        key = window.event.keyCode;
-        isShift = !!window.event.shiftKey; // typecast to boolean
-    } else {
-        key = ev.which;
-        isShift = !!ev.shiftKey;
-    }
-    if ( isShift ) {
-        switch (key) {
-            case 16: // ignore shift key
-                break;
-            default:
-                alert(key);
-                // do stuff here?
-                break;
-        }
-    }
-});
 
 Vue.directive('on').keyCodes.shift = 16;
 
@@ -53,24 +33,35 @@ var demo = new Vue({
     data: {
         language0: [],      // List of translation units in source language
         language1: [],      // List of translation units in destination language
-        selected: []        // List of selected translation units
+        selected: [],       // List of selected translation units
+        deleted: []         // List of deleted cells
     },
     ready: function() {
         this.load_tmx();
     },
     methods: {
+        clean_tmx: function() {
+            this.$set('language0', []);
+            this.$set('language1', []);
+        },
         load_tmx: function() {
-            this.$http.get('/tmx/get_chunks').then((response) => {
+            this.$http.get('/aligner/get_chunks').then((response) => {
                 this.map_items("language0", response.body.language_0);
                 this.map_items("language1", response.body.language_1);
             }, (response) => {
                 console.error("Error: " + response.status);
             });
         },
-        map_items: function(variable, list) {
+        map_items: function(target, list) {
             var self = this;
+            var k = 0;
+            var unit;
             list.forEach(function(item) {
-                self.$get(variable).push(new Unit(item));
+                unit = new Unit(item);
+                unit.index = k;
+                unit.target = target;
+                self.$get(target).push(unit);
+                k++;
             });
         },
         save: function() {
@@ -79,56 +70,74 @@ var demo = new Vue({
                 'language1': this.$get('language1')
             };
 
-            console.log(data);
-
-            this.$http.post('/tmx/save_chunks', data).then((response) => {
-                console.log('data has been saved');
+            this.$http.post('/aligner/save_chunks', data).then((response) => {
+                this.clean_tmx();
                 this.load_tmx();
             }, (response) => {
                 console.error('Error saving TMX data with response code ' + response.code);
             });
         },
-        remove: function(target, item) {
+        remove: function(target, item, index) {
+            item.position = index;
+            item.target = target;
+            this.$get("deleted").push(item);
             this.$get(target).$remove(item);
         },
         duplicate: function(target, item, index) {
-            console.log("Duplicating element at index: " + index);
             this.$get(target).splice(index, 0, item);
         },
         select: function(target, item, event) {
-            //TODO: Check if SHIFT is pressed
             if (item === undefined) {
                 console.error("Item is not defined");
                 return;
             }
-
             if (event.shiftKey) {
                 item.toggleClass("active");
                 this.$get("selected").push(item);
-                console.log(this.$get("selected"));
             }
         },
-        merge: function() {
-            console.log("Merging selected items");
-            //TODO: Merge the selected cells
+        merge: function(target) {
+
+            var self = this;
+
+            var first = this.$get("selected")[0];
+            first.toggleClass("selected");
+            self.$get("selected").$remove(first);
+
+            this.$get("selected").forEach(function(item) {
+                first.text += " " + item.text;
+                item.toggleClass('active');
+                console.log(target);
+                self.$get(target).$remove(item);
+            });
             this.$set('selected', []);
         },
+        split: function(item, event) {
+            var lines = event.target.innerText.trim().split("\n");
+            item.text = lines[0];
+            event.target.innerText = item.text;
 
-        //Split the item at the place of newline
-        split: function(item) {
-            console.log("Enter pressed");
-            console.log(item.text);
-        },
+            if (lines.length < 2) {
+                return;
+            }
+            var created = new Unit(lines[1]);
+            created.index = item.index - 1;
+            created.target = item.target;
+            this.$get(item.target).splice(item.index + 1, 0, created);
 
-        shift: function() {
-            console.log("Shift pressed");
+            //TODO: Hack, need to investigate why the aligner does not update
+            this.$get(item.target)[(item.index + 1)].innerText = lines[1];
         },
         clear: function() {
             this.$get("selected").forEach(function(item) {
                 item.toggleClass("active");
             });
             this.$set("selected", []);
-
+        },
+        undo: function() {
+            var item = this.$get("deleted").pop();
+            console.log(item);
+            this.$get(item.target).splice(item.index, 0, item);
         }
     }
 });

@@ -257,7 +257,7 @@ div[id=form] .content .tab-content .tab-pane {
   display: inline-block;
   position: fixed;
   right: 24px;
-  top: 24px;
+  top: 100px;
   background-color: white;
   text-align: left;
   padding: 8px;
@@ -271,9 +271,12 @@ div[id=form] .content .tab-content .tab-pane {
   clear: both;
   display: block;
 }
-#aligner-editor .row {
-  display: flex;
-  flex-direction: row;
+#aligner-editor .toolbox {
+  text-align: center;
+}
+#aligner-editor .toolbox button {
+  margin: 0 auto 8px 0;
+  width: 100%;
 }
 #aligner-editor .col {
   width: 50%;
@@ -282,9 +285,6 @@ div[id=form] .content .tab-content .tab-pane {
   margin: 0;
   padding: 1em;
   border-bottom: 1px solid #9e9e9e;
-  flex: 1;
-  display: flex;
-  width: 100%;
 }
 #aligner-editor .item:nth-of-type(odd) {
   background: #fcfcfc;
@@ -293,7 +293,7 @@ div[id=form] .content .tab-content .tab-pane {
   background-color: #ade0f6;
 }
 #aligner-editor .item :not(.active):hover {
-  background-color: rgba(97, 255, 61, 0.27);
+  background-color: transparent;
 }
 #aligner-editor .item:hover .tools {
   visibility: visible;
@@ -318,6 +318,9 @@ div[id=form] .content .tab-content .tab-pane {
   display: block;
   margin-bottom: 1em;
 }
+#aligner-editor .item .tools :hover {
+  background-color: transparent;
+}
 [contenteditable="true"]:active,
 [contenteditable="true"]:focus {
   border: none;
@@ -336,4 +339,24 @@ div[id=form] .content .tab-content .tab-pane {
   font-size: 24px;
   z-index: 30;
   margin: -80px auto 0;
+}
+.generated-actions {
+  margin: 20px 0;
+}
+/** table **/
+.rtable {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 3em 0;
+  padding: 0;
+}
+.rtable-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  overflow: hidden;
+  list-style: none;
+}
+.rtable-2cols > .rtable-cell {
+  width: 50%;
 }
