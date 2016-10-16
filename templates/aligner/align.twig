@@ -8,6 +8,7 @@
     <div id="aligner-editor">
         <div class="toolbox text-center">
             <button v-on:click="save" class="btn btn-success">Save TMX</button>
+            <button v-if="!selected.length" class="btn btn-sm btn-default">Shift+mouseclick<br /> to select chunk</button>
             <button v-if="selected.length" v-on:click="clear" class="btn btn-sm btn-default">Clear selection ({{selected.length}})</button>
             <button v-if="deleted.length" v-on:click="undo" class="btn btn-sm btn-default">Undo last delete</button>
         </div>
@@ -22,9 +23,9 @@
                     <div class="tools">
                         <i v-on:click="remove('language0', item, index)" class="fa fa-remove" title="Remove chunk"></i>
                         <i v-on:click="duplicate('language0', item, $index)" class="fa fa-copy" title="Duplicate chunk"></i>
-                        <i v-on:click="merge('language0', item, $index)" class="fa fa-compress" title="Merge chunks"></i>
+                        <!--i v-on:click="merge('language0', item, $index)" class="fa fa-compress" title="Merge chunks"></i-->
                         <i v-on:click="split('language0', item, $index)" class="fa fa-scissors" title="Split chunks"></i>
-                        <i v-if="selected.length" v-on:click="merge('language0')" class="fa fa-adjust" title="Merge chunks"></i>
+                        <i v-if="selected.length" v-on:click="merge('language0')" class="fa fa-compress" title="Merge chunks"></i>
                     </div>
                 </div>
 
@@ -37,9 +38,9 @@
                     <div class="tools">
                         <i v-on:click="remove('language1', item, index)" class="fa fa-remove" title="Remove chunk"></i>
                         <i v-on:click="duplicate('language1', item, $index)" class="fa fa-copy" title="Duplicate chunk"></i>
-                        <i v-on:click="merge('language1', item, $index)" class="fa fa-compress" title="Merge chunks"></i>
+                        <!--i v-on:click="merge('language1', item, $index)" class="fa fa-compress" title="Merge chunks"></i-->
                         <i v-on:click="split('language1', item, $index)" class="fa fa-scissors" title="Split chunks"></i>
-                        <i v-if="selected.length" v-on:click="merge('language1')" class="fa fa-adjust" title="Merge chunks"></i>
+                        <i v-if="selected.length" v-on:click="merge('language1')" class="fa fa-compress" title="Merge chunks"></i>
                     </div>
                 </div>
         </div>

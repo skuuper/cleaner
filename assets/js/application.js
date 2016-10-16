@@ -96,9 +96,9 @@ var demo = new Vue({
                 this.$get("selected").push(item);
             }
         },
-        merge: function(target) {
-
+        merge: function(target, item, index) {
             var self = this;
+            console.log(this.$get("selected"));
 
             var first = this.$get("selected")[0];
             first.toggleClass("selected");
@@ -112,10 +112,17 @@ var demo = new Vue({
             });
             this.$set('selected', []);
         },
-        split: function(item, event) {
-            var lines = event.target.innerText.trim().split("\n");
+        split: function(target, item, index) {
+//            item.position = index;
+//            item.target = target;
+            if (!item.text || item.text.length < 1)
+              return;
+            console.log(item.text);
+            //this.$get(target).splice(index, 0, item);
+            var lines = item.text.trim().split("\n");
+            console.log(lines);
             item.text = lines[0];
-            event.target.innerText = item.text;
+            //event.target.innerText = item.text;
 
             if (lines.length < 2) {
                 return;

@@ -360,3 +360,6 @@ div[id=form] .content .tab-content .tab-pane {
 .rtable-2cols > .rtable-cell {
   width: 50%;
 }
+.selected {
+  background-color: #AAFFEE;
+}
