@@ -4,3 +4,5 @@
 /logs/*
 !/logs/README.md
 composer.lock
+composer.phar
+composer-install.php
