@@ -269,7 +269,7 @@ div[id=form] .content .tab-content .tab-pane {
 }
 .toolbox button {
   clear: both;
-  display: block;
+  display: inline-block;
 }
 #aligner-editor .toolbox {
   text-align: center;
@@ -315,8 +315,8 @@ div[id=form] .content .tab-content .tab-pane {
   border: 2px solid black;
   border-radius: 100%;
   padding: .3em;
-  display: block;
-  margin-bottom: 1em;
+  display: inline-block;
+  margin-left: 3Pt;
 }
 #aligner-editor .item .tools :hover {
   background-color: transparent;
@@ -359,7 +359,4 @@ div[id=form] .content .tab-content .tab-pane {
 }
 .rtable-2cols > .rtable-cell {
   width: 50%;
-}
-.selected {
-  background-color: #AAFFEE;
 }

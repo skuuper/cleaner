@@ -21,11 +21,10 @@
                         {{ item.text }}
                     </div>
                     <div class="tools">
-                        <i v-on:click="remove('language0', item, index)" class="fa fa-remove" title="Remove chunk"></i>
                         <i v-on:click="duplicate('language0', item, $index)" class="fa fa-copy" title="Duplicate chunk"></i>
-                        <!--i v-on:click="merge('language0', item, $index)" class="fa fa-compress" title="Merge chunks"></i-->
                         <i v-on:click="split('language0', item, $index)" class="fa fa-scissors" title="Split chunks"></i>
                         <i v-if="selected.length" v-on:click="merge('language0')" class="fa fa-compress" title="Merge chunks"></i>
+                        <i v-on:click="remove('language0', item, index)" class="fa fa-remove" title="Remove chunk"></i>
                     </div>
                 </div>
 
@@ -36,11 +35,10 @@
                         {{ item.text }}
                     </div>
                     <div class="tools">
-                        <i v-on:click="remove('language1', item, index)" class="fa fa-remove" title="Remove chunk"></i>
                         <i v-on:click="duplicate('language1', item, $index)" class="fa fa-copy" title="Duplicate chunk"></i>
-                        <!--i v-on:click="merge('language1', item, $index)" class="fa fa-compress" title="Merge chunks"></i-->
                         <i v-on:click="split('language1', item, $index)" class="fa fa-scissors" title="Split chunks"></i>
                         <i v-if="selected.length" v-on:click="merge('language1')" class="fa fa-compress" title="Merge chunks"></i>
+                        <i v-on:click="remove('language1', item, index)" class="fa fa-remove" title="Remove chunk"></i>
                     </div>
                 </div>
         </div>
