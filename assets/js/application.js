@@ -118,8 +118,14 @@ var demo = new Vue({
                 return;
             }
             if (event.shiftKey) {
+                if (item.class == "active") {
+                  var index = this.$get("selected").indexOf(item);
+                  if (index > -1) {
+                    this.$get("selected").splice(index, 1);
+                  }
+                } else
+                    this.$get("selected").push(item);
                 item.toggleClass("active");
-                this.$get("selected").push(item);
             }
         },
         merge: function(target, item, index) {
