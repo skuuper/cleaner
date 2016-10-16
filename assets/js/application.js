@@ -1,3 +1,27 @@
+function getCaretCharacterOffsetWithin(element) {
+    var caretOffset = 0;
+    var doc = element.ownerDocument || element.document;
+    var win = doc.defaultView || doc.parentWindow;
+    var sel;
+    if (typeof win.getSelection != "undefined") {
+        sel = win.getSelection();
+        if (sel.rangeCount > 0) {
+            var range = win.getSelection().getRangeAt(0);
+            var preCaretRange = range.cloneRange();
+            preCaretRange.selectNodeContents(element);
+            preCaretRange.setEnd(range.endContainer, range.endOffset);
+            caretOffset = preCaretRange.toString().length;
+        }
+    } else if ( (sel = doc.selection) && sel.type != "Control") {
+        var textRange = sel.createRange();
+        var preCaretTextRange = doc.body.createTextRange();
+        preCaretTextRange.moveToElementText(element);
+        preCaretTextRange.setEndPoint("EndToEnd", textRange);
+        caretOffset = preCaretTextRange.text.length;
+    }
+    return caretOffset;
+}
+
 $( document ).ready(function() {
 
     var hash = window.location.hash;
@@ -23,7 +47,7 @@ var Unit = function(text) {
             this.class = className;
         }
     }
-};
+};	// function Unit
 
 
 Vue.directive('on').keyCodes.shift = 16;
@@ -34,7 +58,9 @@ var demo = new Vue({
         language0: [],      // List of translation units in source language
         language1: [],      // List of translation units in destination language
         selected: [],       // List of selected translation units
-        deleted: []         // List of deleted cells
+        deleted: [],        // List of deleted cells
+        split_pos: -1,      // Position of a cursor within a chunk for splitting before catching mouse click on a button
+        split_item: -1      // Item with cursor
     },
     ready: function() {
         this.load_tmx();
@@ -98,7 +124,6 @@ var demo = new Vue({
         },
         merge: function(target, item, index) {
             var self = this;
-            console.log(this.$get("selected"));
 
             var first = this.$get("selected")[0];
             first.toggleClass("selected");
@@ -112,28 +137,31 @@ var demo = new Vue({
             });
             this.$set('selected', []);
         },
-        split: function(target, item, index) {
-//            item.position = index;
-//            item.target = target;
+        splitHover: function(target, item, index, lang) {
             if (!item.text || item.text.length < 1)
               return;
-            console.log(item.text);
+            var el = target.target.parentElement.parentElement.children[0];
+            var pos = getCaretCharacterOffsetWithin(el) - 25;	// Magic number defined by layout length
+            this.$set("split_pos", pos);
+            this.$set("split_item", index);
+        },
+        split: function(target, item, index) {
+            if (!item.text || item.text.length < 1)
+              return;
+            var pos = this.$get("split_pos");
+            if (this.$get("split_item") != index || pos < 1 || pos > item.text.length)
+               return;
+            //console.log("Breaking at " + pos + " out of " + item.text.length);
+            var text = item.text.trim()
             //this.$get(target).splice(index, 0, item);
-            var lines = item.text.trim().split("\n");
-            console.log(lines);
-            item.text = lines[0];
-            //event.target.innerText = item.text;
-
-            if (lines.length < 2) {
-                return;
-            }
-            var created = new Unit(lines[1]);
-            created.index = item.index - 1;
+            item.text = text.substring(0, pos);
+            var created = new Unit(text.substring(pos));
+            created.index = item.index + 1;
             created.target = item.target;
             this.$get(item.target).splice(item.index + 1, 0, created);
 
             //TODO: Hack, need to investigate why the aligner does not update
-            this.$get(item.target)[(item.index + 1)].innerText = lines[1];
+            //this.$get(item.target)[(item.index + 1)].innerText = lines[1];
         },
         clear: function() {
             this.$get("selected").forEach(function(item) {
