@@ -112,6 +112,10 @@ var demo = new Vue({
         duplicate: function(target, item, index) {
             this.$get(target).splice(index, 0, item);
         },
+        empty: function(target, item, index) {
+            this.$get(target).splice(index, 0, jQuery.extend(true, {}, item));
+            item.text = " ";
+        },
         select: function(target, item, event) {
             if (item === undefined) {
                 console.error("Item is not defined");
