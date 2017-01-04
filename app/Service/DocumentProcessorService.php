@@ -52,10 +52,13 @@ class DocumentProcessorService {
     }
 
 
-
     public function process($input) {
         $paragraphs = $this->process_array($input);
-        $output = implode($this->paragraph_separator, $paragraphs);
+        $para_new = array();
+        foreach ($paragraphs as &$para) {
+            $para_new = array_merge($para_new, preg_split('/(?<=[.?!])\s+(?=[A-ZА-Я])/', $para));
+        }
+        $output = implode($this->paragraph_separator, $para_new);
         return $output;
     }
 

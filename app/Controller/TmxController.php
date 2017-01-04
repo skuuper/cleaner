@@ -48,7 +48,6 @@ class TmxController extends BaseController {
         return $this->view->render($response, 'tmx/index.twig', $data);
     }
 
-
     /**
      * @param $request
      * @param $response
