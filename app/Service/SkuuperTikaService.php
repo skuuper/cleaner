@@ -20,7 +20,7 @@ class SkuuperTikaService {
 
 
     public function get_contents_stream($character_stream) {
-        $uri = 'https://market.skuuper.com/tika-server/tika';
+        $uri = 'https://skuuper.com/tika-server/tika';
         $response = \Httpful\Request::put($uri)
             ->addHeader('Accept', 'text/plain')
             ->authenticateWith('tika-client', 'Tika!83Jprv5@0')

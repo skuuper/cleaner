@@ -67,8 +67,6 @@ class TmxController extends BaseController {
         $source_raw = $files['source_text']->getStream()->getContents();
         $destination_raw = $files['destination_text']->getStream()->getContents();
 
-        
-        
         $source_raw = $this->tika->get_contents_stream($source_raw);
         $destination_raw = $this->tika->get_contents_stream($destination_raw);
 
