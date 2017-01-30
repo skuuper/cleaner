@@ -52,6 +52,15 @@ class TmxService {
 
             array_push($entries, $entry);
         }
+        for ($i = sizeof($source); $i < sizeof($destination); $i++)
+        {
+            $entry = new TmxEntry();
+            $entry->source_language = $source_language;
+            $entry->destination_language = $destination_language;
+            $entry->source_text = false;
+            $entry->destination_text = $destination[$i];
+            array_push($entries, $entry);
+        }
 
 
         $dom = new \DOMDocument();
