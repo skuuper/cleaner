@@ -1,3 +1,11 @@
+if(typeof(String.prototype.trim) === "undefined")
+{
+    String.prototype.trim = function() 
+    {
+        return String(this).replace(/^\s+|\s+$/g, '');
+    };
+}
+
 function getCaretCharacterOffsetWithin(element) {
     var caretOffset = 0;
     var doc = element.ownerDocument || element.document;
@@ -10,7 +18,8 @@ function getCaretCharacterOffsetWithin(element) {
             var preCaretRange = range.cloneRange();
             preCaretRange.selectNodeContents(element);
             preCaretRange.setEnd(range.endContainer, range.endOffset);
-            caretOffset = preCaretRange.toString().length;
+            console.log(preCaretRange.toString().trim());
+            caretOffset = preCaretRange.toString().trim().length;
         }
     } else if ( (sel = doc.selection) && sel.type != "Control") {
         var textRange = sel.createRange();
@@ -140,7 +149,8 @@ var demo = new Vue({
             self.$get("selected").$remove(first);
 
             this.$get("selected").forEach(function(item) {
-                first.text += " " + item.text;
+                spacer = first.text.trim().endsWith(".") ? " " : "";
+                first.text += spacer + item.text;
                 item.toggleClass('active');
                 console.log(target);
                 self.$get(target).$remove(item);
@@ -151,7 +161,7 @@ var demo = new Vue({
             if (!item.text || item.text.length < 1)
               return;
             var el = target.target.parentElement.parentElement.children[0];
-            var pos = getCaretCharacterOffsetWithin(el) - 25;	// Magic number defined by layout length
+            var pos = getCaretCharacterOffsetWithin(el);	// Magic number defined by layout length
             this.$set("split_pos", pos);
             this.$set("split_item", index);
         },
