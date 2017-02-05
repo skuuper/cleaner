@@ -41,6 +41,9 @@ class DocumentProcessorService {
         if (count($paragraphs) <= 1) {
             $paragraphs = array_map('trim', explode("\n", $input));
         }
+        //foreach ($paragraphs as $line) {
+        //  print("DEBUG: ".$line);
+        //}
 
 
         foreach ($paragraphs as &$paragraph) {
