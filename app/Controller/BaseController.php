@@ -38,7 +38,9 @@ class BaseController {
             'fr' => 'French',
             'de' => 'German',
             'ru' => 'Russian',
-            'es' => 'Spanish'
+            'es' => 'Spanish',
+            'zh' => 'Chinese',
+            'fi' => 'Finnish'
         ];
     }
 }

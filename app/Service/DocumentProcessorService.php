@@ -59,7 +59,11 @@ class DocumentProcessorService {
         $paragraphs = $this->process_array($input);
         $para_new = array();
         foreach ($paragraphs as &$para) {
-            $para_new = array_merge($para_new, preg_split('/(?<=[.?!])\s+(?=[A-ZА-Я])/', $para));
+            if (strpos($para, '。') !== false) {
+              $para = str_replace("　", "", $para);
+              $para_new = array_merge($para_new, preg_split('/(?<=。)/', $para));
+            } else
+              $para_new = array_merge($para_new, preg_split('/(?<=[.?!])\s+(?=[A-ZА-Я])/', $para));
         }
         $output = implode($this->paragraph_separator, $para_new);
         return $output;
