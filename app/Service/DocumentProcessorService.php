@@ -31,6 +31,7 @@ class DocumentProcessorService {
 
 
     public function process_array($input) {
+        $input = str_replace("\r", "\n", str_replace("\r\n", "\n", $input));
         $input = $this->remove_between_brackets($input);
         $input = $this->sections_to_newlines($input);
         $input = $this->remove_double_newlines($input);
@@ -42,7 +43,7 @@ class DocumentProcessorService {
             $paragraphs = array_map('trim', explode("\n", $input));
         }
         //foreach ($paragraphs as $line) {
-        //  print("DEBUG: ".$line);
+        //  print("DEBUG: ".str_replace("\n", "_____", $line));
         //}
 
 
@@ -63,7 +64,7 @@ class DocumentProcessorService {
               $para = str_replace("　", "", $para);
               $para_new = array_merge($para_new, preg_split('/(?<=。)/', $para));
             } else
-              $para_new = array_merge($para_new, preg_split('/(?<=[.?!])\s+(?=[A-ZА-Я])/', $para));
+              $para_new = array_merge($para_new, preg_split('/(?<=[.?!])\s+(?=[A-ZА-Я])/u', $para));
         }
         $output = implode($this->paragraph_separator, $para_new);
         return $output;
