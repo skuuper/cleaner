@@ -87,7 +87,7 @@ class TmxService {
         $new_src = array();
         $new_dst = array();
         foreach ($out as $line) {
-          $align = split("\t", $line);
+          $align = explode("\t", $line);
           //print($align[0]." => ".$align[1]."<br />\n");
           for ($i = $sp + 1; $i < $align[0]; $i++) {
             array_push($new_src, $source[$i]);
