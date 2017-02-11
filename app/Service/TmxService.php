@@ -91,6 +91,7 @@ class TmxService {
         $new_dst = array();
         foreach ($out as $line) {
           $align = explode("\t", $line);
+          if ($sp > $align[0] || $dp > $align[1]) $this->write_file('err_'.time().".txt", array_merge($source, $destination));
           //print($align[0]." => ".$align[1]."<br />\n");
           for ($i = $sp + 1; $i < $align[0]; $i++) {
             array_push($new_src, $source[$i]);
@@ -101,7 +102,6 @@ class TmxService {
             array_push($new_src, "");
           }
           //~ TODO: detect duplicate?
-          //~ TODO: log issues with reversed items
           array_push($new_src, $source[$align[0]]);
           array_push($new_dst, $destination[$align[1]]);
           $dp = $align[1];
