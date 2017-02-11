@@ -24,6 +24,10 @@ use App\Model\TmxEntry;
 class TmxService {
 
     public function __construct() {
+      $this->hunalign_path = "thirdparty/aligner/";
+      $this->hunalign_bin = "hunalign";
+      if (PHP_OS == 'Darwin')
+        $this->hunalign_bin .= "_mac";
     }
 
 
@@ -38,10 +42,84 @@ class TmxService {
         return $this->parse($raw_xml);
     }
 
+    function rrmdir($dir) { 
+       if (is_dir($dir)) { 
+         $objects = scandir($dir); 
+         foreach ($objects as $object) { 
+           if ($object != "." && $object != "..") { 
+             if (is_dir($dir."/".$object))
+               rrmdir($dir."/".$object);
+             else
+               unlink($dir."/".$object); 
+          }
+        }
+        rmdir($dir); 
+      } elseif (is_file($dir))
+        unlink($dir);
+    }
 
+    function write_file($fp, $contents) {
+      $myfile = fopen($fp, "w");
+      fwrite($myfile, implode("\n", $contents));
+      fclose($myfile);
+    }
+
+    public function align($source_language, $destination_language, &$source, &$destination)
+    {
+        $tempfile=tempnam(sys_get_temp_dir(),'');
+        //print("Using temp dir: ".$tempfile."<br>\n");
+        if (file_exists($tempfile)) { $this->rrmdir($tempfile); }
+        mkdir($tempfile);
+        $st = $tempfile.'/'.$source_language.'.txt';
+        $dt = $tempfile.'/'.$destination_language.'.txt';
+        $this->write_file($st, $source);
+        $this->write_file($dt, $destination);
+        if (!is_dir($tempfile)) { die('Error creating temporary dir!'); }
+        $out = array();
+        $ret = -1;
+        $dicfile = $this->hunalign_path."data/".$source_language.'-'.$destination_language.".dic";
+        //print("Calling ".$this->hunalign_path.$this->hunalign_bin." ".$dicfile." ".$st." ".$dt);
+        exec($this->hunalign_path.$this->hunalign_bin." ".$dicfile." ".$st." ".$dt, $out, $ret);
+        if ($ret != 0) die("Error calling hunalign!<br />\n");
+        //print_r($out);
+        $sp = 0;
+        $dp = 0;
+        $new_src = array();
+        $new_dst = array();
+        foreach ($out as $line) {
+          $align = split("\t", $line);
+          //print($align[0]." => ".$align[1]."<br />\n");
+          for ($i = $sp + 1; $i < $align[0]; $i++) {
+            array_push($new_src, $source[$i]);
+            array_push($new_dst, "");
+          }
+          for ($i = $dp + 1; $i < $align[1]; $i++) {
+            array_push($new_dst, $destination[$i]);
+            array_push($new_src, "");
+          }
+          //~ TODO: detect duplicate?
+          //~ TODO: log issues with reversed items
+          array_push($new_src, $source[$align[0]]);
+          array_push($new_dst, $destination[$align[1]]);
+          $dp = $align[1];
+          $sp = $align[0];
+        }
+        for ($i = $sp + 1; $i < sizeof($source); $i++) {
+            array_push($new_src, $source[$i]);
+            array_push($new_dst, "");
+        }
+        for ($i = $dp + 1; $i < sizeof($destination); $i++) {
+            array_push($new_dst, $destination[$i]);
+            array_push($new_src, "");
+        }
+        if (file_exists($tempfile)) { $this->rrmdir($tempfile); }
+        $source = $new_src;
+        $destination = $new_dst;
+    }
 
     public function create($source_language, $destination_language, $source, $destination)
     {
+        $this->align($source_language, $destination_language, $source, $destination);
         $entries = [];
         foreach ($source as $index => $item) {
             $entry = new TmxEntry();
