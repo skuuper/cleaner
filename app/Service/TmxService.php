@@ -80,7 +80,10 @@ class TmxService {
         $dicfile = $this->hunalign_path."data/".$source_language.'-'.$destination_language.".dic";
         //print("Calling ".$this->hunalign_path.$this->hunalign_bin." ".$dicfile." ".$st." ".$dt);
         exec($this->hunalign_path.$this->hunalign_bin." ".$dicfile." ".$st." ".$dt, $out, $ret);
-        if ($ret != 0) die("Error calling hunalign!<br />\n");
+        if ($ret != 0) {
+          //die("Error calling hunalign!<br />\n");
+          return;
+        }
         //print_r($out);
         $sp = 0;
         $dp = 0;
