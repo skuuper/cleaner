@@ -6,3 +6,4 @@
 composer.lock
 composer.phar
 composer-install.php
+node-modules/
