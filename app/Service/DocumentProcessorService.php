@@ -46,11 +46,11 @@ class DocumentProcessorService {
         //  print("DEBUG: ".str_replace("\n", "_____", $line));
         //}
 
-
         foreach ($paragraphs as &$paragraph) {
             $paragraph = $this->remove_newline_if_starts_with_character($paragraph);
             $paragraph = $this->cleanup_whitespace($paragraph);
         }
+
         $paragraphs = array_filter($paragraphs);
         return $paragraphs;
     }
@@ -126,7 +126,7 @@ class DocumentProcessorService {
         $p = explode('*', $input);
         foreach ($p as &$item) {
             $item = str_replace("\n", " ", $item);
-            $input = $this->remove_double_spaces($input);
+            $item = $this->remove_double_spaces($item);
             $item = $this->cleanup_whitespace($item);
         }
         $p = array_filter($p);
@@ -139,7 +139,7 @@ class DocumentProcessorService {
     {
         //TODO: Remove the line if it does not contain any alphanumeric characters
         $paragraph = trim($paragraph);
-        if (mb_strlen($paragraph) <= 6) {
+        if (mb_strlen($paragraph) <= 2) {
             return false;
         }
         return $paragraph;
