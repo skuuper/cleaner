@@ -64,6 +64,32 @@ class TmxService {
       fclose($myfile);
     }
 
+    public function spread(&$src, &$dst, $source, $destination) {
+      $i = 0;
+      $so = array();
+      $do = array();
+      if (sizeof($src) != sizeof($dst)) die("Different size of aligned array!");
+      while ($i < sizeof($src)) {
+        if ($i > 0 && $src[$i] == $src[$i - 1]) 
+          $do[sizeof($do) - 1] .= ' '.$destination[$dst[$i]];
+        elseif ($i > 0 && $dst[$i] == $dst[$i - 1])
+          $so[sizeof($so) - 1] .= ' '.$source[$src[$i]];
+        elseif ($dst[$i] == sizeof($destination))
+          $so[sizeof($so) - 1] .= ' '.$source[$src[$i]];
+        elseif ($src[$i] == sizeof($source))
+          $do[sizeof($do) - 1] .= ' '.$destination[$dst[$i]];
+        else {
+          array_push($so, $source[$src[$i]]);
+          array_push($do, $destination[$dst[$i]]);
+        }
+        $i++;
+      }
+      //if (strlen(end($so)) < 1) array_pop($so);
+      //if (strlen(end($do)) < 1) array_pop($do);
+      $src = $so;
+      $dst = $do;
+    }
+
     public function align($source_language, $destination_language, &$source, &$destination)
     {
         $tempfile=tempnam(sys_get_temp_dir(),'');
@@ -89,33 +115,36 @@ class TmxService {
         $dp = 0;
         $new_src = array();
         $new_dst = array();
+        array_push($source, "");
+        array_push($destination, "");
         foreach ($out as $line) {
           $align = explode("\t", $line);
           if ($sp > $align[0] || $dp > $align[1]) $this->write_file('err_'.time().".txt", array_merge($source, $destination));
           //print($align[0]." => ".$align[1]."<br />\n");
           for ($i = $sp + 1; $i < $align[0]; $i++) {
-            array_push($new_src, $source[$i]);
-            array_push($new_dst, "");
+            array_push($new_src, $i);
+            array_push($new_dst, sizeof($destination));
           }
           for ($i = $dp + 1; $i < $align[1]; $i++) {
-            array_push($new_dst, $destination[$i]);
-            array_push($new_src, "");
+            array_push($new_dst, $i);
+            array_push($new_src, sizeof($source));
           }
           //~ TODO: detect duplicate?
-          array_push($new_src, $source[$align[0]]);
-          array_push($new_dst, $destination[$align[1]]);
+          array_push($new_src, $align[0]);
+          array_push($new_dst, $align[1]);
           $dp = $align[1];
           $sp = $align[0];
         }
-        for ($i = $sp + 1; $i < sizeof($source); $i++) {
-            array_push($new_src, $source[$i]);
-            array_push($new_dst, "");
+        for ($i = $sp + 1; $i < sizeof($source) - 1; $i++) {
+            array_push($new_src, $i);
+            array_push($new_dst, sizeof($destination));
         }
-        for ($i = $dp + 1; $i < sizeof($destination); $i++) {
-            array_push($new_dst, $destination[$i]);
-            array_push($new_src, "");
+        for ($i = $dp + 1; $i < sizeof($destination) - 1; $i++) {
+            array_push($new_dst, $i);
+            array_push($new_src, sizeof($source));
         }
         if (file_exists($tempfile)) { $this->rrmdir($tempfile); }
+        $this->spread($new_src, $new_dst, $source, $destination);
         $source = $new_src;
         $destination = $new_dst;
     }
