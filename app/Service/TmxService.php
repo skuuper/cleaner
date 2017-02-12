@@ -84,8 +84,8 @@ class TmxService {
         }
         $i++;
       }
-      //if (strlen(end($so)) < 1) array_pop($so);
-      //if (strlen(end($do)) < 1) array_pop($do);
+      if (strlen(end($so)) < 1) array_pop($so);
+      if (strlen(end($do)) < 1) array_pop($do);
       $src = $so;
       $dst = $do;
     }
