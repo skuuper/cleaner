@@ -98,6 +98,8 @@ class TmxService {
         mkdir($tempfile);
         $st = $tempfile.'/'.$source_language.'.txt';
         $dt = $tempfile.'/'.$destination_language.'.txt';
+        //foreach ($source as $k => &$line) if (strlen(trim($line)) < 1) unset($source[$k]);
+        //foreach ($destination as $k => &$line) if (strlen(trim($line)) < 1) unset($destination[$k]);
         $this->write_file($st, $source);
         $this->write_file($dt, $destination);
         if (!is_dir($tempfile)) { die('Error creating temporary dir!'); }
