@@ -63,7 +63,7 @@ class DocumentProcessorService {
             if (strpos($para, '。') !== false || strpos($para, '？') !== false || strpos($para, '！') !== false) {
               $para = str_replace("　", "", $para);
               // $para_new = array_merge($para_new, preg_split('/(?<=。)/', $para));
-              $para_new = array_merge($para_new, preg_split('/(?<=[.?!。？！])[〞」》"』]?\s?(?=[A-ZА-Я-–\x{3400}-\x{4DB5}\x{4E00}-\x{9FCC}\x{FA0E}-\x{FA29}])/u', $para));
+              $para_new = array_merge($para_new, preg_split('/(?<=[.?!。？！])[〞」》"』]?\s?(?=[A-ZА-Я-–〝\x{3400}-\x{4DB5}\x{4E00}-\x{9FCC}\x{FA0E}-\x{FA29}])/u', $para));
             } else
               $para_new = array_merge($para_new, preg_split('/(?<=[.?!])["“„»]?\s+(?=[A-ZА-Я-–])/u', $para));
         }

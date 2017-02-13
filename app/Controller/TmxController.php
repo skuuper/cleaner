@@ -81,12 +81,13 @@ class TmxController extends BaseController {
 
         $tmx = $this->tmx->create($source_language, $destination_language, $source, $destination);
 
-        $filename = 'generated';
+        date_default_timezone_set('UTC');
+        $filename = str_replace("/", "_", str_replace(".", "_", $files['source_text']->getClientFilename())).'_'.date('Ymd_Hi');
         file_put_contents($this->dl_path . $filename . '.tmx', $tmx);
 
-        $this->session->set('filename', $filename );
+        $this->session->set('filename', $filename.'.tmx' );
 
-        $raw = $this->file->read_file('generated.tmx');
+        $raw = $this->file->read_file($filename.'.tmx');
         $contents = $this->tmx->parse($raw);
 
         $data = [
@@ -112,14 +113,11 @@ class TmxController extends BaseController {
 
         $this->file->download($file);
     }
-    
+
 
 
     public function align($request, $response) {
-
-        $file = 'generated.tmx';
-        # $file = 'sample.tmx';
-
+        $file = $args['filename'];
 
         $raw = $this->file->read_file($file);
         $contents = $this->tmx->parse($raw);
