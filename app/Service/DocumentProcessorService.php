@@ -28,6 +28,8 @@ class DocumentProcessorService {
         $this->tmx = new TmxService();
         $this->ldc_path = "thirdparty/ldc-cn-seg/";
         $this->ldc_bin = "mansegment-utf8.pl";
+        $this->lf_path = "thirdparty/sentence_splitter/";
+        $this->lf_bin = 'split-sentences.perl';
     }
 
     function write_file($fp, $contents) {
@@ -52,7 +54,7 @@ class DocumentProcessorService {
         unlink($dir);
     }
 
-    public function tokenize_ldc($text) {
+    function run_pl($text, $cmd) {
         $tempfile=tempnam(sys_get_temp_dir(),'');
         if (file_exists($tempfile)) { $this->rrmdir($tempfile); }
         mkdir($tempfile);
@@ -63,9 +65,8 @@ class DocumentProcessorService {
         if (!is_dir($tempfile)) { die('Error creating temporary dir!'); }
         $out = array();
         $ret = -1;
-        $dicfile = $this->ldc_path."Mandarin.fre.utf8";
         //print("Calling ".$this->hunalign_path.$this->hunalign_bin." ".$dicfile." ".$st." ".$dt);
-        exec("perl ".$this->ldc_path.$this->ldc_bin." ".$dicfile." < ".$st, $out, $ret);
+        exec("perl ".$cmd." < ".$st, $out, $ret);
         if ($ret != 0) {
           //die("Error calling hunalign!<br />\n");
           print_r($out);
@@ -74,6 +75,17 @@ class DocumentProcessorService {
         if (file_exists($tempfile)) { $this->rrmdir($tempfile); }
         //print_r($out);
         return implode("\n", $out);
+    }
+
+    public function tokenize_ldc($text) {
+        $dicfile = $this->ldc_path."Mandarin.fre.utf8";
+        $cmd = $this->ldc_path.$this->ldc_bin." ".$dicfile;
+        return $this->run_pl($text, $cmd);
+    }
+
+    public function process_LF($text, $lang='en') {
+        $cmd = $this->lf_path.$this->lf_bin.' -l '.$lang.' ';
+        return $this->run_pl($text, $cmd);
     }
 
 
@@ -103,9 +115,9 @@ class DocumentProcessorService {
     }
 
 
-    public function process($input, $bUseLF=false) {
+    public function process($input, $bUseLF=false, $lang='en') {
         if ($bUseLF) {
-          return $input;
+          return $this->process_LF($input, $lang);
         }
         $paragraphs = $this->process_array($input);
         $para_new = array();

@@ -81,8 +81,8 @@ class TmxController extends BaseController {
           else
             $destination_raw = $this->processor->tokenize_ldc($destination_raw);
 
-        $source = explode("\n", $this->processor->process($source_raw, $bUseLF));
-        $destination = explode("\n", $this->processor->process($destination_raw, $bUseLF));
+        $source = explode("\n", $this->processor->process($source_raw, $bUseLF, $source_language));
+        $destination = explode("\n", $this->processor->process($destination_raw, $bUseLF, $destination_language));
 
 
         $tmx = $this->tmx->create($source_language, $destination_language, $source, $destination);
