@@ -13,7 +13,7 @@
         <div class="row">
             <div class="form-group col-md-3">
                 <label>Source language: {{ request.source_language }}</label>
-                <select name="source_language" class="form-control" required="required">
+                <select name="source_language" class="form-control" id="l1" required="required">
                     <option value="">---</option>
                     {% for code, language in languages %}
                         <option value="{{ code }}" {% if code == req.source_language %}selected="selected"{% endif %}>{{ language }}</option>
@@ -28,7 +28,7 @@
         <div class="row">
             <div class="form-group col-md-3">
                 <label>Destination language:</label>
-                <select name="destination_language" class="form-control" required="required">
+                <select name="destination_language" id="l2" class="form-control" required="required">
                     <option value="">---</option>
                     {% for code, language in languages %}
                         <option value="{{ code }}" {% if code == req.destination_language %}selected="selected"{% endif %}>{{ language }}</option>
@@ -42,6 +42,19 @@
         </div>
     </div>
         <div class="row">
+        <center>
+        <table cellpadding="0" cellspacing="0" border="0">
+          <tr>
+                <td style="width: 15Pt;"><input type="checkbox" name="use_lf_aligner" id="lf" disabled></td>
+                <td>Use alternative chunking from LF Aligner </td>
+          </tr><tr>
+                <td><input type="checkbox" name="use_ldc_chunker" id="ldc" disabled></td>
+                <td>Chunk Chinese sentences into words with LDC Segmenter </td>
+          </tr>
+        </table> </br>
+        </center>
+        </div>
+        <div class="row">
             <div class="text-center">
                 <button type="submit" class="btn btn-lg btn-primary">
                     Create TMX
@@ -49,7 +62,19 @@
             </div>
         </div>
     </form>
-
+    <script>
+      function lhandler() {
+        $("select").change(function(e) {
+          //console.log($("#l1").value != 'zh');  //e.target.value);
+          if ($("#l1").val() != 'zh' && $("#l2").val() != 'zh')
+            $("input#ldc").attr('disabled', "disabled");
+          else $("input#ldc").removeAttr('disabled');
+        });
+        //$("input#ldc").removeAttr('disabled');
+        $("input#lf").removeAttr('disabled');
+      }
+      $(document).ready(function() {lhandler();});
+    </script>
     {% if file %}
         <div class="col-md-12 text-center">
             <hr><a href="/tmx/download/{{ file }}" class="btn btn-success btn-sm"><i class="fa fa-download"></i> Download: {{ file }}.tmx</a>

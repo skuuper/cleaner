@@ -26,7 +26,54 @@ class DocumentProcessorService {
         }
 
         $this->tmx = new TmxService();
+        $this->ldc_path = "thirdparty/ldc-cn-seg/";
+        $this->ldc_bin = "mansegment-utf8.pl";
+    }
 
+    function write_file($fp, $contents) {
+      $myfile = fopen($fp, "w");
+      fwrite($myfile, $contents);
+      fclose($myfile);
+    }
+
+    function rrmdir($dir) {
+       if (is_dir($dir)) {
+         $objects = scandir($dir);
+         foreach ($objects as $object) {
+           if ($object != "." && $object != "..") {
+             if (is_dir($dir."/".$object))
+               rrmdir($dir."/".$object);
+             else
+               unlink($dir."/".$object);
+          }
+        }
+        rmdir($dir);
+      } elseif (is_file($dir))
+        unlink($dir);
+    }
+
+    public function tokenize_ldc($text) {
+        $tempfile=tempnam(sys_get_temp_dir(),'');
+        if (file_exists($tempfile)) { $this->rrmdir($tempfile); }
+        mkdir($tempfile);
+        $st = $tempfile.'/segmentation.txt';
+        //foreach ($source as $k => &$line) if (strlen(trim($line)) < 1) unset($source[$k]);
+        //foreach ($destination as $k => &$line) if (strlen(trim($line)) < 1) unset($destination[$k]);
+        $this->write_file($st, $text);
+        if (!is_dir($tempfile)) { die('Error creating temporary dir!'); }
+        $out = array();
+        $ret = -1;
+        $dicfile = $this->ldc_path."Mandarin.fre.utf8";
+        //print("Calling ".$this->hunalign_path.$this->hunalign_bin." ".$dicfile." ".$st." ".$dt);
+        exec("perl ".$this->ldc_path.$this->ldc_bin." ".$dicfile." < ".$st, $out, $ret);
+        if ($ret != 0) {
+          //die("Error calling hunalign!<br />\n");
+          print_r($out);
+          return;
+        }
+        if (file_exists($tempfile)) { $this->rrmdir($tempfile); }
+        //print_r($out);
+        return implode("\n", $out);
     }
 
 
@@ -56,7 +103,10 @@ class DocumentProcessorService {
     }
 
 
-    public function process($input) {
+    public function process($input, $bUseLF=false) {
+        if ($bUseLF) {
+          return $input;
+        }
         $paragraphs = $this->process_array($input);
         $para_new = array();
         foreach ($paragraphs as &$para) {

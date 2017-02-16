@@ -16,13 +16,6 @@
     <link rel="stylesheet" type="text/css" href="{{ base_uri }}bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="{{ base_uri }}bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="{{ base_uri }}assets/css/application.css">
-</head>
-<body>
-{% include "partials/navbar.twig" %}
-<div class="container wrapper">
-    {% block content %}{% endblock %}
-</div>
-
 <script type="text/javascript" src="{{ base_uri }}bower_components/jquery/dist/jquery.js"></script>
 <script type="text/javascript" src="{{ base_uri }}bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="{{ base_uri }}bower_components/bootstrap-filestyle/src/bootstrap-filestyle.min.js"></script>
@@ -33,6 +26,13 @@
 <script type="text/javascript" src="{{ base_uri }}bower_components/vue-resource/dist/vue-resource.min.js"></script>
 <script type="text/javascript" src="{{ base_uri }}assets/js/vue-tables.min.js"></script>
 <script type="text/javascript" src="{{ base_uri }}assets/js/application.js"></script>
+</head>
+<body>
+{% include "partials/navbar.twig" %}
+<div class="container wrapper">
+    {% block content %}{% endblock %}
+</div>
+
 
 </body>
 </html>
