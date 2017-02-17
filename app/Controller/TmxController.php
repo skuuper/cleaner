@@ -91,7 +91,7 @@ class TmxController extends BaseController {
         $filename = str_replace("/", "_", str_replace(".", "_", $files['source_text']->getClientFilename())).'_'.date('Ymd_Hi');
         file_put_contents($this->dl_path . $filename . '.tmx', $tmx);
 
-        $this->session->set('filename', $filename.'.tmx' );
+        $this->session->set('filename', $filename );
 
         $raw = $this->file->read_file($filename.'.tmx');
         $contents = $this->tmx->parse($raw);
