@@ -38,15 +38,22 @@ A table with results of automatic alignment appears on the new page. The left co
 The resulting alignment can be downloaded as a TMX file without editing by clicking on the blue "Download% SourceLanguageFileName\_Date\_Time%.tmx" button. In case you would like to edit the alignment, press the green **"Align generated TMX"** button. A new web page will open.
 
 ![Aligning process](http://cleaner.skuuper.com/assets/img/tutorial_align.png "Aligning process")
-![Hovering menu](http://cleaner.skuuper.com/assets/img/tutorial_menu.png "Hover menu")
+3. This is how **Aligner editor** looks like. It's the same double-column interface allowing to make edits. Hovering a mouse over a chunk invokes a menu in the lower right corner.
 
-![Add chunk button](http://cleaner.skuuper.com/assets/img/tutorial_btn_add.png "Add Chunk below button")
-![Duplicate chunk button](http://cleaner.skuuper.com/assets/img/tutorial_btn_dupe.png "Duplicate button")
-![Split chunk button](http://cleaner.skuuper.com/assets/img/tutorial_btn_split.png "Split chunk button")
-![Delete chunk button](http://cleaner.skuuper.com/assets/img/tutorial_btn_delete.png "Delete a chunk")
-![Merge button](http://cleaner.skuuper.com/assets/img/tutorial_btn_merge.png "Merge chunks")
+The content is editable.
+There are four icons there:
+** ![Add chunk button](http://cleaner.skuuper.com/assets/img/tutorial_btn_add.png "Add Chunk below button") - append an empty chunk below
+** ![Duplicate chunk button](http://cleaner.skuuper.com/assets/img/tutorial_btn_dupe.png "Duplicate button") - duplicate current chunk and append it to the current one
+** ![Split chunk button](http://cleaner.skuuper.com/assets/img/tutorial_btn_split.png "Split chunk button") - split current chunk at the cursor position
+** ![Delete chunk button](http://cleaner.skuuper.com/assets/img/tutorial_btn_delete.png "Delete a chunk") - delete selected chunk
 
+There is also *merging mode*. 
+First, you have to select chunks by clicking the _text_ of the chunk (not the white area) with a mouse pointer with `Shift` pressed. Selection order is important: if you select Chunk2 and Chunk1, you will have a resulting text "Chunk2_text Chunk1_text".
+Then, click the ![Merge button](http://cleaner.skuuper.com/assets/img/tutorial_btn_merge.png "Merge chunks"), a fifth icon appearing in the hover menu when at least one chunk is selected.
+You can deselect by clicking on the text in the chunk in the same way (one chunk at a time) or by clicking "Clear selection" in the upper right corner of the page.
 ![Merging chunks](http://cleaner.skuuper.com/assets/img/tutorial_merge.png "Merging chunks")
+
+**Attention!** The "Merge chunks" icon also appears in menu for chunks not included in the selection (for moth language). If it is pressed outside the selection area, merging is not performed correctly, resulting in crazy result or misplaced output text. Thus, click "Merge" button within selection only.
 ![Wrong merging process](http://cleaner.skuuper.com/assets/img/tutorial_nomerge.png "Do not do like that!")
 
 ![Save the TMX](http://cleaner.skuuper.com/assets/img/tutorial_save_current.png "Saves the document at server")

@@ -13,7 +13,6 @@
             <button v-if="deleted.length" v-on:click="undo" class="btn btn-sm btn-default">Undo last delete</button>
         </div>
         <div class="rtable rtable-2cols">
-
                 <div class="rtable-cell item {{ item.class }}" v-for="item in language0" :style="{'order': $index}" track-by="$index">
                     <div contenteditable="true" class="contents"
                         v-on:click="select('language0', item, $event)"
@@ -28,8 +27,7 @@
                         <i v-on:click="remove('language0', item, index)" class="fa fa-remove" title="Remove chunk"></i>
                     </div>
                 </div>
-
-               <div class="rtable-cell item {{ item.class }}" v-for="item in language1" v-bind:style="{'order': $index}" track-by="$index">
+               <div class="rtable-cell item item2 {{ item.class }}" v-for="item in language1" v-bind:style="{'order': $index}" track-by="$index">
                     <div contenteditable="true" class="contents"
                         v-on:click="select('language1', item, $event)"
                         v-on:keyup.enter="split(item, $event)">
