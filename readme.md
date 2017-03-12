@@ -29,11 +29,13 @@ The [tool](http://cleaner.skuuper.com) opens at TMX Creator page. You will ned t
 1. To begin work on alignment, select a pair of languages in the "Source language" and "Destination language" drop-down menus. After that click the "Select file" button on the right of each language to upload source files. In the window that appears, select the file in the appropriate file on your computer. After uploading, the file name should appear to the right of the "Select file".
 If you miss language selection, the system will show a small popup message and won't allow you to continue.
 There are two additional options:
-* **Use alternative chunking from LF Aligner**: If you want to invoke chunking (paragraph to sentence splitting) process from LF Aligner instead of finely tuned Skuuper process. It's in test  mode and can be useful for alignment comparison.
-* **Chunk Chinese sentences into words with LDC Segmenter**: Break a Chinese text into words by invoking LDC Mandarin Segmenter. It will put spaces between sequences of characters recognized as words. If no words are detected, all the characters will be separated. It slightly increases Chinese alignment accuracy.
+** *Use alternative chunking from LF Aligner*: If you want to invoke chunking (paragraph to sentence splitting) process from LF Aligner instead of finely tuned Skuuper process. It's in test  mode and can be useful for alignment comparison.
+** *Chunk Chinese sentences into words with LDC Segmenter*: Break a Chinese text into words by invoking LDC Mandarin Segmenter. It will put spaces between sequences of characters recognized as words. If no words are detected, all the characters will be separated. It slightly increases Chinese alignment accuracy.
 
-Then click **"Create TMX"** button.
+2. Then click **"Create TMX"** button.
 ![Opening documents](http://cleaner.skuuper.com/assets/img/tutorial_open.png "Opening documents")
+A table with results of automatic alignment appears on the new page. The left column contains chunks from the *Source language* text, the right column shows the Destination language text. Each line corresponds to a pair of chunks.
+The resulting alignment can be downloaded as a TMX file without editing by clicking on the blue "Download% SourceLanguageFileName\_Date\_Time%.tmx" button. In case you would like to edit the alignment, press the green **"Align generated TMX"** button. A new web page will open.
 
 ![Aligning process](http://cleaner.skuuper.com/assets/img/tutorial_align.png "Aligning process")
 ![Hovering menu](http://cleaner.skuuper.com/assets/img/tutorial_menu.png "Hover menu")
