@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b71e97e7a8741146ef09282ad2fcfa04",
-    "content-hash": "7cb772634ae73fafd9ae56f3fd8969fa",
+    "hash": "0f51e4c48b6354831afe2abf9734a0be",
+    "content-hash": "2c4edcc5442850ff201b0cefb4983f02",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -33,6 +33,57 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "time": "2014-12-30 15:22:37"
+        },
+        {
+            "name": "davidepastore/slim-markdown-view",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DavidePastore/Slim-Markdown-View.git",
+                "reference": "d70a62959ad6efbd5f6437613e75feac89bc680e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DavidePastore/Slim-Markdown-View/zipball/d70a62959ad6efbd5f6437613e75feac89bc680e",
+                "reference": "d70a62959ad6efbd5f6437613e75feac89bc680e",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "^1.6",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0",
+                "scrutinizer/ocular": "~1.1",
+                "slim/slim": "^3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DavidePastore\\Slim\\Views\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Davide Pastore",
+                    "email": "pasdavide@gmail.com"
+                }
+            ],
+            "description": "Render PHP view scripts into a PSR-7 Response object.",
+            "keywords": [
+                "framework",
+                "markdown",
+                "md",
+                "renderer",
+                "slim",
+                "template",
+                "view"
+            ],
+            "time": "2016-08-12 19:20:56"
         },
         {
             "name": "doctrine/inflector",
@@ -410,6 +461,48 @@
                 "library"
             ],
             "time": "2016-07-24 01:33:39"
+        },
+        {
+            "name": "erusev/parsedown",
+            "version": "1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown.git",
+                "reference": "20ff8bbb57205368b4b42d094642a3e52dac85fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/20ff8bbb57205368b4b42d094642a3e52dac85fb",
+                "reference": "20ff8bbb57205368b4b42d094642a3e52dac85fb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Parsedown": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "Parser for Markdown.",
+            "homepage": "http://parsedown.org",
+            "keywords": [
+                "markdown",
+                "parser"
+            ],
+            "time": "2016-11-02 15:56:58"
         },
         {
             "name": "guzzlehttp/guzzle",

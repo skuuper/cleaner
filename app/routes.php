@@ -2,6 +2,8 @@
 
 $app->get('/', 'App\Controller\TmxController:index');
 
+$app->get('/manual', 'App\Controller\StaticController:md');
+
 $app->get('/documents', 'App\Controller\DocumentsController:index');
 $app->post('/documents', 'App\Controller\DocumentsController:process');
 $app->post('/process_file', 'App\Controller\DocumentsController:process_file');

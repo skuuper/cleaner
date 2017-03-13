@@ -5,6 +5,7 @@ require_once dirname( __FILE__ ) . '/config.php';
 
 use Psr\Http\Message\RequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
+use \DavidePastore\Slim\Views\MarkdownRenderer;
 
 function debug($data = []) {
     echo '<pre>'; print_r($data); echo '</pre>';
@@ -61,7 +62,8 @@ $container['data'] = function($container) use($data) {
 };
 
 $app = new \Slim\App($container);
-
+$container = $app->getContainer();
+$container['renderer'] = new MarkdownRenderer("./templates");
 
 $app->add(new \Slim\Middleware\HttpBasicAuthentication([
     "path" => ['/admin', '/testers'],
@@ -83,7 +85,9 @@ $app->add(function (Request $request, Response $response, callable $next) {
     return $next($request, $response);
 });
 
-
+$app->get('/hello', function ($request, $response) {
+    return $this->renderer->render($response, "/manual/readme.md");
+});
 
 require __DIR__ . '/app/routes.php';
 
