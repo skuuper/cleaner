@@ -131,6 +131,11 @@ var demo = new Vue({
                 return;
             }
             if (event.shiftKey) {
+                if (this.$get("selected").length > 0) {
+                  if (item.target != this.$get("selected")[0].target) {
+                    return;
+                  }
+                }
                 if (item.class == "active") {
                   var index = this.$get("selected").indexOf(item);
                   if (index > -1) {
