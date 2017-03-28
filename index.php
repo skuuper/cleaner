@@ -85,7 +85,7 @@ $app->add(function (Request $request, Response $response, callable $next) {
     return $next($request, $response);
 });
 
-$app->get('/hello', function ($request, $response) {
+$app->get('/manual', function ($request, $response) {
     return $this->renderer->render($response, "/manual/readme.md");
 });
 

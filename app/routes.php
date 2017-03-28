@@ -2,7 +2,7 @@
 
 $app->get('/', 'App\Controller\TmxController:index');
 
-$app->get('/manual', 'App\Controller\StaticController:md');
+$app->get('/manuals', 'App\Controller\StaticController:index');
 
 $app->get('/documents', 'App\Controller\DocumentsController:index');
 $app->post('/documents', 'App\Controller\DocumentsController:process');

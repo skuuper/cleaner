@@ -18,7 +18,7 @@ class StaticController extends BaseController {
 
 
     public function index($request, $response) {
-        return $this->view->render($response, 'static/index.twig');
+        return $this->view->render($response, 'manual/readme.md');
     }
     
 }
