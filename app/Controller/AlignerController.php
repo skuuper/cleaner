@@ -115,7 +115,7 @@ class AlignerController extends BaseController {
             $destination[] = $item['text'];
         }
 
-        $tmx = $this->tmx->create($source_language, $destination_language, $source, $destination);
+        $tmx = $this->tmx->create($source_language, $destination_language, $source, $destination, false);
 
         $filename =  $this->session->get('filename');
         file_put_contents($this->dl_path . $filename . '.tmx', $tmx);

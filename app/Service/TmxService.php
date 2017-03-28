@@ -151,9 +151,10 @@ class TmxService {
         $destination = $new_dst;
     }
 
-    public function create($source_language, $destination_language, $source, $destination)
+    public function create($source_language, $destination_language, $source, $destination, $bAlign=true)
     {
-        $this->align($source_language, $destination_language, $source, $destination);
+        if ($bAlign)
+          $this->align($source_language, $destination_language, $source, $destination);
         $entries = [];
         foreach ($source as $index => $item) {
             $entry = new TmxEntry();
