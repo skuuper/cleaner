@@ -26,7 +26,7 @@
                     </div>
                 </div>
                <div class="rtable-cell item item2 {{ item.class }}" v-for="item in language1" v-bind:style="{'order': $index}" track-by="$index" v-on:click="select('language1', item, $event)">
-                    <div class="contents" contenteditable="true"  @input="update" v-on:mouseover="uHover(item)">
+                    <div class="contents" contenteditable="true"  @input="update" @mouseover="uHover(item)" @focusout="uHout(item)">
                         {{ item.text }}
                     </div>
                     <div class="tools">

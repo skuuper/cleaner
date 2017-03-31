@@ -70,7 +70,8 @@ var demo = new Vue({
         deleted: [],        // List of deleted cells
         split_pos: -1,      // Position of a cursor within a chunk for splitting before catching mouse click on a button
         split_item: -1,     // Item with cursor
-        cur_item: -1,	    // Current item edited
+        cur_item: -1,       // Current item edited
+        cur_text: ""        // New current item text
     },
     ready: function() {
         this.load_tmx();
@@ -171,13 +172,20 @@ var demo = new Vue({
             this.$set("split_pos", pos);
             this.$set("split_item", index);
         },
+        uHout: function(it) {
+            item = this.$get("cur_item");
+            if (item != it)
+              return;
+            txt = this.$get("cur_text");
+            if (item.text != txt && txt.length > 0)
+              item.text = txt;
+            this.$set("cur_text", "");
+        },
         uHover: function(item) {
             this.$set("cur_item", item);
         },
         update: function (e) {
-            item = this.$get("cur_item");
-            //console.log(item.text);
-            item.text = e.target.innerText;
+            this.$set("cur_text", e.target.innerText);
         },
         split: function(target, item, index) {
             if (!item.text || item.text.length < 1)
@@ -186,8 +194,8 @@ var demo = new Vue({
             if (this.$get("split_item") != index || pos < 1 || pos > item.text.length)
                return;
             var text = item.text.trim();
-            console.log(text);
-            console.log(this.$get(item.target)[index].text);
+            //console.log(text);
+            //console.log(this.$get(item.target)[index].text);
             item.text = text.substring(0, pos);
             var created = new Unit(text.substring(pos));
             created.index = item.index + 1;
