@@ -69,7 +69,8 @@ var demo = new Vue({
         selected: [],       // List of selected translation units
         deleted: [],        // List of deleted cells
         split_pos: -1,      // Position of a cursor within a chunk for splitting before catching mouse click on a button
-        split_item: -1      // Item with cursor
+        split_item: -1,     // Item with cursor
+        cur_item: -1,	    // Current item edited
     },
     ready: function() {
         this.load_tmx();
@@ -170,26 +171,28 @@ var demo = new Vue({
             this.$set("split_pos", pos);
             this.$set("split_item", index);
         },
+        uHover: function(item) {
+            this.$set("cur_item", item);
+        },
+        update: function (e) {
+            item = this.$get("cur_item");
+            //console.log(item.text);
+            item.text = e.target.innerText;
+        },
         split: function(target, item, index) {
             if (!item.text || item.text.length < 1)
               return;
             var pos = this.$get("split_pos");
             if (this.$get("split_item") != index || pos < 1 || pos > item.text.length)
                return;
-            //console.log("Breaking at " + pos + " out of " + item.text.length);
-            var text = item.text.trim()
-            //this.$get(target).splice(index, 0, item);
+            var text = item.text.trim();
+            console.log(text);
+            console.log(this.$get(item.target)[index].text);
             item.text = text.substring(0, pos);
             var created = new Unit(text.substring(pos));
             created.index = item.index + 1;
             created.target = item.target;
-            //console.log(item);
-            //console.log("Inserting at " + index);
-            //console.log(this.$get(item.target));
             this.$get(item.target).splice(index + 1, 0, created);
-
-            //TODO: Hack, need to investigate why the aligner does not update
-            //this.$get(item.target)[(item.index + 1)].innerText = lines[1];
         },
         clear: function() {
             this.$get("selected").forEach(function(item) {
