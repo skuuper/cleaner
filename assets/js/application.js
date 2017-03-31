@@ -18,7 +18,7 @@ function getCaretCharacterOffsetWithin(element) {
             var preCaretRange = range.cloneRange();
             preCaretRange.selectNodeContents(element);
             preCaretRange.setEnd(range.endContainer, range.endOffset);
-            console.log(preCaretRange.toString().trim());
+            //console.log(preCaretRange.toString().trim());
             caretOffset = preCaretRange.toString().trim().length;
         }
     } else if ( (sel = doc.selection) && sel.type != "Control") {
@@ -157,7 +157,7 @@ var demo = new Vue({
                 spacer = first.text.trim().endsWith(".") ? " " : "";
                 first.text += spacer + item.text;
                 item.toggleClass('active');
-                console.log(target);
+                //console.log(target);
                 self.$get(target).$remove(item);
             });
             this.$set('selected', []);
@@ -183,7 +183,10 @@ var demo = new Vue({
             var created = new Unit(text.substring(pos));
             created.index = item.index + 1;
             created.target = item.target;
-            this.$get(item.target).splice(item.index + 1, 0, created);
+            //console.log(item);
+            //console.log("Inserting at " + index);
+            //console.log(this.$get(item.target));
+            this.$get(item.target).splice(index + 1, 0, created);
 
             //TODO: Hack, need to investigate why the aligner does not update
             //this.$get(item.target)[(item.index + 1)].innerText = lines[1];
@@ -196,7 +199,7 @@ var demo = new Vue({
         },
         undo: function() {
             var item = this.$get("deleted").pop();
-            console.log(item);
+            //console.log(item);
             this.$get(item.target).splice(item.index, 0, item);
         }
     }
