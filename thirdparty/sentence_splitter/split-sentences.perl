@@ -1,13 +1,15 @@
 #!/usr/bin/perl -w
 
-# Based on Preprocessor written by Philipp Koehn
+use utf8;
 
+# Based on Preprocessor written by Philipp Koehn
 binmode(STDIN, ":utf8");
 binmode(STDOUT, ":utf8");
 binmode(STDERR, ":utf8");
 
 use FindBin qw($Bin);
 use strict;
+#use feature 'unicode_strings';
 
 my $mydir = "$Bin/nonbreaking_prefixes";
 
@@ -107,6 +109,9 @@ sub preprocess {
 		
 	# add breaks for sentences that end with some sort of punctuation are followed by a sentence starter punctuation and upper case
 	$text =~ s/([?!\.]) +([\'\"\(\[\¿\¡\p{IsPi}]+[\ ]*[\p{IsUpper}])/$1\n$2/g;
+	
+	# Add breaks for CJK
+	$text =~ s/([。？！”〞」》』]+)([^。？！”〞」》』])/$1\n$2/ug;
 	
 	# special punctuation cases are covered. Check all remaining periods.
 	my $word;
