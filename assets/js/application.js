@@ -115,10 +115,19 @@ var demo = new Vue({
             });
         },
         remove: function(target, item, index) {
-            item.position = index;
-            item.target = target;
-            this.$get("deleted").push(item);
-            this.$get(target).$remove(item);
+            //~ Determining the real position
+            var ind = item.index;
+            for (i = 0; i < this.$get("language0").length; i++) 
+              if (this.$get("language0")[i].index == item.index) 
+                ind = i;
+            item0 = this.$get("language0")[ind];
+            item0.target = "language0";
+            item1 = this.$get("language1")[ind];
+            item1.target = "language1";
+            this.$get("deleted").push(item0);
+            this.$get("deleted").push(item1);
+            this.$get("language0").$remove(item0);
+            this.$get("language1").$remove(item1);
         },
         duplicate: function(target, item, index) {
             this.$get(target).splice(index, 0, item);
@@ -209,6 +218,9 @@ var demo = new Vue({
             this.$set("selected", []);
         },
         undo: function() {
+            var item = this.$get("deleted").pop();
+            //console.log(item);
+            this.$get(item.target).splice(item.index, 0, item);
             var item = this.$get("deleted").pop();
             //console.log(item);
             this.$get(item.target).splice(item.index, 0, item);

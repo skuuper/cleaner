@@ -85,6 +85,7 @@ class DocumentProcessorService {
 
     public function process_LF($text, $lang='en') {
         $cmd = $this->lf_path.$this->lf_bin.' -l '.$lang.' ';
+        //print($cmd);
         return $this->run_pl($text, $cmd);
     }
 

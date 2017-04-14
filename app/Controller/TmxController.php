@@ -55,11 +55,13 @@ class TmxController extends BaseController {
      */
     public function process($request, $response) {
         $data = $request->getParsedBody();
+        //print_r($data);
         $source_language = $data['source_language'];
         $destination_language = $data['destination_language'];
         $files = $request->getUploadedFiles();
         $bUseLF = $data['use_lf_aligner'] == 'on' || $data['use_lf_aligner'] == 'true' || $data['use_lf_aligner'] == '1';
         $bUseLDC = $data['use_ldc_chunker'] == 'on' || $data['use_ldc_chunker'] == 'true' || $data['use_ldc_chunker'] == '1';
+        //print($bUseLF);
 
         //TODO: Handle missing files with someting different than exceptions
         if (empty($files['source_text'])) {
@@ -72,8 +74,10 @@ class TmxController extends BaseController {
         $source_raw = $files['source_text']->getStream()->getContents();
         $destination_raw = $files['destination_text']->getStream()->getContents();
 
+        //print($destination_raw);
         $source_raw = $this->tika->get_contents_stream($source_raw);
         $destination_raw = $this->tika->get_contents_stream($destination_raw);
+        //print($destination_raw);
 
         if ($bUseLDC)
           if ($source_language == 'zh')
@@ -83,7 +87,7 @@ class TmxController extends BaseController {
 
         $source = explode("\n", $this->processor->process($source_raw, $bUseLF, $source_language));
         $destination = explode("\n", $this->processor->process($destination_raw, $bUseLF, $destination_language));
-
+        //print($destination_raw);
 
         $tmx = $this->tmx->create($source_language, $destination_language, $source, $destination);
 
