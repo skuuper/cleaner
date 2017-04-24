@@ -31,29 +31,60 @@ function getCaretCharacterOffsetWithin(element) {
     return caretOffset;
 }
 
+function cleanTable1(vue) {
+  var el = vue.$get("language0").length;
+  if (el.text.length < 2) {
+    console.log("Removing spacer");
+    item1 = vue.$get("language0")[el - 1];
+    vue.$get("language0").$remove(item1);
+  }
+}
+
+function cleanTable(vue) {
+  for (t = 0; t <= 1; t++) {
+    var target = 'language' + t;
+    for (var el = vue.$get(target).length - 1; el > 0; el--)
+      if (vue.$get(target)[el].text == '  ') {
+        console.log("Removing spacer in " + target);
+        vue.$get(target).$remove(vue.$get(target)[el]);
+     }
+  }
+}
+
+function addSpacer(vue, target) {
+    var end = vue.$get(target).length - 1;
+    var item = vue.$get(target)[end];
+    vue.$get(target).splice(end, 0, jQuery.extend(true, {}, item));
+    item.text = "  ";
+    item.target = target;
+    console.log("Adding spacer");
+}
+
 function alignTable(vue) {
   var el = vue.$get("language0").length;
-  console.log("Found " + el + " elements");
-  var item = vue.$get("language0")[el - 1];
-  if (el % 2 != 0) {
-    vue.$get('language0').splice(el - 1, 0, jQuery.extend(true, {}, item));
-    item.text = " ";
-    console.log("Adding spacer");
-  }
-  else
-    if (vue.$get("language0")[el - 1].text.length < 2) {
-        console.log("Removing spacer");
-        item1 = this.$get("language0")[el - 1];
-        vue.$get("language0").$remove(item1);
-    }
-
+  var el1 = vue.$get("language1").length;
+  for (i = el; i < el1; i++) 
+    addSpacer(vue, 'language0');
+  for (i = el1; i < el; i++) 
+    addSpacer(vue, 'language1');
+  el = vue.$get("language0").length;
+  if (el % 2 != 0) addSpacer(vue, 'language0');
 }
 
 $( document ).ready(function() {
+    $.ajax({url: 'https://skuuper.com/users/me.json', xhrFields: {withCredentials: true}})
+      .success(function(status, e) {
+        //console.log("Login fine!");
+      })
+      .fail(function(status) {
+        console.log("Error logging in: " + status.statusText);
+        location.href = "http://skuuper.com/en/users/sign_in";
+        //+ TODO: show unauthorized; open auth in new window
+      });
 
     var hash = window.location.hash;
     hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-    
+
     $('.nav-tabs a').click(function (e) {
         $(this).tab('show');
         var scrollmem = $('body').scrollTop();
@@ -134,15 +165,24 @@ var demo = new Vue({
             });
         },
         remove: function(target, item, index) {
+            cleanTable(this);
+            item.position = index;
+            item.target = target;
+            this.$get("deleted").push(item);
+            this.$get(target).$remove(item);
+            alignTable(this);
+        },
+        removeLine: function(target, item, index) {
             //~ Determining the real position
+            cleanTable(this);
             var ind = item.index;
             for (i = 0; i < this.$get("language0").length; i++) 
               if (this.$get("language0")[i].index == item.index) 
                 ind = i;
             item0 = this.$get("language0")[ind];
-            item0.target = "language0";
+            item0.target = " language0";
             item1 = this.$get("language1")[ind];
-            item1.target = "language1";
+            item1.target = " language1";
             this.$get("deleted").push(item0);
             this.$get("deleted").push(item1);
             this.$get("language0").$remove(item0);
@@ -150,6 +190,7 @@ var demo = new Vue({
             alignTable(this);
         },
         duplicate: function(target, item, index) {
+            cleanTable(this);
             var item = (JSON.parse(JSON.stringify(item)));
             this.$get(target).splice(index, 0, item);
             alignTable(this);
@@ -241,11 +282,12 @@ var demo = new Vue({
         },
         undo: function() {
             var item = this.$get("deleted").pop();
-            //console.log(item);
-            this.$get(item.target).splice(item.index, 0, item);
-            var item = this.$get("deleted").pop();
-            //console.log(item);
-            this.$get(item.target).splice(item.index, 0, item);
+            if (item.target.startsWith(" "))
+            {
+              var item2 = this.$get("deleted").pop();
+              this.$get(item2.target.trim()).splice(item2.index, 0, item2);
+            }
+            this.$get(item.target.trim()).splice(item.index, 0, item);
         }
     }
 });
