@@ -78,7 +78,7 @@ $( document ).ready(function() {
       })
       .fail(function(status) {
         console.log("Error logging in: " + status.statusText);
-        location.href = "http://skuuper.com/en/users/sign_in";
+        //location.href = "http://skuuper.com/en/users/sign_in";
         //+ TODO: show unauthorized; open auth in new window
       });
 
