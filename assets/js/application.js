@@ -221,6 +221,7 @@ var demo = new Vue({
             }
         },
         merge: function(target, item, index) {
+            cleanTable(this);
             var self = this;
 
             var first = this.$get("selected")[0];
@@ -235,6 +236,7 @@ var demo = new Vue({
                 self.$get(target).$remove(item);
             });
             this.$set('selected', []);
+            alignTable(this);
         },
         splitHover: function(target, item, index, lang) {
             if (!item.text || item.text.length < 1)
@@ -260,6 +262,7 @@ var demo = new Vue({
             this.$set("cur_text", e.target.innerText);
         },
         split: function(target, item, index) {
+            cleanTable(this);
             if (!item.text || item.text.length < 1)
               return;
             var pos = this.$get("split_pos");
@@ -273,6 +276,7 @@ var demo = new Vue({
             created.index = item.index + 1;
             created.target = item.target;
             this.$get(item.target).splice(index + 1, 0, created);
+            alignTable(this);
         },
         clear: function() {
             this.$get("selected").forEach(function(item) {
