@@ -288,6 +288,7 @@ var demo = new Vue({
             this.$set("selected", []);
         },
         undo: function() {
+            cleanTable(this);
             var item = this.$get("deleted").pop();
             if (item.target.startsWith(" "))
             {
@@ -295,6 +296,7 @@ var demo = new Vue({
               this.$get(item2.target.trim()).splice(item2.index, 0, item2);
             }
             this.$get(item.target.trim()).splice(item.index, 0, item);
+            alignTable(this);
         }
     }
 });
