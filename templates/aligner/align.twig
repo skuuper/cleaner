@@ -23,6 +23,7 @@
                         <i v-on:click="split('language0', item, $index)" v-on:mouseover="splitHover($event, item, $index, 1)" class="fa fa-scissors" title="Split chunks"></i>
                         <i v-if="selected.length && selected[0].target == 'language0'" v-on:click="merge('language0')" class="fa fa-compress" title="Merge chunks"></i>
                         <i v-on:click="remove('language0', item, index)" class="fa fa-remove" title="Remove chunk"></i>
+                        <div v-on:click="removeLine('language1', item, index)" class="fa fa-remove" title="Remove line" style="position: relative;"></div>
                     </div>
                 </div>
                <div class="rtable-cell item item2 {{ item.class }}" v-for="item in language1" v-bind:style="{'order': $index}" track-by="$index" v-on:click="select('language1', item, $event)">

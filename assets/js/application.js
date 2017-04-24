@@ -32,10 +32,17 @@ function getCaretCharacterOffsetWithin(element) {
 }
 
 $( document ).ready(function() {
+    $.ajax({url: 'https://skuuper.com/users/me.json', xhrFields: {withCredentials: true}})
+      .success(function(status) {
+      })
+      .fail(function(status) {
+        console.log("Error logging in: " + status.statusText);
+        console.log(status);
+      });
 
     var hash = window.location.hash;
     hash && $('ul.nav a[href="' + hash + '"]').tab('show');
-    
+
     $('.nav-tabs a').click(function (e) {
         $(this).tab('show');
         var scrollmem = $('body').scrollTop();
@@ -115,22 +122,29 @@ var demo = new Vue({
             });
         },
         remove: function(target, item, index) {
+             item.position = index;
+             item.target = target;
+             this.$get("deleted").push(item);
+             this.$get(target).$remove(item);
+        },
+        removeLine: function(target, item, index) {
             //~ Determining the real position
             var ind = item.index;
             for (i = 0; i < this.$get("language0").length; i++) 
               if (this.$get("language0")[i].index == item.index) 
                 ind = i;
             item0 = this.$get("language0")[ind];
-            item0.target = "language0";
+            item0.target = " language0";
             item1 = this.$get("language1")[ind];
-            item1.target = "language1";
+            item1.target = " language1";
             this.$get("deleted").push(item0);
             this.$get("deleted").push(item1);
             this.$get("language0").$remove(item0);
             this.$get("language1").$remove(item1);
         },
         duplicate: function(target, item, index) {
-            this.$get(target).splice(index, 0, item);
+            newItem = item;
+            this.$get(target).splice(index, 0, newItem);
         },
         empty: function(target, item, index) {
             this.$get(target).splice(index, 0, jQuery.extend(true, {}, item));
@@ -219,11 +233,12 @@ var demo = new Vue({
         },
         undo: function() {
             var item = this.$get("deleted").pop();
-            //console.log(item);
-            this.$get(item.target).splice(item.index, 0, item);
-            var item = this.$get("deleted").pop();
-            //console.log(item);
-            this.$get(item.target).splice(item.index, 0, item);
+            if (item.target.startsWith(" "))
+            {
+              var item2 = this.$get("deleted").pop();
+              this.$get(item2.target.trim()).splice(item2.index, 0, item2);
+            }
+            this.$get(item.target.trim()).splice(item.index, 0, item);
         }
     }
 });

@@ -123,6 +123,7 @@ class DocumentProcessorService {
         $paragraphs = $this->process_array($input);
         $para_new = array();
         foreach ($paragraphs as &$para) {
+            //print($para . "<br />");
             if (strpos($para, '。') !== false || strpos($para, '？') !== false || strpos($para, '！') !== false) {
               $para = str_replace("　", "", $para);
               // $para_new = array_merge($para_new, preg_split('/(?<=。)/', $para));
