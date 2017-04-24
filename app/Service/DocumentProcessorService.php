@@ -93,8 +93,8 @@ class DocumentProcessorService {
     public function process_array($input) {
         $input = str_replace("\r", "\n", str_replace("\r\n", "\n", $input));
         $input = $this->remove_between_brackets($input);
-        $input = $this->sections_to_newlines($input);
         $input = $this->remove_double_newlines($input);
+        $input = $this->sections_to_newlines($input);
         $input = $this->remove_double_spaces($input);
         $input = $this->split_paragraph_titles($input);
 
@@ -120,6 +120,7 @@ class DocumentProcessorService {
         if ($bUseLF) {
           return $this->process_LF($input, $lang);
         }
+        //print($input);
         $paragraphs = $this->process_array($input);
         $para_new = array();
         foreach ($paragraphs as &$para) {
@@ -165,7 +166,9 @@ class DocumentProcessorService {
 
 
     private function sections_to_newlines($input) {
-        return str_replace("^", "\n", $input);
+        $ip = preg_replace('/(?<=[\.\?])(\s+)(?=[0-9])/', "\n\n", $input);
+        //$input = preg_replace('(?<=[.\)?])(\s+)(?=[0-9]+)', '$1\\n$2', $input);
+        return str_replace("^", "\n", $ip);
     }
 
     private function split_paragraph_titles($input) {
