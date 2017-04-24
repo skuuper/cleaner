@@ -8,3 +8,4 @@ composer.phar
 composer-install.php
 node-modules/
 translate.txt
+.DS*

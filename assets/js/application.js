@@ -31,6 +31,24 @@ function getCaretCharacterOffsetWithin(element) {
     return caretOffset;
 }
 
+function alignTable(vue) {
+  var el = vue.$get("language0").length;
+  console.log("Found " + el + " elements");
+  var item = vue.$get("language0")[el - 1];
+  if (el % 2 != 0) {
+    vue.$get('language0').splice(el - 1, 0, jQuery.extend(true, {}, item));
+    item.text = " ";
+    console.log("Adding spacer");
+  }
+  else
+    if (vue.$get("language0")[el - 1].text.length < 2) {
+        console.log("Removing spacer");
+        item1 = this.$get("language0")[el - 1];
+        vue.$get("language0").$remove(item1);
+    }
+
+}
+
 $( document ).ready(function() {
 
     var hash = window.location.hash;
@@ -85,6 +103,7 @@ var demo = new Vue({
             this.$http.get('/aligner/get_chunks').then((response) => {
                 this.map_items("language0", response.body.language_0);
                 this.map_items("language1", response.body.language_1);
+                alignTable(this);
             }, (response) => {
                 console.error("Error: " + response.status);
             });
@@ -128,10 +147,12 @@ var demo = new Vue({
             this.$get("deleted").push(item1);
             this.$get("language0").$remove(item0);
             this.$get("language1").$remove(item1);
+            alignTable(this);
         },
         duplicate: function(target, item, index) {
             var item = (JSON.parse(JSON.stringify(item)));
             this.$get(target).splice(index, 0, item);
+            alignTable(this);
         },
         empty: function(target, item, index) {
             this.$get(target).splice(index, 0, jQuery.extend(true, {}, item));
