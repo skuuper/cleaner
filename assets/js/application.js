@@ -181,6 +181,9 @@ var demo = new Vue({
                 ind = i;
             item0 = this.$get("language0")[ind];
             item0.target = " language0";
+            for (i = 0; i < this.$get("language1").length; i++) 
+              if (this.$get("language1")[i].index == item.index) 
+                ind = i;
             item1 = this.$get("language1")[ind];
             item1.target = " language1";
             this.$get("deleted").push(item0);
