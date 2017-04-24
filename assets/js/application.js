@@ -130,6 +130,7 @@ var demo = new Vue({
             this.$get("language1").$remove(item1);
         },
         duplicate: function(target, item, index) {
+            var item = (JSON.parse(JSON.stringify(item)));
             this.$get(target).splice(index, 0, item);
         },
         empty: function(target, item, index) {
