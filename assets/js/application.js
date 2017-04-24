@@ -31,15 +31,6 @@ function getCaretCharacterOffsetWithin(element) {
     return caretOffset;
 }
 
-function cleanTable1(vue) {
-  var el = vue.$get("language0").length;
-  if (el.text.length < 2) {
-    console.log("Removing spacer");
-    item1 = vue.$get("language0")[el - 1];
-    vue.$get("language0").$remove(item1);
-  }
-}
-
 function cleanTable(vue) {
   for (t = 0; t <= 1; t++) {
     var target = 'language' + t;
@@ -69,6 +60,12 @@ function alignTable(vue) {
     addSpacer(vue, 'language1');
   el = vue.$get("language0").length;
   if (el % 2 != 0) addSpacer(vue, 'language0');
+
+  for (t = 0; t <= 1; t++) {
+    var target = 'language' + t;
+    for (var el = 0; el < vue.$get(target).length; el++)
+      vue.$get(target)[el].index = el;
+  }
 }
 
 $( document ).ready(function() {
@@ -176,6 +173,7 @@ var demo = new Vue({
             //~ Determining the real position
             cleanTable(this);
             var ind = item.index;
+            console.log("Looking for index " + ind);
             for (i = 0; i < this.$get("language0").length; i++) 
               if (this.$get("language0")[i].index == item.index) 
                 ind = i;
