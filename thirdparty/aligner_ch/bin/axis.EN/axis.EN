@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cat $* | \
+$CTK/bin/axis.EN/etoken.pl | \
+$CTK/bin/axis.EN/lowercase | \
+$CTK/bin/axis.EN/english_stemmer.pl

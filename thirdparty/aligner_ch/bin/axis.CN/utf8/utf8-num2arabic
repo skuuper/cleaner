@@ -1,0 +1,91 @@
+#!/usr/bin/perl
+#
+# Usage: utf8-num2arabic <utf8 text>
+# Author:  Xiaoyi Ma, LDC, 03/09/2006
+# Purpose:     translates Chinese numbers in utf8  into their Arabic
+#              equivalents, where possible
+#
+
+use utf8;
+
+if (@ARGV == 1) {
+    open STDIN, "<$ARGV[0]" or die "$0: cannot open $ARGV[0]!\n";
+}
+
+binmode STDIN, ":utf8";
+binmode STDOUT, ":utf8";
+
+$int = "(○|零|一|二|三|四|五|六|七|八|九|十|百|千|万|亿){2,}";
+$dec = "(○|零|一|二|三|四|五|六|七|八|九|十|百|千|万|亿)+点(○|零|一|二|三|四|五|六|七|八|九|十|百|千|万|亿)+";
+
+
+while (<STDIN>) {
+    s/$int|$dec/&cn2arabic($&)/eg;
+    print;
+}
+
+sub cn2arabic{
+    my ($cn) = @_;
+
+    $cn =~ s/○/0/g;
+    $cn =~ s/零/0/g;
+    $cn =~ s/一/1/g;
+    $cn =~ s/二/2/g;
+    $cn =~ s/三/3/g;
+    $cn =~ s/四/4/g;
+    $cn =~ s/五/5/g;
+    $cn =~ s/六/6/g;
+    $cn =~ s/七/7/g;
+    $cn =~ s/八/8/g;
+    $cn =~ s/九/9/g;
+    $cn =~ s/十/s/g; # ten
+    $cn =~ s/百/b/g; # hundred
+    $cn =~ s/千/q/g; # thousand
+    $cn =~ s/万/w/g; # ten thousand
+    $cn =~ s/亿/y/g; # 100 million
+    $cn =~ s/点/\./g;
+
+    return &mid2arabic($cn);
+}
+
+sub mid2arabic{
+    my ($cn) = @_;
+    my ($int,$fra,$multi,$remain);
+    
+    return if $cn eq "";
+
+    if ($cn =~ /\./) {
+	$int = &mid2arabic($`);
+	$fra = &mid2arabic($');
+	return $int.".".$fra;
+    } elsif ($cn =~ /y/) {
+	$multi = &mid2arabic($`);
+	$remain = &mid2arabic($');
+	return $multi*100000000+$remain;
+    } elsif ($cn =~ /w/) {
+	$multi = &mid2arabic($`);
+	$remain = &mid2arabic($');
+	return $multi*10000+$remain;
+    } elsif ($cn =~ /q/) {
+	$multi = &mid2arabic($`);
+	$remain = &mid2arabic($');
+	return $multi*1000+$remain;
+    } elsif ($cn =~ /b/) {
+	$multi = &mid2arabic($`);
+	$remain = &mid2arabic($');
+	return $multi*100+$remain;
+    } elsif ($cn =~ /s/) {
+	if($` eq "") {
+	    $multi = 1;
+	} else {
+	    $multi = &mid2arabic($`);
+	}
+	$remain = &mid2arabic($');
+	return $multi*10+$remain;
+    } else {
+	$cn =~ s/\D//g;
+	return $cn;
+    }
+}
+
+

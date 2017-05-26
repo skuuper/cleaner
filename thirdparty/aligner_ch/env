@@ -1,0 +1,2 @@
+export PATH=/Users/ourzhumt/projects/Thesis/tools/champollion-1.2:/Applications/MATLAB_R2016a.app/bin/:/Applications/MATLAB_R2016a.app/bin/:/Users/ourzhumt/.rbenv/shims:/Users/ourzhumt/.rbenv/bin:/usr/local/bin:/usr/local/share/zsh/site-functions:/usr/local/bin:/opt/theos/bin:/usr/bin:/bin:/usr/sbin:/sbin
+export CTK=`pwd`

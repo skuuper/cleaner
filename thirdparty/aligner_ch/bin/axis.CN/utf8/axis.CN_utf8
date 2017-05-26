@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cat $* | \
+$CTK/bin/axis.CN/utf8/utf82mixed | \
+$CTK/bin/axis.CN/utf8/utf8-num2arabic | \
+$CTK/thirdparty/ldc-cn-seg/mansegment-utf8.pl | \
+$CTK/bin/axis.CN/utf8/cn-tk-number-ascii

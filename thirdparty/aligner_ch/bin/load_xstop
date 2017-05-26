@@ -1,0 +1,16 @@
+#!/usr/bin/perl
+
+sub load_xstop {
+    local ($xstop_fn, $xstop_href) = @_;
+
+    print STDERR "Reading X stop list...";
+    open XS, "<$xstop_fn" || die "$0: Couldn't open $xstop_fn!\n";
+    while (<XS>) {
+	chomp;
+	$$xstop_href{$_} = 1;
+    }
+    close XS;
+    print STDERR " done.\n";
+}
+
+1;

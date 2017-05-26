@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cat $* | \
+$CTK/bin/axis.generic/gtoken.pl | \
+$CTK/bin/eos_tokenize.pl

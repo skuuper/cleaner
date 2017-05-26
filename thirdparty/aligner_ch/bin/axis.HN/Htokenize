@@ -1,0 +1,66 @@
+#!/usr/bin/perl -p
+#
+# Purpose: tokenize hindi text, put spaces around numbers,
+#          ascii punctuations, and hindi end of sentence marks.
+#          Can be piped into another process to split at spaces
+#          to get a token array.
+# Author : Xiaoyi Ma, 6/5/2003
+
+#use utf8;
+
+
+#$Usage = "Usage: $0 [filename]\n";
+#die $Usage if ( @ARGV > 1 or ( @ARGV == 1 and ! -f $ARGV[0] ));
+
+if ( @ARGV ) {
+    open( STDIN, shift );
+}
+
+binmode STDIN, ":utf8";
+binmode STDOUT, ":utf8";
+
+
+# put space after any period that's followed by a non-number
+s/\.([^0-9])/\. $1/g;
+# put space before any period that's followed by a space
+# the following space is introduced in the previous command
+s/\. / \. /g;
+
+# put space around colons and comas, unless they're surrounded by numbers
+s/([0-9])\:([0-9])/$1<CLTKN>$2/g;
+s/\:/ \: /g;
+s/([0-9])<CLTKN>([0-9])/$1\:$2/g;
+s/([0-9])\,([0-9])/$1<CMTKN>$2/g;
+s/\,/ \, /g;
+s/([0-9])<CMTKN>([0-9])/$1\,$2/g;
+
+
+# put space around any other punctuation
+s/([^ ])\!/$1 \! /g;
+s/([^ ])\?/$1 \? /g;
+s/([^ ])\;/$1 \; /g;
+s/([^ ])\"/$1 \" /g;
+s/([^ ])\)/$1 \) /g;
+s/([^ ])\(/$1 \( /g;
+s/\(/ \( /g;
+s/([^ ])\//$1 \/ /g;
+
+# put spaces around special symbols
+s/([^ ])\@/$1 \@ /g;
+s/([^ ])\%/$1 \% /g;
+s/([^ ])\$/$1 \$ /g;
+s/([^ ])\+/$1 \+ /g;
+s/([^ ])\-/$1 \- /g;
+s/([^ ])\#/$1 \# /g;
+s/([^ ])\*/$1 \* /g;
+s/([^ ])\[/$1 \[ /g;
+s/([^ ])\]/$1 \] /g;
+s/([^ ])\>/$1 \> /g;
+s/([^ ])\</$1 \< /g;
+s/([^ ])\_/$1 \_ /g;
+s/([^ ])\\/$1 \\ /g;
+s/([^ ])\|/$1 \| /g;
+s/([^ ])\=/$1 \= /g;
+
+# put spaces around hindi end of sentence marks
+s/\x{0964}|\x{0965}/ $& /g;

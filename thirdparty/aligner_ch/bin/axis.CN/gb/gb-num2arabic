@@ -1,0 +1,78 @@
+#!/usr/bin/perl -p
+#
+# Usage: gb-num2arabic <GB text>
+# Author:  Xiaoyi Ma, LDC, 11/14/03
+# Purpose:     translates numbers in GB characters into their Arabic
+#              equivalents, where possible
+#
+
+$int = "(○|零|一|二|三|四|五|六|七|八|九|十|百|千|万|亿){2,}";
+$dec = "(○|零|一|二|三|四|五|六|七|八|九|十|百|千|万|亿)+点(○|零|一|二|三|四|五|六|七|八|九|十|百|千|万|亿)+";
+
+s/$int|$dec/&gb2arabic($&)/eg;
+
+sub gb2arabic{
+    my ($gb) = @_;
+
+    $gb =~ s/○/0/g;
+    $gb =~ s/零/0/g;
+    $gb =~ s/一/1/g;
+    $gb =~ s/二/2/g;
+    $gb =~ s/三/3/g;
+    $gb =~ s/四/4/g;
+    $gb =~ s/五/5/g;
+    $gb =~ s/六/6/g;
+    $gb =~ s/七/7/g;
+    $gb =~ s/八/8/g;
+    $gb =~ s/九/9/g;
+    $gb =~ s/十/s/g; # ten
+    $gb =~ s/百/b/g; # hundred
+    $gb =~ s/千/q/g; # thousand
+    $gb =~ s/万/w/g; # ten thousand
+    $gb =~ s/亿/y/g; # 100 million
+    $gb =~ s/点/\./g;
+
+    return &mid2arabic($gb);
+}
+
+sub mid2arabic{
+    my ($gb) = @_;
+    my ($int,$fra,$multi,$remain);
+    
+    return if $gb eq "";
+
+    if ($gb =~ /\./) {
+	$int = &mid2arabic($`);
+	$fra = &mid2arabic($');
+	return $int.".".$fra;
+    } elsif ($gb =~ /y/) {
+	$multi = &mid2arabic($`);
+	$remain = &mid2arabic($');
+	return $multi*100000000+$remain;
+    } elsif ($gb =~ /w/) {
+	$multi = &mid2arabic($`);
+	$remain = &mid2arabic($');
+	return $multi*10000+$remain;
+    } elsif ($gb =~ /q/) {
+	$multi = &mid2arabic($`);
+	$remain = &mid2arabic($');
+	return $multi*1000+$remain;
+    } elsif ($gb =~ /b/) {
+	$multi = &mid2arabic($`);
+	$remain = &mid2arabic($');
+	return $multi*100+$remain;
+    } elsif ($gb =~ /s/) {
+	if($` eq "") {
+	    $multi = 1;
+	} else {
+	    $multi = &mid2arabic($`);
+	}
+	$remain = &mid2arabic($');
+	return $multi*10+$remain;
+    } else {
+	$gb =~ s/\D//g;
+	return $gb;
+    }
+}
+
+

@@ -1,0 +1,44 @@
+#!/bin/sh
+#
+# Purpose: Wrapper script to align English and Other Language
+#          parallel text.
+# Usage: champollion.generic <LX sentence file> <LY sentence file> <alignment file> <dictionary>
+# Input: Language X text file, one sentence per line
+#        Language X text file, one sentence per line
+# Output: alignment file, alignment are in the format of:
+#         e_st_ids <=> c_st_ids
+#         Each e_st_ids or c_st_ids can contain up to four sentence ids
+#         delimited by comas, it also can be "omitted" indicating no
+#         mapping has been found.
+#
+
+# print usage if necessary
+if [ $# -ne 4 ]; then
+    echo "Usage: $0 <LX sentence file> <LY sentence file> <alignment file> <dictionary>"
+    exit 1
+fi
+
+lx_axis=/tmp/`basename $1`.axis
+ly_axis=/tmp/`basename $2`.axis
+
+
+# Tokenize Language X
+echo "Tokenizing Language X ... "
+$CTK/bin/axis.generic/axis.generic $1 > $lx_axis
+if [ $? -ne 0 ]; then
+exit 2
+fi
+
+# Tokenize Language Y
+echo "Tokenizing Language Y ... "
+$CTK/bin/axis.generic/axis.generic $2 > $ly_axis
+if [ $? -ne 0 ]; then
+exit 3
+fi
+
+# Align sentences
+echo "Aligning Sentences ... "
+$CTK/bin/champollion -d $4 -s $CTK/lib/E.stoplist $lx_axis $ly_axis $3
+
+# Remove intermediate files
+rm $lx_axis $ly_axis

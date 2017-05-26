@@ -1,0 +1,46 @@
+#!/bin/sh
+#
+# Purpose: Wrapper script to align English and Chinese (GB)
+#          parallel text.
+# Usage: champollion.EC <english sentence file> <chinese sentence file> <alignment file>
+# Input: English text file, one sentence per line, encoded in ASCII
+#        Chinese text file, one sentence per line, encoded in GB
+# Output: alignment file, alignment are in the format of:
+#         e_st_ids <=> c_st_ids
+#         Each e_st_ids or c_st_ids can contain up to four sentence ids
+#         delimited by comas, it also can be "omitted" indicating no
+#         mapping has been found.
+#
+
+# print usage if necessary
+if [ $# -ne 3 ]; then
+    echo "Usage: $0 <english sentence file> <chinese sentence file> <alignment file>"
+    exit 1
+fi
+
+en_axis=/tmp/`basename $1`.en.axis
+cn_axis=/tmp/`basename $2`.cn.axis
+
+
+# Tokenize English
+echo "Tokenizing English ... "
+$CTK/bin/axis.EN/axis.EN $1 > $en_axis
+if [ $? -ne 0 ]; then
+exit 2
+fi
+
+# Tokenize Chinese
+echo "Tokenizing Chinese ... "
+echo $CTK/bin/axis.CN/gb/axis.CN $2 to $cn_axis
+$CTK/bin/axis.CN/gb/axis.CN $2 > $cn_axis
+if [ $? -ne 0 ]; then
+exit 3
+fi
+
+# Align sentences
+echo "Aligning Sentences ... "
+echo $CTK/bin/champollion -d $CTK/lib/ecdict.gb.txt -s $CTK/lib/E.stoplist -c 0.634 $en_axis $cn_axis $3
+$CTK/bin/champollion -d $CTK/lib/ecdict.gb.txt -s $CTK/lib/E.stoplist -c 0.634 $en_axis $cn_axis $3
+
+# Remove temporary files
+#rm $en_axis $cn_axis

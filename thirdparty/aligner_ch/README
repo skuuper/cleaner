@@ -1,0 +1,161 @@
+                     Champollion Tool Kit V1.2
+
+
+
+About CTK
+----------
+
+Champollion Tool Kit (CTK) is a tool kit aiming to provide
+ready-to-use parallel text sentence alignment tools for as many
+language pairs as possible.
+
+Built around the LDC champollion sentence aligner kernel, the tool kit
+provides essential components required for accurate sentence
+alignment, including sentence breakers, stemmers, pre-processing
+scripts, dictionaries (if possible), post-processing scripts etc.
+
+Currently, CTK includes tools to align English text with Arabic, Chinese,
+ and Hindi translations. It can be easily expanded to other language pairs.
+
+CTK welcomes contributions from other researchers.
+
+CTK is written in perl.
+
+Installation
+------------
+
+After unpack the CTK distribution, you need to set the enviorment
+variable CTK to the directory where the package is unpacked, which is
+this directory if you haven't done anything funny. And that's it.
+
+To test the installation, try run the following command:
+
+./test_installtion
+
+It will tell you either the installation is good, or bad and in which
+case minimum diagnosis will be given.
+
+Please note, the first time you run champollion (or test_installation
+which runs champollion internally), the program needs to build certain
+databases, which can take up to five minutes.
+
+Input and Output
+----------------
+
+The input files for both sides should be one segment (sentence) per
+line.
+
+The output (alignment file) looks like the following:
+
+omitted <=> 1
+omitted <=> 2
+omitted <=> 3
+1 <=> 4
+2 <=> 5
+3 <=> 6
+4,5 <=> 7
+6 <=> 8
+7 <=> 9
+8 <=> 10
+9 <=> omitted
+
+
+Every alignment is in the format of:
+
+        language1 sentence ids <=> language2 sentence ids
+
+where each language1/language2 sentence ids may contain up to four sentence ids
+delimited by commas, it also can be "omitted" indicating no translation
+was found. The sentence ids start at 1.
+
+Languages
+---------
+
+CTK v1.2 supports three language pairs:
+
+	English Chinese(GB)
+	English Chinese(UTF8)
+	English Arabic (UTF8)
+	English Hindi (UTF8)
+
+
+IMPORTANT: Because we don't have IPRs to distribute the dictionaries
+we're using internally, the dictionaries included in this package
+are rather small: English Chinese dictionary (about 5K headwords) 
+and English Arabic dictionary (about 4K headwords). Our experiment 
+shows that bigger dictionary usually leads better performance, which 
+means that you may want to use your own dictionary, if it has better
+coverage than the one we provide.
+
+Command Line
+------------
+
+Command line to run English Chinese sentence aligner:
+
+your_CTK_path/bin/champollion.EC_GB <english sentence file> <chinese sentence file> <alignment file>
+
+or 
+
+your_CTK_path/bin/champollion.EC_utf8 <english sentence file> <chinese sentence file> <alignment file>
+
+Command line to run English Arabic sentence aligner:
+
+your_CTK_path/bin/champollion.EA <english sentence file> <arabic sentence file> <alignment file>
+
+Command line to run English Hindi sentence aligner:
+
+your_CTK_path/bin/champollion.EH <english sentence file> <hindi sentence file> <alignment file>
+
+In addition, there is champollion.generic which can align unknown
+language pairs. To run it:
+
+your_CTK_path/bin/champollion.generic <LX sentence file> <LY sentence file> <alignment file> <dictionary>
+
+For languages not included in the package, it's strongly recommended
+that you write a tokenizer following existing examples, and a stemmer
+if possible. Even an imperfect stemmer will make a big difference.
+
+Evaluation Corpus
+-----------------
+
+To facilitate the development of better sentence aligners, this
+package also includes the manually aligned English Chinese data as an
+evaluation corpus. The evaluation corpus is in 'eval' directory.
+
+The data were selected from three sources: UN, Sinorama, and Hong Kong Hansards.
+
+The Chinese files are:
+
+198706005.c.txt         921008fc.txt            UN19990209_010.c.txt
+200110006.c.txt         930422fc.txt
+890621fc.txt            UN19930101_020.c.txt
+
+The English files are:
+
+198706005.e.txt         921008fe.txt            UN19990209_010.e.txt
+200110006.e.txt         930422fe.txt
+890621fe.txt            UN19930101_020.e.txt
+
+The gold alignment files are:
+
+198706005.gold.align            930422f.gold.align
+200110006.gold.align            UN19930101_020.gold.align
+890621f.gold.align              UN19990209_010.gold.align
+921008f.gold.align
+
+
+COPYRIGHT
+---------
+
+This software are protected by Common Public License, see LICENSE for
+detail.
+
+Contributions, Questions, Bug report, etc.
+------------------------------------------
+
+Please contact Xiaoyi Ma at xma@ldc.upenn.edu.
+
+
+Xiaoyi Ma 6/20/2011
+Linguistic Data Consortium
+xma@ldc.upenn.edu

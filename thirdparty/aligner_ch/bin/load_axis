@@ -1,0 +1,73 @@
+#!/usr/bin/perl
+
+sub load_axis {
+    my ($axis_fn, $st_aref, $len_aref, $token_stat_href, $tkn2snt_href) = @_;
+    my $token, %new_st, %tkn2snt;
+    my $segid, $seg, $expected_segid;
+    
+    open A, "<$axis_fn" || die "$0: Can not open $axis_fn\n";
+    
+    print STDERR "Loading axis...";
+    $segid = 1;
+    while (<A>){
+	chomp;
+	
+	$seg = $_;
+	$seg =~ s/\s+/ /g;
+
+	if ($seg =~ /^\s*$/) {
+	    die "segment $segid is empty!\n";
+	}
+
+	push @$st_aref, $seg;
+	@tokens = split ' ',$seg;
+
+	$snt = $seg;
+	$snt =~ s/ //g;
+	$$len_aref[$segid-1] = length $snt;
+	
+	foreach (@tokens) {
+	    # the following line is needed when doing an exact match
+	    # and the Y axis is not segmented
+	    #s/\W/\\$&/g;
+	    next if defined $xstop{$_};
+	    $$token_stat_href{$_}++;
+	    $$token_stat_href{TTAALL}++;
+	    $$tkn2snt_href{$_}{$segid-1} = 1;
+	}
+	$segid++;
+    }
+
+
+    close A;
+    print STDERR "done.\n";
+    print STDERR "Number of sentences: $segid\n";
+}
+
+sub load_axis_cn {
+    my ($axis_fn, $st_aref, $len_aref, $token_stat_href, $tkn2snt_href) = @_;
+    my $token, %new_st, %tkn2snt;
+    my $stno = 0;
+    
+    open A, "<$axis_fn" || die "$0: Can not open $axis_fn\n";
+    
+    print STDERR "Loading axis...";
+    while (<A>){
+	chomp;
+	s/\s+/ /g;
+	$$len_aref[$stno] = length $_;
+	s/\s//g;
+	@_ = split //,$_;
+	#print STDERR join '', @_, "\n";
+	foreach (@_) {
+	    $$tkn2snt_href{$_}{$stno} = 1;
+	}
+	push @$st_aref, $_;
+	$stno++;
+    }
+    close A;
+    print STDERR "done.\n";
+    print STDERR "Number of sentences: $stno\n";
+}
+
+1;

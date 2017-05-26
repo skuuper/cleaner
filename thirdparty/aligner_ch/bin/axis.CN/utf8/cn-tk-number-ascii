@@ -1,0 +1,7 @@
+#!/usr/bin/perl -p
+#
+# This script put space around ASCII numbers and letters
+#
+s/\d+(\,\d+)*(\.\d+)?/ $& /g;
+s/[a-zA-Z]+/sprintf " %s ", lc $& /eg;
+s/[\x21-\x2B\x2D\x2F]|[\x3A-\x40]|[\x5B-\x60]|[\x7B-\x7E]/ $& /g;

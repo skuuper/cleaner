@@ -1,0 +1,48 @@
+#!/usr/bin/perl
+#
+# Load the translation dictionary
+# Each line of the dictionary files should look like:
+#  src_word <> tgt_word
+#
+# Any entry which has a stop words as the source word
+# would be discarded
+#
+
+# $dict_fn:    file name of the translation dictionary
+# $xstop_href: reference to a hash table of the source language stop words
+# $dict_href:  reference to the hash table of loaded dictionary;
+#              the hash table is a hash of arrays with the keys being
+#              the the source word, the value being an array of possible
+#              translations
+sub load_dict {
+    my ($dict_fn, $xstop_href, $dict_href) = @_;
+
+    print STDERR "Reading seed translation lexicon...";
+    open D, "<$dict_fn" || die "$0: Couldn't open $dict_fn!\n";
+    while (<D>) {
+	chomp;
+	if (/^\s*(.+?)\s*<>\s*(.+?)\s*$/) {
+	    $source = $1;
+	    $translation = $2;
+
+	    # lowercase the source words; should be comment out
+	    # for multiple-byte encodings (such as Big5 Chinese) 
+	    # which overlaps with ASCII
+	    $source =~ tr/[A-Z]/[a-z]/;
+
+	    # discard entries with stop words
+	    next if defined $$xstop_href{$source};
+
+	    #$translation =~ s/\W/\\$&/g;
+	    push  @{$dict{"$source"}}, $translation;
+	} else {
+	    print STDERR "invalid dictionary entry:\n$_\n";
+	}
+    }
+    close D;
+    print STDERR " done.\n";
+    print STDERR "Number of entries: ", scalar keys %dict, "\n";
+
+}
+
+1;

@@ -1,0 +1,5 @@
+cat $* | \
+$CTK/bin/axis.HN/Htokenize | \
+$CTK/bin/axis.HN/light_hindi_stemmer.pl | \
+$CTK/bin/axis.EN/lowercase | \
+$CTK/bin/axis.HN/romanize_hin_num.pl

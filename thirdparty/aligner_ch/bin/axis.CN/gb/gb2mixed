@@ -1,0 +1,419 @@
+#!/usr/bin/perl
+#
+# Usage: gb2mixed <GB text>
+# Author:  Xiaoyi Ma, LDC, 11/14/03
+# Purpose:     translates 2-byte GB characters into their Roman
+#              equivalents, where possible
+#
+
+while (<>) {
+    s/\r?\n$//;
+    s/ /ssspppaaaccceee/g;
+    s/[\x00-\x7F]|[\x81-\xFE][\x40-\x7E\x80-\xFE]/ $& /g;
+    @_ = split ' ', $_;
+    foreach $char (@_) {
+	if ($char eq "¡¡") {
+	    $out .= " ";
+	} elsif ($char eq "¡¢") {
+	    $out .= "\,";
+	} elsif ($char eq "¡£") {
+	    $out .= "\.";
+	} elsif ($char eq "¡¤") {
+	    $out .= "\ ";
+	} elsif ($char eq "¡¥") {
+	    $out .= "\-";
+	} elsif ($char eq "¡§") {
+	    $out .= "\...";
+	} elsif ($char eq "¡ª") {
+	    $out .= "\-";
+	} elsif ($char eq "¡«") {
+	    $out .= "\-";
+	} elsif ($char eq "¡­") {
+	    $out .= "\...";
+	} elsif ($char eq "¡®") {
+	    $out .= "\`";
+	} elsif ($char eq "¡¯") {
+	    $out .= "\'";
+	} elsif ($char eq "¡°") {
+	    $out .= "\"";
+	} elsif ($char eq "¡±") {
+	    $out .= "\"";
+	} elsif ($char eq "¡²") {
+	    $out .= "\[";
+	} elsif ($char eq "¡³") {
+	    $out .= "\]";
+	} elsif ($char eq "¡´") {
+	    $out .= "\<";
+	} elsif ($char eq "¡µ") {
+	    $out .= "\>";
+	} elsif ($char eq "¡¶") {
+	    $out .= "\"";
+	} elsif ($char eq "¡·") {
+	    $out .= "\"";
+	} elsif ($char eq "¡¸") {
+	    $out .= "\`";
+	} elsif ($char eq "¡¹") {
+	    $out .= "\'";
+	} elsif ($char eq "¡º") {
+	    $out .= "\"";
+	} elsif ($char eq "¡»") {
+	    $out .= "\"";
+	} elsif ($char eq "¡¼") {
+	    $out .= "\[";
+	} elsif ($char eq "¡½") {
+	    $out .= "\]";
+	} elsif ($char eq "¡¾") {
+	    $out .= "\[";
+	} elsif ($char eq "¡¿") {
+	    $out .= "\]";
+	} elsif ($char eq "¡Ã") {
+	    $out .= "\:";
+	} elsif ($char eq "¡ä") {
+	    $out .= "\/";
+	} elsif ($char eq "¡ç") {
+	    $out .= "\$";
+	} elsif ($char eq "¡ë") {
+	    $out .= "\%";
+	} elsif ($char eq "¡í") {
+	    $out .= "\#";
+	} elsif ($char eq "¡þ") {
+	    $out .= "\=";
+	} elsif ($char eq "¢±") {
+	    $out .= "1";
+	} elsif ($char eq "¢²") {
+	    $out .= "2";
+	} elsif ($char eq "¢³") {
+	    $out .= "3";
+	} elsif ($char eq "¢´") {
+	    $out .= "4";
+	} elsif ($char eq "¢µ") {
+	    $out .= "5";
+	} elsif ($char eq "¢¶") {
+	    $out .= "6";
+	} elsif ($char eq "¢·") {
+	    $out .= "7";
+	} elsif ($char eq "¢¸") {
+	    $out .= "8";
+	} elsif ($char eq "¢¹") {
+	    $out .= "9";
+	} elsif ($char eq "¢º") {
+	    $out .= "10";
+	} elsif ($char eq "¢»") {
+	    $out .= "11";
+	} elsif ($char eq "¢¼") {
+	    $out .= "12";
+	} elsif ($char eq "¢½") {
+	    $out .= "13";
+	} elsif ($char eq "¢¾") {
+	    $out .= "14";
+	} elsif ($char eq "¢¿") {
+	    $out .= "15";
+	} elsif ($char eq "¢À") {
+	    $out .= "16";
+	} elsif ($char eq "¢Á") {
+	    $out .= "17";
+	} elsif ($char eq "¢Â") {
+	    $out .= "18";
+	} elsif ($char eq "¢Ã") {
+	    $out .= "19";
+	} elsif ($char eq "¢Ä") {
+	    $out .= "20";
+	} elsif ($char eq "¢Å") {
+	    $out .= "1";
+	} elsif ($char eq "¢Æ") {
+	    $out .= "2";
+	} elsif ($char eq "¢Ç") {
+	    $out .= "3";
+	} elsif ($char eq "¢È") {
+	    $out .= "4";
+	} elsif ($char eq "¢É") {
+	    $out .= "5";
+	} elsif ($char eq "¢Ê") {
+	    $out .= "6";
+	} elsif ($char eq "¢Ë") {
+	    $out .= "7";
+	} elsif ($char eq "¢Ì") {
+	    $out .= "8";
+	} elsif ($char eq "¢Í") {
+	    $out .= "9";
+	} elsif ($char eq "¢Î") {
+	    $out .= "10";
+	} elsif ($char eq "¢Ï") {
+	    $out .= "11";
+	} elsif ($char eq "¢Ð") {
+	    $out .= "12";
+	} elsif ($char eq "¢Ñ") {
+	    $out .= "13";
+	} elsif ($char eq "¢Ò") {
+	    $out .= "14";
+	} elsif ($char eq "¢Ó") {
+	    $out .= "15";
+	} elsif ($char eq "¢Ô") {
+	    $out .= "16";
+	} elsif ($char eq "¢Õ") {
+	    $out .= "17";
+	} elsif ($char eq "¢Ö") {
+	    $out .= "18";
+	} elsif ($char eq "¢×") {
+	    $out .= "19";
+	} elsif ($char eq "¢Ø") {
+	    $out .= "20";
+	} elsif ($char eq "¢Ù") {
+	    $out .= "1";
+	} elsif ($char eq "¢Ú") {
+	    $out .= "2";
+	} elsif ($char eq "¢Û") {
+	    $out .= "3";
+	} elsif ($char eq "¢Ü") {
+	    $out .= "4";
+	} elsif ($char eq "¢Ý") {
+	    $out .= "5";
+	} elsif ($char eq "¢Þ") {
+	    $out .= "6";
+	} elsif ($char eq "¢ß") {
+	    $out .= "7";
+	} elsif ($char eq "¢à") {
+	    $out .= "8";
+	} elsif ($char eq "¢á") {
+	    $out .= "9";
+	} elsif ($char eq "¢â") {
+	    $out .= "10";
+	} elsif ($char eq "¢å") {
+	    $out .= "one";
+	} elsif ($char eq "¢æ") {
+	    $out .= "two";
+	} elsif ($char eq "¢ç") {
+	    $out .= "three";
+	} elsif ($char eq "¢è") {
+	    $out .= "four";
+	} elsif ($char eq "¢é") {
+	    $out .= "five";
+	} elsif ($char eq "¢ê") {
+	    $out .= "six";
+	} elsif ($char eq "¢ë") {
+	    $out .= "seven";
+	} elsif ($char eq "¢ì") {
+	    $out .= "eight";
+	} elsif ($char eq "¢í") {
+	    $out .= "nine";
+	} elsif ($char eq "¢î") {
+	    $out .= "ten";
+	} elsif ($char eq "¢ñ") {
+	    $out .= "I";
+	} elsif ($char eq "¢ò") {
+	    $out .= "II";
+	} elsif ($char eq "¢ó") {
+	    $out .= "III";
+	} elsif ($char eq "¢ô") {
+	    $out .= "\IV";
+	} elsif ($char eq "¢õ") {
+	    $out .= "V";
+	} elsif ($char eq "¢ö") {
+	    $out .= "VI";
+	} elsif ($char eq "¢÷") {
+	    $out .= "VII";
+	} elsif ($char eq "¢ø") {
+	    $out .= "VIII";
+	} elsif ($char eq "¢ù") {
+	    $out .= "IX";
+	} elsif ($char eq "¢ú") {
+	    $out .= "X";
+	} elsif ($char eq "¢û") {
+	    $out .= "XI";
+	} elsif ($char eq "¢ü") {
+	    $out .= "XII";
+	} elsif ($char eq "£¡") {
+	    $out .= "\!";
+	} elsif ($char eq "£¢") {
+	    $out .= "\"";
+	} elsif ($char eq "££") {
+	    $out .= "\#";
+	} elsif ($char eq "£¤") {
+	    $out .= "\$";
+	} elsif ($char eq "£¥") {
+	    $out .= "\%";
+	} elsif ($char eq "£¦") {
+	    $out .= "\&";
+	} elsif ($char eq "£§") {
+	    $out .= "\'";
+	} elsif ($char eq "£¨") {
+	    $out .= "\(";
+	} elsif ($char eq "£©") {
+	    $out .= "\)";
+	} elsif ($char eq "£ª") {
+	    $out .= "\*";
+	} elsif ($char eq "£«") {
+	    $out .= "\+";
+	} elsif ($char eq "£¬") {
+	    $out .= "\,";
+	} elsif ($char eq "£­") {
+	    $out .= "\-";
+	} elsif ($char eq "£®") {
+	    $out .= "\.";
+	} elsif ($char eq "£¯") {
+	    $out .= "\/";
+	} elsif ($char eq "£°") {
+	    $out .= "0";
+	} elsif ($char eq "£±") {
+	    $out .= "1";
+	} elsif ($char eq "£²") {
+	    $out .= "2";
+	} elsif ($char eq "£³") {
+	    $out .= "3";
+	} elsif ($char eq "£´") {
+	    $out .= "4";
+	} elsif ($char eq "£µ") {
+	    $out .= "5";
+	} elsif ($char eq "£¶") {
+	    $out .= "6";
+	} elsif ($char eq "£·") {
+	    $out .= "7";
+	} elsif ($char eq "£¸") {
+	    $out .= "8";
+	} elsif ($char eq "£¹") {
+	    $out .= "9";
+	} elsif ($char eq "£º") {
+	    $out .= "\:";
+	} elsif ($char eq "£»") {
+	    $out .= "\;";
+	} elsif ($char eq "£¼") {
+	    $out .= "\<";
+	} elsif ($char eq "£½") {
+	    $out .= "\=";
+	} elsif ($char eq "£¾") {
+	    $out .= "\>";
+	} elsif ($char eq "£¿") {
+	    $out .= "\?";
+	} elsif ($char eq "£À") {
+	    $out .= "\@";
+	} elsif ($char eq "£Á") {
+	    $out .= "A";
+	} elsif ($char eq "£Â") {
+	    $out .= "B";
+	} elsif ($char eq "£Ã") {
+	    $out .= "C";
+	} elsif ($char eq "£Ä") {
+	    $out .= "D";
+	} elsif ($char eq "£Å") {
+	    $out .= "E";
+	} elsif ($char eq "£Æ") {
+	    $out .= "F";
+	} elsif ($char eq "£Ç") {
+	    $out .= "G";
+	} elsif ($char eq "£È") {
+	    $out .= "H";
+	} elsif ($char eq "£É") {
+	    $out .= "I";
+	} elsif ($char eq "£Ê") {
+	    $out .= "J";
+	} elsif ($char eq "£Ë") {
+	    $out .= "K";
+	} elsif ($char eq "£Ì") {
+	    $out .= "L";
+	} elsif ($char eq "£Í") {
+	    $out .= "M";
+	} elsif ($char eq "£Î") {
+	    $out .= "N";
+	} elsif ($char eq "£Ï") {
+	    $out .= "O";
+	} elsif ($char eq "£Ð") {
+	    $out .= "P";
+	} elsif ($char eq "£Ñ") {
+	    $out .= "Q";
+	} elsif ($char eq "£Ò") {
+	    $out .= "R";
+	} elsif ($char eq "£Ó") {
+	    $out .= "S";
+	} elsif ($char eq "£Ô") {
+	    $out .= "T";
+	} elsif ($char eq "£Õ") {
+	    $out .= "U";
+	} elsif ($char eq "£Ö") {
+	    $out .= "V";
+	} elsif ($char eq "£×") {
+	    $out .= "W";
+	} elsif ($char eq "£Ø") {
+	    $out .= "X";
+	} elsif ($char eq "£Ù") {
+	    $out .= "Y";
+	} elsif ($char eq "£Ú") {
+	    $out .= "Z";
+	} elsif ($char eq "£Û") {
+	    $out .= "\[";
+	} elsif ($char eq "£Ü") {
+	    $out .= "\\";
+	} elsif ($char eq "£Ý") {
+	    $out .= "\]";
+	} elsif ($char eq "£Þ") {
+	    $out .= "\^";
+	} elsif ($char eq "£ß") {
+	    $out .= "\_";
+	} elsif ($char eq "£à") {
+	    $out .= "\`";
+	} elsif ($char eq "£á") {
+	    $out .= "a";
+	} elsif ($char eq "£â") {
+	    $out .= "b";
+	} elsif ($char eq "£ã") {
+	    $out .= "c";
+	} elsif ($char eq "£ä") {
+	    $out .= "d";
+	} elsif ($char eq "£å") {
+	    $out .= "e";
+	} elsif ($char eq "£æ") {
+	    $out .= "f";
+	} elsif ($char eq "£ç") {
+	    $out .= "g";
+	} elsif ($char eq "£è") {
+	    $out .= "h";
+	} elsif ($char eq "£é") {
+	    $out .= "i";
+	} elsif ($char eq "£ê") {
+	    $out .= "j";
+	} elsif ($char eq "£ë") {
+	    $out .= "k";
+	} elsif ($char eq "£ì") {
+	    $out .= "l";
+	} elsif ($char eq "£í") {
+	    $out .= "m";
+	} elsif ($char eq "£î") {
+	    $out .= "n";
+	} elsif ($char eq "£ï") {
+	    $out .= "o";
+	} elsif ($char eq "£ð") {
+	    $out .= "p";
+	} elsif ($char eq "£ñ") {
+	    $out .= "q";
+	} elsif ($char eq "£ò") {
+	    $out .= "r";
+	} elsif ($char eq "£ó") {
+	    $out .= "s";
+	} elsif ($char eq "£ô") {
+	    $out .= "t";
+	} elsif ($char eq "£õ") {
+	    $out .= "u";
+	} elsif ($char eq "£ö") {
+	    $out .= "v";
+	} elsif ($char eq "£÷") {
+	    $out .= "w";
+	} elsif ($char eq "£ø") {
+	    $out .= "x";
+	} elsif ($char eq "£ù") {
+	    $out .= "y";
+	} elsif ($char eq "£ú") {
+	    $out .= "z";
+	} elsif ($char eq "£û") {
+	    $out .= "\{";
+	} elsif ($char eq "£ü") {
+	    $out .= "\|";
+	} elsif ($char eq "£ý") {
+	    $out .= "\}";
+	} else {
+	    $out .= $char;
+	}
+    }
+
+    $out =~ s/ssspppaaaccceee/ /g;
+    print "$out\n";
+    $out = "";
+}

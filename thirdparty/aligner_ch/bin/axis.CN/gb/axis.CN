@@ -1,0 +1,7 @@
+#!/bin/sh
+
+cat $* | \
+$CTK/bin/axis.CN/gb/gb2mixed | \
+$CTK/bin/axis.CN/gb/gb-num2arabic | \
+$CTK/thirdparty/ldc-cn-seg/mansegment.perl | \
+$CTK/bin/axis.CN/gb/cn-tk-number-ascii

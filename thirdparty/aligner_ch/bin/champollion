@@ -1,0 +1,413 @@
+#!/usr/bin/perl
+#
+# Usage: champollion [-hfnscda] <L1 axis> <L2 axis> <alignment output file>
+#
+
+use Getopt::Std;
+#use DB_File;
+
+#
+# parse command line
+#
+getopts('hnac:s:d:', \%opts) || usage();
+usage() if $opts{h};
+
+$fast = $opts{f};
+$disallow3 = $opts{n};
+$alignall = $opts{a};
+$xtoyc = $opts{c};
+$dict_fn = $opts{d};
+$Xstoplist = $opts{s};
+usage() if @ARGV != 3;
+
+$xfn = shift;
+$yfn = shift;
+$align_fn = shift;
+
+
+#
+# load components
+#
+push @INC,"$ENV{CTK}/bin";
+require "load_xstop";
+require "load_dict";
+require "load_axis";
+require "len_match.pl";
+require "champollion_kernel";
+
+load_xstop($Xstoplist, \%xstop);
+load_dict($dict_fn, \%xstop,\%dict);
+load_axis($xfn, \@xst, \@lenx, \%xtoken_stat, \%xtkn2snt);
+load_axis($yfn, \@yst, \@leny, \%ytoken_stat, \%ytkn2snt);
+
+$nx = @xst;
+$ny = @yst;
+$xyratio = $nx/$ny;
+
+$WIN_PER_100 = 8;
+$MIN_WIN_SIZE = 10;
+$MAX_WIN_SIZE = 600;
+$w1_size = int($xyratio*$nx*$WIN_PER_100/100);
+$w2_size = int(abs($nx-$ny)*3/4);
+$window_size = min(max($MIN_WIN_SIZE,max($w1_size,$w2_size)),$MAX_WIN_SIZE);
+print STDERR "Window size: $window_size\n";
+
+# If necessary, tie memory-intensive variables to on-disk database 
+# to reduce memory usage
+#if ($nx > 4000) { $usedbfile = 1 };
+#if ($usedbfile) {
+#    $pathxf = "/tmp/pathxf.$$";
+#    $pathyf = "/tmp/pathyf.$$";
+#    $scoref = "/tmp/score.$$";
+#    unlink $pathxf if -e $pathxf;
+#    unlink $pathyf if -e $pathyf;
+#    unlink $scoref if -e $scoref;
+#    tie %path_x, "DB_File", $pathxf || die "$0: Cannot open dbmfile $pathxf!\n";
+#    tie %path_y, "DB_File", $pathyf || die "$0: Cannot open dbmfile $pathyf!\n";
+#    tie %score, "DB_File", $scoref || die "$0: Cannot open dbmfile $scoref!\n";
+#}
+
+print STDERR "Aligning Sentences ... ";
+#if ($notokenization) {
+#    find_trans_pairs_cn();
+#} else {
+#    find_trans_pairs();
+#}
+
+
+align(\@lenx, \@leny, $nx, $ny);
+
+print STDERR "done.\n";
+
+# If all sentences are translated
+if ($alignall) {
+    merge_omission();
+}
+
+print_alignment($align_fn);
+
+#
+# clean up
+#
+if ($usedbfile) {
+    untie %path_x;
+    untie %path_y;
+    untie %score;
+    unlink $pathxf;
+    unlink $pathyf;
+    unlink $scoref;
+}
+exit;
+
+sub min {
+    local ($x, $y) = @_;
+
+    return $x<$y?$x:$y;
+}
+
+sub max {
+    local ($x, $y) = @_;
+
+    return $x>$y?$x:$y;
+}
+
+sub merge_omission {
+    my $xalign_tkn, $yalign_tkn, $xyratio;
+    my %x2ymap, %y2xmap;
+    my @align_org, @align;
+
+    @align_org = reverse @ralign;
+
+    $i = 0;
+    $x2ymap{0} = [0];
+    $y2xmap{0} = [0];
+    $xfnp1 = $xfn+1;
+    $yfnp1 = $yfn+1;
+    $x2ymap{$xfnp1} = [$yfnp1];
+    $y2xmap{$yfnp1} = [$xfnp1];
+    foreach (@align_org) {
+	$index{$_} = $i; $i++;
+	next if /omitted/;
+	/(.+) <=> (.+)/;
+	$xsent = $1; $ysent = $2;
+	@xsent = split /,/, $xsent;
+	@ysent = split /,/, $ysent;
+	foreach (@xsent) {
+	    $xalign_tkn += $lenx[$_-1];
+	    $x2ymap{$_} = [@ysent];
+	}
+	foreach (@ysent) {
+	    $yalign_tkn += $leny[$_-1];
+	    $y2xmap{$_} = [@xsent];
+	}
+    }
+    
+    $xyratio = $xalign_tkn/$yalign_tkn;
+
+    for ($i = 0; $i<@align_org; $i++) {
+	next unless $align_org[$i] =~ /omitted/;
+
+	if ($align_org[$i] =~ /omitted <=> (\d+)/) {
+	    $ysid = $1;
+	    $lb = lowerbound($ysid, \%y2xmap);
+	    $ub = upperbound($ysid, \%y2xmap);
+	    #print STDERR "UB: $ub LB: $lb\n";
+	    next unless defined $ub && defined $lb;
+	    if ($ub-$lb == 2) {
+		$xsid = $lb+1;
+		$align_org[$i] = "$xsid <=> $ysid";
+		$align_org[$index{"$xsid <=> omitted"}] = "";
+	    } elsif ($ub-$lb == 1) {
+		my $pxtkn, $pytkn, $nxtkn, $nytkn;
+		
+		# counting tokens of previous alignment
+		$align_org[$i-1] =~ /(.+) <=> (.+)/;
+		$xsent = $1; $ysent = $2;
+		@xsent = split /,/, $xsent;
+		@ysent = split /,/, $ysent;
+		foreach (@xsent) {
+		    $pxtkn += $lenx[$_-1];
+		}
+		foreach (@ysent) {
+		    $pytkn += $leny[$_-1];
+		}
+
+		# counting tokens of next alignment
+		$align_org[$i+1] =~ /(.+) <=> (.+)/;
+		$xsent = $1; $ysent = $2;
+		@xsent = split /,/, $xsent;
+		@ysent = split /,/, $ysent;
+		foreach (@xsent) {
+		    $nxtkn += $lenx[$_-1];
+		}
+		foreach (@ysent) {
+		    $nytkn += $leny[$_-1];
+		}
+		if ($pxtkn/$pytkn > $nxtkn/$nytkn) {
+		    $align_org[$i-1] .= ",$ysid";
+		} else {
+		    $align_org[$i+1] =~ s/<=> /<=> $ysid,/;
+		}
+		$align_org[$i] = "";
+	    }
+	} elsif ($align_org[$i] =~ /(\d+) <=> omitted/) {
+	    $xsid = $1;
+	    $lb = lowerbound($xsid, \%x2ymap);
+	    $ub = upperbound($xsid, \%x2ymap);
+	    next unless defined $ub && defined $lb;
+	    if ($ub-$lb == 1) {
+		my ($pxtkn, $pytkn, $nxtkn, $nytkn) = (0,0,0,0);
+		
+		# counting tokens of previous alignment
+		$align_org[$i-1] =~ /(.+) <=> (.+)/;
+		$xsent = $1; $ysent = $2;
+		@xsent = split /,/, $xsent;
+		@ysent = split /,/, $ysent;
+		foreach (@xsent) {
+		    $pxtkn += $lenx[$_-1];
+		}
+		foreach (@ysent) {
+		    $pytkn += $leny[$_-1];
+		}
+
+		# counting tokens of next alignment
+		$align_org[$i+1] =~ /(.+) <=> (.+)/;
+		$xsent = $1; $ysent = $2;
+		@xsent = split /,/, $xsent;
+		@ysent = split /,/, $ysent;
+		foreach (@xsent) {
+		    $nxtkn += $lenx[$_-1];
+		}
+		foreach (@ysent) {
+		    $nytkn += $leny[$_-1];
+		}
+
+		if ($pxtkn/$pytkn < $nxtkn/$nytkn) {
+		    $align_org[$i-1] =~ s/ <=>/,$xsid <=>/;
+		} else {
+		    $align_org[$i+1] = $xsid.",".$align_org[$i+1];
+		}
+		$align_org[$i] = "";
+	    }
+	}
+    }
+    undef @ralign;
+    foreach (@align_org) {
+	push @ralign, $_ unless /^$/;
+    }
+    
+    @ralign = reverse @ralign;
+    
+}
+
+sub print_alignment {
+    my ($align_fn) = @_;
+
+    open A, ">$align_fn" || die;
+    foreach (reverse @ralign) {
+	print A "$_\n";
+    }
+    close A;
+}
+
+sub lowerbound {
+    my ($sid, $mapref) = @_;
+
+    my $psid = $sid - 1;
+    my @map = @{$$mapref{$psid}};
+    if (@map) {
+	return $map[$#map];
+    } else {
+	return;
+    }
+}
+
+sub upperbound {
+    my ($sid, $mapref) = @_;
+
+    my $nsid = $sid + 1;
+    my @map = @{$$mapref{$nsid}};
+    if (@map) {
+	return $map[0];
+    } else {
+	return;
+    }
+}
+
+
+sub usage() {
+    print STDERR << "EOF";
+usage: $0 [-hdscn] <X token file> <Y token file> <alignment file>
+      
+      -h       : this (help) message
+      -d dictf : use dictf as the translation dictionary
+      -s xstop : use words in file xstop as X stop words
+      -c n     : number of Y chars for each X char
+      -n       : disallow 1-3, 3-1, 1-4, 4-1 alignments
+              (faster, lower performance)
+
+EOF
+
+       exit;
+}
+
+
+sub inwindow {
+    my ($xsnt, $ysnt) = @_;
+
+    my $center = int($ysnt * $xyratio);
+    $window_start = $center-$window_size>0?$center-$window_size:0;
+    $window_end = $center+$window_size<$nx?$center+$window_size:$nx;
+
+    if ($xsnt >= $window_start && $xsnt <= $window_end) {
+	return 1;
+    } else {
+	return 0;
+    }
+}
+
+
+sub find_trans_pairs {
+    my $entry = 0;
+    my $found = 0;
+
+    foreach $xtoken (keys %xtkn2snt) {
+	# print STDERR "XT: $xtoken\n";
+	$found = 0;
+	next if defined $xstop{$xtoken};
+        foreach $ysnt (keys %{$ytkn2snt{$xtoken}}) {
+	    foreach $xsnt (keys %{$xtkn2snt{$xtoken}}) {
+		if (inwindow($xsnt,$ysnt)) {
+		    push @{$transpairs{$xsnt,$ysnt}}, $entry;
+		    $found = 1;
+		}
+	    }
+	}
+	$dict_idx{$entry++} = "$xtoken $xtoken" if $found;
+        #print STDERR "DICT $entry: $dict_idx{$entry-1}\n" if $found;
+	foreach $xtoken_trans (@{$dict{$xtoken}}) {
+	    $found = 0;
+	    # print STDERR "XTT: $xtoken_trans\n";
+	    foreach $ysnt (keys %{$ytkn2snt{$xtoken_trans}}) {
+		# print STDERR "$ysnt\n";
+		foreach $xsnt (keys %{$xtkn2snt{$xtoken}}) {
+		    if (inwindow($xsnt,$ysnt)) {
+			push @{$transpairs{$xsnt,$ysnt}}, $entry;
+			$found = 1;
+			#print STDERR "$xsnt $ysnt $xtoken $xtoken_trans\n";
+		    }
+		}
+	    }
+	    $dict_idx{$entry++} = "$xtoken $xtoken_trans" if $found;
+	    #print STDERR "DICT $entry: $dict_idx{$entry-1}\n" if $found;
+	}
+    }
+}
+
+sub find_trans_pairs_cn {
+    my $entry = 0;
+    my @ystno;
+
+    foreach $xtoken (sort keys %xtkn2snt) {
+	# print STDERR "XT: $xtoken\n";
+	$found = 0;
+	next if defined $xstop{$xtoken};
+	@ystno = cn_index($xtoken);
+	# print STDERR join ' ', @ystno, "\n";
+	foreach $ysnt (@ystno) {
+	    foreach $xsnt (keys %{$xtkn2snt{$xtoken}}) {
+		if (inwindow($xsnt,$ysnt) && $yst[$ysnt]=~/\b$xtoken\b/) {
+		    push @{$transpairs{$xsnt,$ysnt}}, $entry;
+		    $found = 1;
+		}
+	    }
+	}
+	$dict_idx{$entry++} = "$xtoken $xtoken" if $found;
+	#print STDERR "DICT $entry: $dict_idx{$entry-1}\n" if $found;;
+	foreach $xtoken_trans (@{$dict{$xtoken}}) {
+	    $found = 0;
+	    # print STDERR "XTT: $xtoken_trans\n";
+	    @ystno = cn_index($xtoken_trans);
+	    # print STDERR join ' ', @ystno, "\n";
+	    foreach $ysnt (@ystno) {
+		foreach $xsnt (keys %{$xtkn2snt{$xtoken}}) {
+		    if (inwindow($xsnt,$ysnt) && $yst[$ysnt]=~/$xtoken_trans/ ) {
+			push @{$transpairs{$xsnt,$ysnt}}, $entry;
+			$found = 1;
+			#print STDERR "$xsnt $ysnt $xtoken $xtoken_trans\n";
+		    }
+		}
+	    }
+	    $dict_idx{$entry++} = "$xtoken $xtoken_trans" if $found;
+	    # print STDERR "DICT $entry: $dict_idx{$entry-1}\n" if $found;
+	}
+    }
+}
+
+sub cn_index {
+    my ($string) = @_;
+    my (%snt, @char, %seen, %new, @uniqchar);
+
+    #print STDERR $string, "\n";
+    #print STDERR join ' ', @uniqchar,"\n";
+    $string =~ s/\\(.)/$1/g;
+    @char = split //, $string;
+
+    %seen = ();
+    foreach $item (@char) {
+	push(@uniqchar, $item) unless $seen{$item}++;
+    }
+
+    #print STDERR join ' ', @uniqchar,"\n";
+    %snt=%{$ytkn2snt{$uniqchar[0]}};
+    #print STDERR $uniqchar[0]," ", join ' ', keys %snt,"\n";
+    for($i=1; $i<@uniqchar; $i++) {
+	%new = %{$ytkn2snt{$uniqchar[$i]}};
+	foreach (keys %snt) {
+	    delete $snt{$_} unless $new{$_};
+	}
+	return keys %snt if keys %snt == 0;
+    }
+
+    return keys %snt;
+}
