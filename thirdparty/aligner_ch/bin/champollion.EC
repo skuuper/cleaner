@@ -1,10 +1,10 @@
 #!/bin/sh
 #
-# Purpose: Wrapper script to align English and Chinese (in utf8)
+# Purpose: Wrapper script to align English and Chinese (GB)
 #          parallel text.
 # Usage: champollion.EC <english sentence file> <chinese sentence file> <alignment file>
 # Input: English text file, one sentence per line, encoded in ASCII
-#        Chinese text file, one sentence per line, encoded in utf8
+#        Chinese text file, one sentence per line, encoded in utf-8
 # Output: alignment file, alignment are in the format of:
 #         e_st_ids <=> c_st_ids
 #         Each e_st_ids or c_st_ids can contain up to four sentence ids
@@ -31,6 +31,7 @@ fi
 
 # Tokenize Chinese
 echo "Tokenizing Chinese ... "
+echo $CTK/bin/axis.CN/utf8/axis.CN_utf8 $2 to $cn_axis
 $CTK/bin/axis.CN/utf8/axis.CN_utf8 $2 > $cn_axis
 if [ $? -ne 0 ]; then
 exit 3
@@ -38,7 +39,8 @@ fi
 
 # Align sentences
 echo "Aligning Sentences ... "
-$CTK/bin/champollion -d $CTK/lib/ecdict.utf8.full.txt -s $CTK/lib/E.stoplist -c 0.78 $en_axis $cn_axis $3
+echo $CTK/bin/champollion -d $CTK/lib/ecdict.utf8.txt -s $CTK/lib/E.stoplist -c 0.634 $en_axis $cn_axis $3
+$CTK/bin/champollion -d $CTK/lib/ecdict.utf8.txt -s $CTK/lib/E.stoplist -c 0.634 $en_axis $cn_axis $3
 
 # Remove temporary files
 #rm $en_axis $cn_axis

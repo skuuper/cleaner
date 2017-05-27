@@ -1,4 +1,6 @@
 echo Здесь должен быть скрипт, который выравнивает тексты с помощью Champollion
 echo Usage: align dictfile.txt source translate
 
-#champollion.pl ...
+export CTK=`pwd`
+
+bin/champollion.RC demo/CPP20000210000021.e.st demo/CPP20000210000021.c.st out.align > out.log
