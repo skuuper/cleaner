@@ -1,0 +1,13 @@
+#!/bin/sh
+
+bin/champollion.EC demo/CPP20000210000021.e.st demo/CPP20000210000021.c.utf8.st demo/CPP20000210000021.align > /dev/null 2>&1
+
+cmp -s demo/CPP20000210000021.align demo/CPP20000210000021.align.shouldbe
+
+if [ $? -eq 0 ]; then
+    echo The installation is good.
+else
+    echo The installation is not good.
+    echo Please check if the environment variable CTK is set right.
+    echo The value of CTK is $CTK, current directory is `pwd`.
+fi
