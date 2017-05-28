@@ -39,7 +39,7 @@ fi
 # Align sentences
 echo "Aligning Sentences ... ПОДЛОЖИТЕ РУССКИЙ СЛОВАРЬ, ИЗВЕРГИ! "
 # Магическое число 0.78 - экспериментально подобранное соотношение длины русского и китайского предложеиня в среднем. МОжно попытаться подгонять на ходу.
-$CTK/bin/champollion -d $CTK/lib/ecdict.utf8.txt -s $CTK/lib/R.stoplist -c 0.78 $en_axis $cn_axis $3
+$CTK/bin/champollion -d $CTK/lib/rcdict.utf8.txt -s $CTK/lib/R.stoplist -c 0.78 $en_axis $cn_axis $3
 
 # Remove temporary files
 #rm $en_axis $cn_axis
