@@ -30,6 +30,9 @@ class BaseController {
         $this->debug = $container->get('settings')['debug'];
     }
 
+    public function login($request, $response) {
+        return $this->view->render($response, 'layouts/login.twig');
+    }
 
     protected function getLanguages() {
         return [
