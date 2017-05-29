@@ -128,8 +128,7 @@ class TmxService {
             array_push($destination, "");
             foreach ($out as $line) {
               $align = explode("\t", $line);
-              if ($sp > $align[0] || $dp > $align[1]) $this->write_file('err_'.time().".txt", array_merge($source, $destination));
-              //print($align[0]." => ".$align[1]."<br />\n");
+              //if ($sp > $align[0] || $dp > $align[1]) $this->write_file('err_'.time().".txt", array_merge($source, $destination));
               for ($i = $sp + 1; $i < $align[0]; $i++) {
                 array_push($new_src, $i);
                 array_push($new_dst, sizeof($destination));
@@ -158,51 +157,27 @@ class TmxService {
             $this->aligner_path = str_replace('aligner', $aligner, $this->aligner_path);
             $this->aligner_bin = str_replace('_mac', '', $this->aligner_bin);
             $dicfile = $this->aligner_path."lib/";
-            if ($dic === '') $dic .= $source_language[0].''.$destination_language[0]."dict.utf8.txt"; 
-            else
-              $dicfile .= $dic;
+            if ($dic === '') $dic .= $source_language[0].''.$destination_language[0]."dict.utf8.txt";  else $dicfile .= $dic;
             //print("Calling ".$this->aligner_path.$this->aligner_bin." ".$dicfile." ".$st." ".$dt);
             $op = $tempfile.'/align.txt';
             exec('cd '.$this->aligner_path.' && ./'.$this->aligner_bin." ".$st." ".$dt." ".$dicfile." ".$op, $out, $ret);
-            if ($ret != 0) {
-              //die("Error calling aligner!<br />\n");
+            if ($ret != 0) {              //die("Error calling aligner!<br />\n");  
               return;
             }
-            //error_log("Written to ".$op);
             $out = file($op);
-            //print_r($out);
-            $sp = 0;
-            $dp = 0;
             array_push($source, "");
             array_push($destination, "");
             foreach ($out as $line) {
               $align = explode(" <=> ", $line);
-              if ($sp > $align[0] || $dp > $align[1]) $this->write_file('err_'.time().".txt", array_merge($source, $destination));
-              //print($align[0]." => ".$align[1]."<br />\n");
-              for ($i = $sp + 1; $i < $align[0]; $i++) {
-                array_push($new_src, $i);
-                array_push($new_dst, sizeof($destination));
-              }
-              for ($i = $dp + 1; $i < $align[1]; $i++) {
-                array_push($new_dst, $i);
-                array_push($new_src, sizeof($source));
-              }
-              //~ TODO: detect duplicate?
-              array_push($new_src, $align[0]);
-              array_push($new_dst, $align[1]);
-              $dp = $align[1];
-              $sp = $align[0];
+              $ss = '';
+              $ds = '';
+              foreach (split(',', $align[0]) as $s)
+                $ss .= ' '.$source[intval($s)];
+              foreach (split(',', $align[1]) as $s)
+                $ds .= ' '.$destination[intval($s)];
+              array_push($new_src, trim($ss));
+              array_push($new_dst, trim($ds));
             }
-            for ($i = $sp + 1; $i < sizeof($source) - 1; $i++) {
-                array_push($new_src, $i);
-                array_push($new_dst, sizeof($destination));
-            }
-            for ($i = $dp + 1; $i < sizeof($destination) - 1; $i++) {
-                array_push($new_dst, $i);
-                array_push($new_src, sizeof($source));
-            }
-            if (file_exists($tempfile)) { $this->rrmdir($tempfile); }
-            $this->spread($new_src, $new_dst, $source, $destination);
         }
         $source = $new_src;
         $destination = $new_dst;
