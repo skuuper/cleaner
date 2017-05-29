@@ -13,6 +13,7 @@ $app->get('/login', 'App\Controller\BaseController:login');
 
 
 $app->get('/tmx', 'App\Controller\TmxController:index');
+$app->get('/tmx/languages', 'App\Controller\DicController:index');
 $app->post('/tmx/process', 'App\Controller\TmxController:process');
 $app->get('/tmx/download/{filename}', 'App\Controller\TmxController:download');
 $app->get('/tmx/align', 'App\Controller\TmxController:align');

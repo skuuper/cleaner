@@ -85,11 +85,14 @@ class TmxController extends BaseController {
           else
             $destination_raw = $this->processor->tokenize_ldc($destination_raw);
 
+        $aligner = $data['aligner'];
+        $dic = $data['dict'];
+
         $source = explode("\n", $this->processor->process($source_raw, $bUseLF, $source_language));
         $destination = explode("\n", $this->processor->process($destination_raw, $bUseLF, $destination_language));
         //print($destination_raw);
 
-        $tmx = $this->tmx->create($source_language, $destination_language, $source, $destination);
+        $tmx = $this->tmx->create($source_language, $destination_language, $source, $destination, $aligner, $dic);
 
         date_default_timezone_set('UTC');
         $filename = str_replace("/", "_", str_replace(".", "_", $files['source_text']->getClientFilename())).'_'.date('Ymd_Hi');
