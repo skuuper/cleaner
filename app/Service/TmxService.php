@@ -79,8 +79,10 @@ class TmxService {
         elseif ($src[$i] == sizeof($source))
           $do[sizeof($do) - 1] .= ' '.$destination[$dst[$i]];
         else {
-          array_push($so, $source[$src[$i]]);
-          array_push($do, $destination[$dst[$i]]);
+          foreach (split(',', $src[$i]) as $v)
+            array_push($so, $source[$v]);
+          foreach (split(',', $dst[$i]) as $v)
+            array_push($do, $destination[trim($v)]);
         }
         $i++;
       }
@@ -154,17 +156,53 @@ class TmxService {
             $this->spread($new_src, $new_dst, $source, $destination);
         } else {
             $this->aligner_path = str_replace('aligner', $aligner, $this->aligner_path);
+            $this->aligner_bin = str_replace('_mac', '', $this->aligner_bin);
             $dicfile = $this->aligner_path."lib/";
             if ($dic === '') $dic .= $source_language[0].''.$destination_language[0]."dict.utf8.txt"; 
             else
               $dicfile .= $dic;
-            print("Calling ".$this->aligner_path.$this->aligner_bin." ".$dicfile." ".$st." ".$dt);
-            exec($this->aligner_path.$this->aligner_bin." ".$dicfile." ".$st." ".$dt, $out, $ret);
+            //print("Calling ".$this->aligner_path.$this->aligner_bin." ".$dicfile." ".$st." ".$dt);
+            $op = $tempfile.'/align.txt';
+            exec('cd '.$this->aligner_path.' && ./'.$this->aligner_bin." ".$st." ".$dt." ".$dicfile." ".$op, $out, $ret);
             if ($ret != 0) {
               //die("Error calling aligner!<br />\n");
               return;
             }
+            //error_log("Written to ".$op);
+            $out = file($op);
             //print_r($out);
+            $sp = 0;
+            $dp = 0;
+            array_push($source, "");
+            array_push($destination, "");
+            foreach ($out as $line) {
+              $align = explode(" <=> ", $line);
+              if ($sp > $align[0] || $dp > $align[1]) $this->write_file('err_'.time().".txt", array_merge($source, $destination));
+              //print($align[0]." => ".$align[1]."<br />\n");
+              for ($i = $sp + 1; $i < $align[0]; $i++) {
+                array_push($new_src, $i);
+                array_push($new_dst, sizeof($destination));
+              }
+              for ($i = $dp + 1; $i < $align[1]; $i++) {
+                array_push($new_dst, $i);
+                array_push($new_src, sizeof($source));
+              }
+              //~ TODO: detect duplicate?
+              array_push($new_src, $align[0]);
+              array_push($new_dst, $align[1]);
+              $dp = $align[1];
+              $sp = $align[0];
+            }
+            for ($i = $sp + 1; $i < sizeof($source) - 1; $i++) {
+                array_push($new_src, $i);
+                array_push($new_dst, sizeof($destination));
+            }
+            for ($i = $dp + 1; $i < sizeof($destination) - 1; $i++) {
+                array_push($new_dst, $i);
+                array_push($new_src, sizeof($source));
+            }
+            if (file_exists($tempfile)) { $this->rrmdir($tempfile); }
+            $this->spread($new_src, $new_dst, $source, $destination);
         }
         $source = $new_src;
         $destination = $new_dst;

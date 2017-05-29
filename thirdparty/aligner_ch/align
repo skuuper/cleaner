@@ -3,4 +3,4 @@
 
 export CTK=`pwd`
 
-bin/champollion.RC $1 $2 $3 $4 > out.log
+$CTK/bin/champollion.RC $1 $2 $3 $4 > out.log
