@@ -59,8 +59,8 @@ class TmxController extends BaseController {
         $source_language = $data['source_language'];
         $destination_language = $data['destination_language'];
         $files = $request->getUploadedFiles();
-        $bUseLF = $data['use_lf_aligner'] == 'on' || $data['use_lf_aligner'] == 'true' || $data['use_lf_aligner'] == '1';
-        $bUseLDC = $data['use_ldc_chunker'] == 'on' || $data['use_ldc_chunker'] == 'true' || $data['use_ldc_chunker'] == '1';
+        $bUseLF = isset($data['use_lf_aligner']) && ($data['use_lf_aligner'] == 'on' || $data['use_lf_aligner'] == 'true' || $data['use_lf_aligner'] == '1');
+        $bUseLDC = isset($data['use_ldc_chunker']) && ($data['use_ldc_chunker'] == 'on' || $data['use_ldc_chunker'] == 'true' || $data['use_ldc_chunker'] == '1');
         //print($bUseLF);
 
         //TODO: Handle missing files with someting different than exceptions
