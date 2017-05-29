@@ -13,8 +13,8 @@
 #
 
 # print usage if necessary
-if [ $# -ne 3 ]; then
-    echo "Usage: $0 <russian sentence file> <chinese sentence file> <alignment file>"
+if [ $# -ne 4 ]; then
+    echo "Usage: $0 <russian sentence file> <chinese sentence file> <dictionary file> <alignment file>"
     exit 1
 fi
 
@@ -39,7 +39,7 @@ fi
 # Align sentences
 echo "Aligning Sentences ... ПОДЛОЖИТЕ РУССКИЙ СЛОВАРЬ, ИЗВЕРГИ! "
 # Магическое число 0.78 - экспериментально подобранное соотношение длины русского и китайского предложеиня в среднем. МОжно попытаться подгонять на ходу.
-$CTK/bin/champollion -d $CTK/lib/rcdict.utf8.txt -s $CTK/lib/R.stoplist -c 0.78 $en_axis $cn_axis $3
+$CTK/bin/champollion -d $3 -s $CTK/lib/R.stoplist -c 0.78 $en_axis $cn_axis $4
 
 # Remove temporary files
 #rm $en_axis $cn_axis
