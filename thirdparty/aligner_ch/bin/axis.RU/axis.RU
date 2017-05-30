@@ -4,6 +4,5 @@ echo Russian tokenization has not been implemented yet, using generic scripts...
 
 cat $* | \
 $CTK/bin/axis.RU/gtoken.pl | \
-$CTK/bin/axis.RU/lowercase
-
-#$CTK/bin/axis.EN/english_stemmer.pl
+$CTK/bin/axis.RU/lowercase | \
+$CTK/bin/axis.RU/lemmatize
