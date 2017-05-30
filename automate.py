@@ -37,8 +37,11 @@ def align(fp, fp2, ldc=False, lf=False, aligner='champollion', df='rcdict.utf8.t
         print("Saving: " + fp_out)
         with open(fp_out, 'w') as fo:
             fo.write(r1.text)
+        return fp_out
     else: 
         print("Error getting TMX!")
+        return ""
+
 
 if __name__ == '__main__':
     align('thirdparty/aligner_ch/demo/CPP20000210000021.r.st', 'thirdparty/aligner_ch/demo/CPP20000210000021.c.utf8.st', ldc=True, lf=False, aligner='hunalign', df='ru-zh.dic')
