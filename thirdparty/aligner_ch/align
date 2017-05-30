@@ -3,4 +3,4 @@ echo Usage: align dictfile.txt source translate
 
 export CTK=`pwd`
 
-bin/champollion.RC $1 $2 $3 > out.log
+bin/champollion.RC $2 $3 $4 > out.log
