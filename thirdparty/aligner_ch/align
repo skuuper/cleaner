@@ -1,5 +1,5 @@
-echo Здесь должен быть скрипт, который выравнивает тексты с помощью Champollion
-echo Usage: align dictfile.txt source translate
+#echo Здесь должен быть скрипт, который выравнивает тексты с помощью Champollion
+#echo Usage: align dictfile.txt source translate
 
 export CTK=`pwd`
 

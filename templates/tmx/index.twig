@@ -45,6 +45,14 @@
         <center>
         <table cellpadding="0" cellspacing="0" border="0">
           <tr>
+                <td style="width: 140Pt;"><select id="aligner" name="aligner"><option value="aligner">hunalign</option><option value="aligner_ch">Champollion 1.2</option></select></td>
+                <td>Aligner tool</td>
+          </tr><tr>
+          <tr id="al_dict" style="display: none;">
+                <td style="width: 140Pt;"><select id="diclist" name="dict"><option value="ru_zh.dic">ru_zh.dic</option></select></td>
+                <td>Supplement aligner with dictionary</td>
+          </tr><tr>
+          <tr>
                 <td style="width: 15Pt;"><input type="checkbox" name="use_lf_aligner" id="lf" disabled></td>
                 <td>Use alternative chunking from LF Aligner </td>
           </tr><tr>
@@ -65,13 +73,26 @@
     <script>
       function lhandler() {
         $("select").change(function(e) {
-          //console.log($("#l1").value != 'zh');  //e.target.value);
           if ($("#l1").val() != 'zh' && $("#l2").val() != 'zh')
             $("input#ldc").attr('disabled', "disabled");
           else $("input#ldc").removeAttr('disabled');
+
+          //+ updating dictionary list
+          $.getJSON('/tmx/languages?srclang='+$("#l1").val()+'&dstlang='+$("#l2").val()).success(function(data) {
+            lst = $("#diclist");
+            lst.find('option').remove();
+            console.log($("#aligner").val());
+            $.each(data, function(key, value) 
+              { if(($("#aligner").val() == 'aligner') === value.endsWith('dic'))
+                lst.append('<option value=' + value + '>' + value + '</option>'); });
+            console.log(data);
+          }).fail(function(e) {
+            console.log('Error fetching data');
+          });
         });
         //$("input#ldc").removeAttr('disabled');
         $("input#lf").removeAttr('disabled');
+        $("#al_dict").show();
       }
       $(document).ready(function() {lhandler();});
     </script>

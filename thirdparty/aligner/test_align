@@ -1,0 +1,5 @@
+#!/bin/sh
+
+./align demo/CPP20000210000021.r.st demo/CPP20000210000021.c.utf8.st output.align 
+
+./hunalign_mac ./data/ru-zh.dic demo/ru.txt demo/zh.txt

@@ -24,10 +24,10 @@ use App\Model\TmxEntry;
 class TmxService {
 
     public function __construct() {
-      $this->hunalign_path = "thirdparty/aligner/";
-      $this->hunalign_bin = "hunalign";
+      $this->aligner_path = "thirdparty/aligner/";
+      $this->aligner_bin = "align";
       if (PHP_OS == 'Darwin')
-        $this->hunalign_bin .= "_mac";
+        $this->aligner_bin .= "_mac";
     }
 
 
@@ -79,8 +79,10 @@ class TmxService {
         elseif ($src[$i] == sizeof($source))
           $do[sizeof($do) - 1] .= ' '.$destination[$dst[$i]];
         else {
-          array_push($so, $source[$src[$i]]);
-          array_push($do, $destination[$dst[$i]]);
+          foreach (split(',', $src[$i]) as $v)
+            array_push($so, $source[$v]);
+          foreach (split(',', $dst[$i]) as $v)
+            array_push($do, $destination[trim($v)]);
         }
         $i++;
       }
@@ -90,7 +92,7 @@ class TmxService {
       $dst = $do;
     }
 
-    public function align($source_language, $destination_language, &$source, &$destination)
+    public function align($source_language, $destination_language, &$source, &$destination, $aligner='aligner', $dic='')
     {
         $tempfile=tempnam(sys_get_temp_dir(),'');
         //print("Using temp dir: ".$tempfile."<br>\n");
@@ -105,56 +107,86 @@ class TmxService {
         if (!is_dir($tempfile)) { die('Error creating temporary dir!'); }
         $out = array();
         $ret = -1;
-        $dicfile = $this->hunalign_path."data/".$source_language.'-'.$destination_language.".dic";
-        //print("Calling ".$this->hunalign_path.$this->hunalign_bin." ".$dicfile." ".$st." ".$dt);
-        exec($this->hunalign_path.$this->hunalign_bin." ".$dicfile." ".$st." ".$dt, $out, $ret);
-        if ($ret != 0) {
-          //die("Error calling hunalign!<br />\n");
-          return;
-        }
-        //print_r($out);
-        $sp = 0;
-        $dp = 0;
         $new_src = array();
         $new_dst = array();
-        array_push($source, "");
-        array_push($destination, "");
-        foreach ($out as $line) {
-          $align = explode("\t", $line);
-          if ($sp > $align[0] || $dp > $align[1]) $this->write_file('err_'.time().".txt", array_merge($source, $destination));
-          //print($align[0]." => ".$align[1]."<br />\n");
-          for ($i = $sp + 1; $i < $align[0]; $i++) {
-            array_push($new_src, $i);
-            array_push($new_dst, sizeof($destination));
-          }
-          for ($i = $dp + 1; $i < $align[1]; $i++) {
-            array_push($new_dst, $i);
-            array_push($new_src, sizeof($source));
-          }
-          //~ TODO: detect duplicate?
-          array_push($new_src, $align[0]);
-          array_push($new_dst, $align[1]);
-          $dp = $align[1];
-          $sp = $align[0];
+        if ($aligner == 'aligner') {
+            $this->aligner_bin = str_replace('align', 'hunalign', $this->aligner_bin);
+            $dicfile = $this->aligner_path."data/";
+            if ($dic === '') $dic .= $source_language.'-'.$destination_language.".dic"; 
+            else
+              $dicfile .= $dic;
+            //print("Calling ".$this->aligner_path.$this->aligner_bin." ".$dicfile." ".$st." ".$dt);
+            exec($this->aligner_path.$this->aligner_bin." ".$dicfile." ".$st." ".$dt, $out, $ret);
+            if ($ret != 0) {
+              //die("Error calling hunalign!<br />\n");
+              return;
+            }
+            //print_r($out);
+            $sp = 0;
+            $dp = 0;
+            array_push($source, "");
+            array_push($destination, "");
+            foreach ($out as $line) {
+              $align = explode("\t", $line);
+              //if ($sp > $align[0] || $dp > $align[1]) $this->write_file('err_'.time().".txt", array_merge($source, $destination));
+              for ($i = $sp + 1; $i < $align[0]; $i++) {
+                array_push($new_src, $i);
+                array_push($new_dst, sizeof($destination));
+              }
+              for ($i = $dp + 1; $i < $align[1]; $i++) {
+                array_push($new_dst, $i);
+                array_push($new_src, sizeof($source));
+              }
+              //~ TODO: detect duplicate?
+              array_push($new_src, $align[0]);
+              array_push($new_dst, $align[1]);
+              $dp = $align[1];
+              $sp = $align[0];
+            }
+            for ($i = $sp + 1; $i < sizeof($source) - 1; $i++) {
+                array_push($new_src, $i);
+                array_push($new_dst, sizeof($destination));
+            }
+            for ($i = $dp + 1; $i < sizeof($destination) - 1; $i++) {
+                array_push($new_dst, $i);
+                array_push($new_src, sizeof($source));
+            }
+            if (file_exists($tempfile)) { $this->rrmdir($tempfile); }
+            $this->spread($new_src, $new_dst, $source, $destination);
+        } else {
+            $this->aligner_path = str_replace('aligner', $aligner, $this->aligner_path);
+            $this->aligner_bin = str_replace('_mac', '', $this->aligner_bin);
+            $dicfile = $this->aligner_path."lib/";
+            if ($dic === '') $dic .= $source_language[0].''.$destination_language[0]."dict.utf8.txt";  else $dicfile .= $dic;
+            //print("Calling ".$this->aligner_path.$this->aligner_bin." ".$dicfile." ".$st." ".$dt);
+            $op = $tempfile.'/align.txt';
+            exec('cd '.$this->aligner_path.' && ./'.$this->aligner_bin." ".$st." ".$dt." ".$dicfile." ".$op, $out, $ret);
+            if ($ret != 0) {              //die("Error calling aligner!<br />\n");  
+              return;
+            }
+            $out = file($op);
+            array_push($source, "");
+            array_push($destination, "");
+            foreach ($out as $line) {
+              $align = explode(" <=> ", $line);
+              $ss = '';
+              $ds = '';
+              foreach (split(',', $align[0]) as $s)
+                $ss .= ' '.$source[intval($s)];
+              foreach (split(',', $align[1]) as $s)
+                $ds .= ' '.$destination[intval($s)];
+              array_push($new_src, trim($ss));
+              array_push($new_dst, trim($ds));
+            }
         }
-        for ($i = $sp + 1; $i < sizeof($source) - 1; $i++) {
-            array_push($new_src, $i);
-            array_push($new_dst, sizeof($destination));
-        }
-        for ($i = $dp + 1; $i < sizeof($destination) - 1; $i++) {
-            array_push($new_dst, $i);
-            array_push($new_src, sizeof($source));
-        }
-        if (file_exists($tempfile)) { $this->rrmdir($tempfile); }
-        $this->spread($new_src, $new_dst, $source, $destination);
         $source = $new_src;
         $destination = $new_dst;
     }
 
-    public function create($source_language, $destination_language, $source, $destination, $bAlign=true)
+    public function create($source_language, $destination_language, $source, $destination, $aligner='aligner', $dic='', $bAlign=true)
     {
         if ($bAlign)
-          $this->align($source_language, $destination_language, $source, $destination);
+          $this->align($source_language, $destination_language, $source, $destination, $aligner, $dic);
         $entries = [];
         foreach ($source as $index => $item) {
             $entry = new TmxEntry();

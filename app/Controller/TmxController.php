@@ -59,8 +59,8 @@ class TmxController extends BaseController {
         $source_language = $data['source_language'];
         $destination_language = $data['destination_language'];
         $files = $request->getUploadedFiles();
-        $bUseLF = $data['use_lf_aligner'] == 'on' || $data['use_lf_aligner'] == 'true' || $data['use_lf_aligner'] == '1';
-        $bUseLDC = $data['use_ldc_chunker'] == 'on' || $data['use_ldc_chunker'] == 'true' || $data['use_ldc_chunker'] == '1';
+        $bUseLF = isset($data['use_lf_aligner']) && ($data['use_lf_aligner'] == 'on' || $data['use_lf_aligner'] == 'true' || $data['use_lf_aligner'] == '1');
+        $bUseLDC = isset($data['use_ldc_chunker']) && ($data['use_ldc_chunker'] == 'on' || $data['use_ldc_chunker'] == 'true' || $data['use_ldc_chunker'] == '1');
         //print($bUseLF);
 
         //TODO: Handle missing files with someting different than exceptions
@@ -85,11 +85,14 @@ class TmxController extends BaseController {
           else
             $destination_raw = $this->processor->tokenize_ldc($destination_raw);
 
+        $aligner = $data['aligner'];
+        $dic = $data['dict'];
+
         $source = explode("\n", $this->processor->process($source_raw, $bUseLF, $source_language));
         $destination = explode("\n", $this->processor->process($destination_raw, $bUseLF, $destination_language));
         //print($destination_raw);
 
-        $tmx = $this->tmx->create($source_language, $destination_language, $source, $destination);
+        $tmx = $this->tmx->create($source_language, $destination_language, $source, $destination, $aligner, $dic);
 
         date_default_timezone_set('UTC');
         $filename = str_replace("/", "_", str_replace(".", "_", $files['source_text']->getClientFilename())).'_'.date('Ymd_Hi');

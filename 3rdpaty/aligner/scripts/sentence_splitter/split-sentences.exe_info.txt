@@ -1,3 +1,0 @@
-Made with PAR Packager for Windows
-Used by perl script if OS is Windows
-Also used by BAT
