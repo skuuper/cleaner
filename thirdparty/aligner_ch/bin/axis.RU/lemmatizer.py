@@ -1,0 +1,1 @@
+/Users/ourzhumt/projects/Marat_th/ZhRuParCor_pipeline/ZhRuParCor/lemmatizer.py
