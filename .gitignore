@@ -9,3 +9,5 @@ composer-install.php
 node-modules/
 translate.txt
 .DS*
+__pycache__
+*.pyc
