@@ -74,8 +74,8 @@ class TmxController extends BaseController {
         $source_raw = $files['source_text']->getStream()->getContents();
         $destination_raw = $files['destination_text']->getStream()->getContents();
 
-        //print($destination_raw);
         $source_raw = $this->tika->get_contents_stream($source_raw);
+        //print_r($source_raw);
         $destination_raw = $this->tika->get_contents_stream($destination_raw);
         //print($destination_raw);
 
@@ -89,6 +89,7 @@ class TmxController extends BaseController {
         $dic = $data['dict'];
 
         $source = explode("\n", $this->processor->process($source_raw, $bUseLF, $source_language));
+        //print_r($source);
         $destination = explode("\n", $this->processor->process($destination_raw, $bUseLF, $destination_language));
         //print($destination_raw);
 

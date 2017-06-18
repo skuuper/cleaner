@@ -109,7 +109,7 @@ class TmxService {
         $ret = -1;
         $new_src = array();
         $new_dst = array();
-        if ($aligner == 'aligner') {
+        if ($aligner == 'aligner') {	// HUNALIGN
             $this->aligner_bin = str_replace('align', 'hunalign', $this->aligner_bin);
             $dicfile = $this->aligner_path."data/";
             if ($dic === '') $dic .= $source_language.'-'.$destination_language.".dic"; 
@@ -117,13 +117,18 @@ class TmxService {
               $dicfile .= $dic;
             //print("Calling ".$this->aligner_path.$this->aligner_bin." ".$dicfile." ".$st." ".$dt);
             exec($this->aligner_path.$this->aligner_bin." ".$dicfile." ".$st." ".$dt, $out, $ret);
+            
+            $fh = fopen($tempfile.'/align.dat', 'w');
+            foreach($out as $line)
+              fprintf($fh, $line."\n");
+            fclose($fh);
+            
             if ($ret != 0) {
-              //die("Error calling hunalign!<br />\n");
+              print("Error calling hunalign!<br />\n");
               return;
             }
-            //print_r($out);
-            $sp = 0;
-            $dp = 0;
+            $sp = -1;
+            $dp = -1;
             array_push($source, "");
             array_push($destination, "");
             foreach ($out as $line) {
@@ -153,7 +158,7 @@ class TmxService {
             }
             if (file_exists($tempfile)) { $this->rrmdir($tempfile); }
             $this->spread($new_src, $new_dst, $source, $destination);
-        } else {
+        } else {	// CHAMPOLLION
             $this->aligner_path = str_replace('aligner', $aligner, $this->aligner_path);
             $this->aligner_bin = str_replace('_mac', '', $this->aligner_bin);
             $dicfile = $this->aligner_path."lib/";
@@ -179,6 +184,7 @@ class TmxService {
               array_push($new_dst, trim($ds));
             }
         }
+        print_r($source);
         $source = $new_src;
         $destination = $new_dst;
     }
