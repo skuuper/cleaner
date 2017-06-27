@@ -79,9 +79,9 @@ class TmxService {
         elseif ($src[$i] == sizeof($source))
           $do[sizeof($do) - 1] .= ' '.$destination[$dst[$i]];
         else {
-          foreach (split(',', $src[$i]) as $v)
+          foreach (explode(',', $src[$i]) as $v)
             array_push($so, $source[$v]);
-          foreach (split(',', $dst[$i]) as $v)
+          foreach (explode(',', $dst[$i]) as $v)
             array_push($do, $destination[trim($v)]);
         }
         $i++;
@@ -176,9 +176,9 @@ class TmxService {
               $align = explode(" <=> ", $line);
               $ss = '';
               $ds = '';
-              foreach (split(',', $align[0]) as $s)
+              foreach (explode(',', $align[0]) as $s)
                 $ss .= ' '.$source[intval($s)];
-              foreach (split(',', $align[1]) as $s)
+              foreach (explode(',', $align[1]) as $s)
                 $ds .= ' '.$destination[intval($s)];
               array_push($new_src, trim($ss));
               array_push($new_dst, trim($ds));
