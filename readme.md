@@ -1,3 +1,11 @@
+# Skuuper Cleaner
+This project is a project developed inside Skuuper OU to simplify preparation of parallel corpora creation and cleaning, and released to the community to encourage public development of the parallel corpora area.
+
+Cleaner is free for educational and non-commercial usage. All commercial rights are reserved by Skuuper OU.
+
+# Contributing
+This project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution.
+
 # Installation
 
 * Clone the project to the directory you want it to run
